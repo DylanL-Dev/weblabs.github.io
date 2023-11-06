@@ -258,14 +258,8 @@ a {
 }
 
 .video_desktop {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   padding-top: 100px;
 }
@@ -326,7 +320,7 @@ footer {
 }
 
 .service_footer {
-  font-family: "IntegralCF-Bold";
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   font-size: 80px;
   padding: 20px;
   color: #808080;
@@ -396,7 +390,7 @@ footer {
   gap: 10px;
 }
 .contact p {
-  font-family: "IntegralCF-Bold";
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   font-size: 43px;
   padding: 20px;
   color: #808080;
@@ -409,7 +403,7 @@ footer {
 }
 
 .mail {
-  font-family: "IntegralCF-Bold";
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   font-size: 25px;
   padding-left: 20px;
   color: #ffff00;
