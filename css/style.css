@@ -7,6 +7,8 @@
   box-sizing: border-box;
 }
 
+
+
 img,
 video {
   object-fit: cover;
@@ -15,9 +17,12 @@ video {
 body {
   width: 100%;
   background-color: #dfff00;
+  cursor: url('/Assets/logo/cursor-black.png'), auto;
+
 }
 a {
   text-decoration: none !important;
+  cursor: url('/Assets/logo/cursor-pointer.png'), auto;
 }
 /*FONT*/
 @font-face {
@@ -253,15 +258,20 @@ a {
   display: none;
 }
 
-
-
-.video{
+.video {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 100px;
+  position: relative;
 }
-
+.video img {
+  position: absolute;
+  top: 16%;
+  left: 84%;
+  transform: translate(-50%, -50%);
+  width: 14%;
+}
 .video video {
   width: 90%;
   max-height: 700px;
@@ -315,7 +325,10 @@ a {
 
 footer {
   background-color: #181818;
+  cursor: url('/Assets/logo/cursor-jaune.png'), auto;
 }
+
+
 
 .service_footer {
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
@@ -377,11 +390,41 @@ footer {
   color: #808080;
 }
 
-.bulle p {
-  font-size: 16px;
+.bulle p,a {
+  font-size: 20px;
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   color: #818181;
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.overlay-content {
+  width: 30%;
+  background: #181818;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+
+.overlay-content p{
+  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+  font-size: 20px;
+  color: #808080;
+}
+
+
 
 .contact {
   display: flex;
@@ -407,6 +450,7 @@ footer {
   padding-left: 20px;
   color: #ffff00;
 }
+
 
 .space {
   padding-top: 20px;
@@ -479,6 +523,14 @@ footer {
     width: 90%;
 
     margin-left: 14%;
+  }
+
+  .overlay-content {
+    width: 85%;
+    background: #181818;
+    padding: 20px;
+    border-radius: 10px;
+  
   }
 
   .contact {
@@ -622,6 +674,10 @@ footer {
     transform: rotate(315deg);
   }
 
+  .video img {
+    display: none;
+  }
+
   .service_footer {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 44px;
@@ -670,7 +726,6 @@ footer {
 
   .bulle i {
     font-size: 17px;
-    
   }
 
   .bulle p {
@@ -678,6 +733,16 @@ footer {
     font-family: "Garrison_Regular", "Martel Sans", sans-serif;
     color: #818181;
   }
+
+  .overlay-content {
+    width: 90%;
+    background: #181818;
+    padding: 20px;
+    border-radius: 10px;
+  
+  }
+  
+
 
   .contact {
     display: flex;
