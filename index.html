@@ -16,11 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/Assets/logo/logo_IMG.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="/Assets/logo/logo_IMG.ico" />
     <!--CSS-->
     <link
       rel="stylesheet"
@@ -34,7 +30,11 @@
       src="https://kit.fontawesome.com/79857fa36d.js"
       crossorigin="anonymous"
     ></script>
-    <title>Web Labs</title>
+    <title>Web Labs - Développeur Web Indépendant</title>
+    <meta
+      name="description"
+      content="Web Labs, votre développeur web indépendant spécialisé dans la conception de sites web et la création d'interfaces utilisateur intuitives."
+    />
   </head>
   <body>
     <section>
@@ -54,12 +54,21 @@
       <div class="name">
         <h1>Web Labs</h1>
         <div class="social">
-          <a target="_blank" href="https://www.instagram.com/weblabs_inc">
-            <i class="fa-brands fa-instagram"></i
-          ></a>
-          <a target="_blank" href="https://www.behance.net/mdahyou"
-            ><i class="fa-brands fa-behance"></i
-          ></a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/weblabs_inc"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.behance.net/mdahyou"
+            aria-label="Behance"
+          >
+            <i class="fa-brands fa-behance"></i>
+          </a>
+
           <i class="fa-brands fa-dribbble"></i>
         </div>
       </div>
@@ -97,19 +106,21 @@
     </header>
 
     <main>
-      <div class="video_mobile">
+      <!-- <div class="video_mobile">
         <video autoplay muted loop playsinline>
           <source
             src="https://cdn.dribbble.com/uploads/39485/original/58f7d3690a4f77fa03c8a2e03f577078.mp4?1657906840"
           />
         </video>
-      </div>
+      </div>-->
 
-      <div class="video_desktop">
+      <div class="video">
         <video autoplay muted loop playsinline>
           <source
             src="https://cdn.dribbble.com/userupload/7644665/file/original-63bac7bfa5896c548bd299ba8d7ccf8a.mp4"
           />
+          <!-- Élément <track> vide pour indiquer l'absence de légendes -->
+          <track kind="captions" src="" label="No Captions" />
         </video>
       </div>
 
@@ -184,12 +195,14 @@
         <p>contactez-nous</p>
         <a
           target="_blank"
+          aria-label="Gmail envoyer un courrier élétronique"
           href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@weblabs.fr"
           ><i class="fa-solid fa-envelope"></i
         ></a>
       </div>
       <a
         target="_blank"
+        aria-label="Gmail envoyer un courrier élétronique"
         href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@weblabs.fr"
       >
         <div class="mail">

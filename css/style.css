@@ -253,18 +253,16 @@ a {
   display: none;
 }
 
-.video_mobile {
-  display: none;
-}
 
-.video_desktop {
+
+.video{
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 100px;
 }
 
-.video_desktop video {
+.video video {
   width: 90%;
   max-height: 700px;
   -o-object-fit: cover;
@@ -363,6 +361,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
 }
 
 .bulle-content {
@@ -381,7 +380,7 @@ footer {
 .bulle p {
   font-size: 16px;
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-  color: #808080;
+  color: #818181;
 }
 
 .contact {
@@ -671,13 +670,13 @@ footer {
 
   .bulle i {
     font-size: 17px;
-    color: #808080;
+    
   }
 
   .bulle p {
     font-size: 17px;
     font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-    color: #808080;
+    color: #818181;
   }
 
   .contact {
