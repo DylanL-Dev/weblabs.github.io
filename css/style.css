@@ -449,7 +449,7 @@ footer {
   }
 
   .service_footer {
-    font-family: "IntegralCF-Bold";
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 55px;
     padding: 20px;
     color: #808080;
@@ -489,7 +489,7 @@ footer {
     padding-top: 15px;
   }
   .contact p {
-    font-family: "IntegralCF-Bold";
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 35px;
     padding: 20px;
     color: #808080;
@@ -502,7 +502,7 @@ footer {
   }
 
   .mail {
-    font-family: "IntegralCF-Bold";
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 20px;
     padding-left: 20px;
     color: #ffff00;
@@ -624,7 +624,7 @@ footer {
   }
 
   .service_footer {
-    font-family: "IntegralCF-Bold";
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 44px;
     padding: 20px;
     color: #808080;
@@ -686,7 +686,7 @@ footer {
     gap: 10px;
   }
   .contact p {
-    font-family: "IntegralCF-Bold";
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 40px;
     padding: 20px;
     color: #808080;
@@ -704,7 +704,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding-right: 25px;
-    font-family: "IntegralCF-Bold";
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 15px;
     color: #ffff00;
   }
