@@ -7,8 +7,6 @@
   box-sizing: border-box;
 }
 
-
-
 img,
 video {
   object-fit: cover;
@@ -17,12 +15,9 @@ video {
 body {
   width: 100%;
   background-color: #dfff00;
-  cursor: url('/Assets/logo/cursor-black.png'), auto;
-
 }
 a {
   text-decoration: none !important;
-  cursor: url('/Assets/logo/cursor-pointer.png'), auto;
 }
 /*FONT*/
 @font-face {
@@ -258,21 +253,24 @@ a {
   display: none;
 }
 
-.video {
+.video_mobile {
+  display: none;
+}
+
+.video_desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-top: 100px;
-  position: relative;
 }
-.video img {
-  position: absolute;
-  top: 16%;
-  left: 84%;
-  transform: translate(-50%, -50%);
-  width: 14%;
-}
-.video video {
+
+.video_desktop video {
   width: 90%;
   max-height: 700px;
   -o-object-fit: cover;
@@ -325,13 +323,10 @@ a {
 
 footer {
   background-color: #181818;
-  cursor: url('/Assets/logo/cursor-jaune.png'), auto;
 }
 
-
-
 .service_footer {
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  font-family: "IntegralCF-Bold";
   font-size: 80px;
   padding: 20px;
   color: #808080;
@@ -374,7 +369,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
 }
 
 .bulle-content {
@@ -390,41 +384,11 @@ footer {
   color: #808080;
 }
 
-.bulle p,a {
-  font-size: 20px;
+.bulle p {
+  font-size: 16px;
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-  color: #818181;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  
-  
-}
-
-.overlay-content {
-  width: 30%;
-  background: #181818;
-  padding: 20px;
-  border-radius: 10px;
-
-}
-
-.overlay-content p{
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-  font-size: 20px;
   color: #808080;
 }
-
-
 
 .contact {
   display: flex;
@@ -432,7 +396,7 @@ footer {
   gap: 10px;
 }
 .contact p {
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  font-family: "IntegralCF-Bold";
   font-size: 43px;
   padding: 20px;
   color: #808080;
@@ -445,12 +409,11 @@ footer {
 }
 
 .mail {
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  font-family: "IntegralCF-Bold";
   font-size: 25px;
   padding-left: 20px;
   color: #ffff00;
 }
-
 
 .space {
   padding-top: 20px;
@@ -492,7 +455,7 @@ footer {
   }
 
   .service_footer {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-family: "IntegralCF-Bold";
     font-size: 55px;
     padding: 20px;
     color: #808080;
@@ -525,14 +488,6 @@ footer {
     margin-left: 14%;
   }
 
-  .overlay-content {
-    width: 85%;
-    background: #181818;
-    padding: 20px;
-    border-radius: 10px;
-  
-  }
-
   .contact {
     display: flex;
     align-items: center;
@@ -540,7 +495,7 @@ footer {
     padding-top: 15px;
   }
   .contact p {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-family: "IntegralCF-Bold";
     font-size: 35px;
     padding: 20px;
     color: #808080;
@@ -553,7 +508,7 @@ footer {
   }
 
   .mail {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-family: "IntegralCF-Bold";
     font-size: 20px;
     padding-left: 20px;
     color: #ffff00;
@@ -674,12 +629,8 @@ footer {
     transform: rotate(315deg);
   }
 
-  .video img {
-    display: none;
-  }
-
   .service_footer {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-family: "IntegralCF-Bold";
     font-size: 44px;
     padding: 20px;
     color: #808080;
@@ -726,23 +677,14 @@ footer {
 
   .bulle i {
     font-size: 17px;
+    color: #808080;
   }
 
   .bulle p {
     font-size: 17px;
     font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-    color: #818181;
+    color: #808080;
   }
-
-  .overlay-content {
-    width: 90%;
-    background: #181818;
-    padding: 20px;
-    border-radius: 10px;
-  
-  }
-  
-
 
   .contact {
     display: flex;
@@ -750,7 +692,7 @@ footer {
     gap: 10px;
   }
   .contact p {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-family: "IntegralCF-Bold";
     font-size: 40px;
     padding: 20px;
     color: #808080;
@@ -768,7 +710,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding-right: 25px;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-family: "IntegralCF-Bold";
     font-size: 15px;
     color: #ffff00;
   }
