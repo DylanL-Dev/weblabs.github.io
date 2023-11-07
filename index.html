@@ -16,11 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/Assets/logo/logo_randsted_sans_fond_noir.ico"
-    />
+    <link rel="icon" type="image/x-icon" href="/Assets/logo/logo_IMG.ico" />
     <!--CSS-->
     <link
       rel="stylesheet"
@@ -34,10 +30,15 @@
       src="https://kit.fontawesome.com/79857fa36d.js"
       crossorigin="anonymous"
     ></script>
-    <title>Web Labs</title>
+    <title>Web Labs - Développeur Web Indépendant</title>
+    <meta
+      name="description"
+      content="Web Labs, votre développeur web indépendant spécialisé dans la conception de sites web et la création d'interfaces utilisateur intuitives."
+    />
   </head>
   <body>
-    <!-- LOADER 
+    <section>
+      <!-- LOADER 
     <div class="container_loading">
       <div class="logo_loader">
         <img
@@ -47,18 +48,32 @@
       </div>
     </div>
  END LOADER -->
+    </section>
 
     <header>
       <div class="name">
         <h1>Web Labs</h1>
         <div class="social">
-          <a target="_blank" href="https://www.instagram.com/weblabs_inc">
-            <i class="fa-brands fa-instagram"></i
-          ></a>
-          <a target="_blank" href="https://www.behance.net/mdahyou"
-            ><i class="fa-brands fa-behance"></i
-          ></a>
-          <i class="fa-brands fa-dribbble"></i>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/weblabs_inc"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.behance.net/mdahyou"
+            aria-label="Behance"
+          >
+            <i class="fa-brands fa-behance"></i>
+          </a>
+          <!--nav bar mobile-->
+          <div class="nav_mobile">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+
+          <!--nav bar mobile-->
         </div>
       </div>
 
@@ -66,6 +81,7 @@
         <h2 class="title_site">Web Labs</h2>
         <h2 class="subtitle_header">CAMPUTER & TECHNOLOGY</h2>
       </div>
+
       <div class="flex_presentation">
         <div class="excellence">
           <div class="bubble">
@@ -76,6 +92,9 @@
           <div class="bubble">
             <i class="fa-solid fa-lightbulb"></i>
             <p>Innovation</p>
+          </div>
+          <div class="img_bar_header">
+            <img src="Assets/bar_header.png" alt="bar" />
           </div>
         </div>
         <div class="presentation">
@@ -95,19 +114,28 @@
     </header>
 
     <main>
-      <div class="video_mobile">
+      <!-- <div class="video_mobile">
         <video autoplay muted loop playsinline>
           <source
             src="https://cdn.dribbble.com/uploads/39485/original/58f7d3690a4f77fa03c8a2e03f577078.mp4?1657906840"
           />
-        </video>
-      </div>
 
-      <div class="video_desktop">
+        </video>
+      </div>-->
+
+      <!--https://cdn.dribbble.com/userupload/7644665/file/original-63bac7bfa5896c548bd299ba8d7ccf8a.mp4-->
+
+      <div class="video">
+        <img
+          src="Assets/logo/Capture_d_écran_2023-11-06_100145-removebg-preview.png"
+          alt=""
+        />
         <video autoplay muted loop playsinline>
           <source
-            src="https://cdn.dribbble.com/userupload/7644665/file/original-63bac7bfa5896c548bd299ba8d7ccf8a.mp4"
+            src="https://cdn.dribbble.com/uploads/39485/original/58f7d3690a4f77fa03c8a2e03f577078.mp4?1657906840"
           />
+          <!-- Élément <track> vide pour indiquer l'absence de légendes -->
+          <track kind="captions" src="" label="No Captions" />
         </video>
       </div>
 
@@ -130,70 +158,259 @@
         <h3>NOS SERVICES <span class="dote">.</span></h3>
       </section>
       <div class="flex-container">
-        <section class="text_footer">
-          <p>
-            En tant que développeur web indépendant, je suis passionné par la
-            création de sites web, la refonte de sites et le suivi des sites web
-            de mes clients. Je mets mes compétences à votre disposition pour
-            optimiser votre présence en ligne.
-          </p>
-        </section>
+        <div class="flex-container">
+          <section class="text_footer">
+            <p>
+              En tant que développeur web indépendant, je suis passionné par la
+              création de sites web, la refonte de sites et le suivi des sites
+              web de mes clients. Je mets mes compétences à votre disposition
+              pour optimiser votre présence en ligne.
+            </p>
+          </section>
 
-        <section class="grid_flex">
-          <div class="bulle">
-            <div class="bulle-content">
-              <i class="fa-solid fa-window-maximize"></i>
-              <p>Développement</p>
+          <section class="grid_flex">
+            <div class="bulle">
+              <div class="bulle-content">
+                <i class="fa-solid fa-laptop-code"></i>
+                <p>
+                  <a
+                    href="#"
+                    class="overlay-link"
+                    data-overlay="developpement-overlay"
+                    >Développement</a
+                  >
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bulle">
-            <div class="bulle-content">
-              <i class="fa-solid fa-code"></i>
-              <p>Site sur-mesure</p>
+
+            <div class="bulle">
+              <div class="bulle-content">
+                <i class="fa-solid fa-code"></i>
+                <p>
+                  <a
+                    href="#"
+                    class="overlay-link"
+                    data-overlay="surmesure-overlay"
+                    >sur-mesure</a
+                  >
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bulle">
-            <div class="bulle-content">
-              <i class="fa-solid fa-pen-ruler"></i>
-              <p>Refonte de site</p>
+
+            <div class="bulle">
+              <div class="bulle-content">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <p>
+                  <a
+                    href="#"
+                    class="overlay-link"
+                    data-overlay="refonte-overlay"
+                    >Refonte de site</a
+                  >
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bulle">
-            <div class="bulle-content">
-              <i class="fa-solid fa-gears"></i>
-              <p>SEO naturel</p>
+
+            <div class="bulle">
+              <div class="bulle-content">
+                <i class="fa-solid fa-gears"></i>
+                <p>
+                  <a
+                    href="#"
+                    class="overlay-link"
+                    data-overlay="seonaturel-overlay"
+                    >SEO naturel</a
+                  >
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bulle">
-            <div class="bulle-content">
-              <i class="fa-solid fa-wand-magic-sparkles"></i>
-              <p>Proposition design</p>
+
+            <div class="bulle">
+              <div class="bulle-content">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <p>
+                  <a
+                    href="#"
+                    class="overlay-link"
+                    data-overlay="propositiondesign-overlay"
+                    >Proposition design</a
+                  >
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="bulle">
-            <div class="bulle-content">
-              <i class="fa-solid fa-rocket"></i>
-              <p>Performance</p>
+
+            <div class="bulle">
+              <div class="bulle-content">
+                <i class="fa-solid fa-rocket"></i>
+                <p>
+                  <a
+                    href="#"
+                    class="overlay-link"
+                    data-overlay="performance-overlay"
+                    >Performance</a
+                  >
+                </p>
+              </div>
             </div>
-          </div>
-        </section>
+
+            <div class="overlay" id="developpement-overlay">
+              <div class="overlay-content">
+                <i class="fa-solid fa-laptop-code"></i>
+                <p>
+                  Derrière Web Labs, je me consacre entièrement au développement
+                  de sites web et d'applications pour appareils mobiles. Mon
+                  engagement est de créer des solutions numériques innovantes,
+                  mettant en avant la simplicité et la performance. Dans un
+                  monde en constante évolution, l'objectif est de concevoir des
+                  expériences utilisateur exceptionnelles, donnant à mes clients
+                  les outils dont ils ont besoin pour réussir dans le paysage
+                  numérique d'aujourd'hui.
+                </p>
+              </div>
+            </div>
+
+            <div class="overlay" id="surmesure-overlay">
+              <div class="overlay-content">
+                <i class="fa-solid fa-code"></i>
+                <p>
+                  La conception sur-mesure est au cœur de mon approche chez Web
+                  Labs. Mon engagement envers la création de sites web et
+                  d'applications personnalisés est inébranlable. Chaque projet
+                  est une opportunité de créer quelque chose d'unique, en
+                  mettant l'accent sur l'originalité et la personnalisation. Mon
+                  objectif est de fournir des solutions numériques taillées sur
+                  mesure pour aider mes clients à se démarquer dans un monde en
+                  ligne en constante évolution.
+                </p>
+              </div>
+            </div>
+
+            <div class="overlay" id="refonte-overlay">
+              <div class="overlay-content">
+                <i class="fa-solid fa-pen-ruler"></i>
+                <p>
+                  La refonte de site est l'une de mes spécialités chez Web Labs.
+                  Mon engagement consiste à revitaliser et à améliorer les sites
+                  web pour les rendre plus performants et captivants. Chaque
+                  projet de refonte est une opportunité de créer une expérience
+                  utilisateur exceptionnelle et de renforcer la présence en
+                  ligne de mes clients. Mon objectif est de donner une nouvelle
+                  vie aux sites web, en les rendant plus efficaces et mieux
+                  adaptés aux besoins actuels du monde numérique.
+                </p>
+              </div>
+            </div>
+
+            <div class="overlay" id="seonaturel-overlay">
+              <div class="overlay-content">
+                <i class="fa-solid fa-gears"></i>
+                <p>
+                  Le SEO naturel est au cœur de ma démarche chez Web Labs, avec
+                  pour objectif de propulser mes clients en tête des résultats
+                  des moteurs de recherche. Mon approche du SEO est globale,
+                  mettant l'accent sur des stratégies organiques pour garantir
+                  une visibilité en ligne maximale. Grâce à mes efforts en SEO,
+                  mes clients se démarquent dans un paysage numérique en
+                  constante évolution, attirant un trafic qualifié et renforçant
+                  leur présence sur le web.
+                </p>
+              </div>
+            </div>
+
+            <div class="overlay" id="propositiondesign-overlay">
+              <div class="overlay-content">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <p>
+                  La proposition de design joue un rôle essentiel dans ma
+                  démarche chez Web Labs. Mon approche consiste à concevoir des
+                  designs innovants et sur mesure pour répondre aux besoins des
+                  clients. Ma capacité à créer des designs uniques qui captivent
+                  les utilisateurs et reflètent la vision de mes clients est au
+                  cœur de mon travail. Mon objectif est d'offrir des solutions
+                  de design qui se distinguent dans le monde numérique en
+                  constante évolution, renforçant ainsi la présence de mes
+                  clients en ligne.
+                </p>
+              </div>
+            </div>
+
+            <div class="overlay" id="performance-overlay">
+              <div class="overlay-content">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <p>
+                  La performance est au cœur de mon travail chez Web Labs. Ma
+                  démarche vise à optimiser les sites web et les applications
+                  que je développe pour garantir une expérience utilisateur
+                  exceptionnelle. Je m'efforce de fournir des solutions de haute
+                  qualité qui permettent à mes clients de réussir sur la scène
+                  numérique en constante évolution. Mon expertise en matière de
+                  performance garantit que chaque projet que j'entreprends
+                  atteint son plein potentiel en termes de vitesse, d'efficacité
+                  et de réactivité.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
+      <section>
+        <div class="contenair_text">
+          <div class="carré_text">
+            L'innovation est
+            <span class="img1"
+              ><img
+                src="Assets/6fe75703930e7db096d1c6dbd8a9bb7f.jpg"
+                alt="abstrait"
+            /></span>
+            le moteur qui nous pousse à repousser les limites de la
+            <span class="img2"
+              ><img
+                src="Assets/6fe75703930e7db096d1c6dbd8a9bb7f.jpg"
+                alt="abstrait"
+            /></span>
+            créativité, à explorer de nouvelles idées et à
+            <span class="img3"
+              ><img
+                src="Assets/6fe75703930e7db096d1c6dbd8a9bb7f.jpg"
+                alt="abstrait"
+            /></span>
+            créer un avenir où les possibilités sont infinies
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="contenair_follow_us">
+          <img src="Assets/stars_bar.png" alt="" />
+          <div>
+            <h1>DISCUTONS DE VOS IDÉES</h1>
+          </div>
+          <div class="button_footer">
+            <a href="#"
+              ><div class="parlons-maintenant-button">DISCUTONS</div></a
+            >
+            <a href="#"> <div class="suivez-nous-button">SUIVEZ-NOUS</div></a>
+          </div>
+        </div>
+      </section>
+      <!--
       <div class="contact">
         <p>contactez-nous</p>
-        <a
-          target="_blank"
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@weblabs.fr"
-          ><i class="fa-solid fa-envelope"></i
-        ></a>
+        <i class="fa-solid fa-envelope"></i>
       </div>
-      <a
-        target="_blank"
-        href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@weblabs.fr"
-      >
-        <div class="mail">
-          <p>contact@weblabs.fr</p>
-        </div></a
-      >
+
+      <div>
+        <p>
+          <a
+            class="mail"
+            target="_blank"
+            aria-label="Gmail envoyer un courrier élétronique"
+            href="mailto:contact@weblabs.fr"
+            >contact@weblabs.fr</a
+          >
+        </p>
+      </div>
+      -->
       <div class="space"></div>
     </footer>
     <script defer src="script.js"></script>

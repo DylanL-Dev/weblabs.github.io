@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../Assets/logo/logo_randsted_sans_fond_noir.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/normalize/node_modules/normalize.css/normalize.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script
+      defer
+      src="https://kit.fontawesome.com/79857fa36d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contact</title>
+  </head>
+
+  <body class="bg_contact">
+    <!-- LOADER -->
+    <div class="container_loading">
+      <div class="logo_loader">
+        <img
+          src="../Assets/logo/logo_randsted_sans_fond_blanc_sans-titre.png"
+          alt="Logo"
+        />
+      </div>
+    </div>
+    <!-- END LOADER -->
+    <header>
+      <!-- MOBILE HEADER -->
+      <div>
+        <!--NAV MOBILE-->
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <div class="overlay-content">
+            <span class="border"><a href="../index.html">Accueil</a></span>
+            <span class="border"><a href="creation.html">Création</a></span>
+            <span class="border"
+              ><a href="inspiration.html">Inspiration</a></span
+            >
+            <span class="border"><a href="asssistance.html">Dépannage</a></span>
+            <span class="border"><a href="contact.html">Contact</a></span>
+          </div>
+        </div>
+        <!--END NAV MOBILE-->
+        <div class="name">
+          <h1>Dylan LEFEBVRE</h1>
+          <!--NAV DOTE-->
+          <span class="navbar_logo" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <!--END NAV DOTE-->
+        </div>
+        <div
+          class="name_web_site name_web_site_inspiration name_web_site_contact"
+        >
+          <h2 class="title_site">Nous sommes ravis de vous aider !</h2>
+          <div
+            class="subtitle_header subtitle_header_inspi subtitle_header_contact"
+          >
+            <h2>
+              Une collaboration fructueuse commence par un simple clic.
+              Contactez-nous et laissez-nous transformer vos idées en réalité
+            </h2>
+          </div>
+        </div>
+        <div class="text_header text_header_contact">
+          <p>
+            Nous sommes là pour vous aider à concrétiser vos idées et atteindre
+            vos objectifs. Notre équipe dédiée est prête à répondre à toutes vos
+            questions et demandes d'information. Que vous souhaitiez discuter
+            d'un projet, obtenir des conseils ou simplement établir un
+            partenariat, nous sommes à votre écoute.
+          </p>
+        </div>
+      </div>
+      <!-- END MOBILE HEADER -->
+    </header>
+    <main>
+      <!-- MOBILE MAIN -->
+      <section>
+        <form action="../form/form.php" method="post">
+          <label for="name">Nom :</label>
+          <input placeholder="Nom" type="text" id="name" name="name" required />
+
+          <label for="email">E-mail :</label>
+          <input
+            placeholder="E-mail"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <label for="message">Message :</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            style="resize: none"
+          ></textarea>
+
+          <input type="submit" value="Envoyer" />
+        </form>
+      </section>
+      <section>
+        <div class="zone_annonce_mobile">
+          <span class="annonce_content_mobile">
+            * Merci de votre intérêt et à bientôt * Merci de votre intérêt et à
+            bientôt * Merci de votre intérêt et à bientôt * Merci de votre
+            intérêt et à bientôt * Merci de votre intérêt et à bientôt *Merci de
+            votre intérêt et à bientôt * Merci de votre intérêt et à bientôt *
+            Merci de votre intérêt et à bientôt * Merci de votre intérêt et à
+            bientôt * Merci de votre intérêt et à bientôt * Merci de votre
+            intérêt et à bientôt * Merci de votre intérêt et à bientôt * Merci
+            de votre intérêt et à bientôt * Merci de votre intérêt et à bientôt
+            * Merci de votre intérêt et à bientôt *
+          </span>
+        </div>
+      </section>
+      <!-- END MOBILE MAIN -->
+    </main>
+    <footer>
+      <!-- MOBILE FOOTER -->
+      <section>
+        <div class="logo_footer logo_footer_contact">
+          <h2>DYLAN LEFEBVRE</h2>
+          <img
+            class="logo"
+            src="../Assets/logo/logo-randsted_blanc.webp"
+            alt="logo du site"
+          />
+        </div>
+      </section>
+      <section>
+        <div class="privacy">
+          <p>CONDITION D'UTILISATION</p>
+          <p>POLITIQUE DE CONFIDENTIALITÉ</p>
+        </div>
+      </section>
+
+      <!-- END  MOBILE FOOTER -->
+    </footer>
+    <script defer src="../script.js"></script>
+  </body>
+</html>
