@@ -12,10 +12,19 @@ video {
   object-fit: cover;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
-  background-color: #d5ff3f;
+
   cursor: url("/Assets/logo/cursor-black.png"), auto;
+}
+
+header,
+main {
+  background-color: #d5ff3f;
 }
 a {
   text-decoration: none !important;
@@ -184,13 +193,11 @@ a {
   color: #000000;
 }
 
-
 .social i:hover {
   font-size: 30px;
   color: #000000;
   cursor: url("/Assets/logo/cursor-pointer.png"), auto;
 }
-
 
 .nav_mobile {
   display: none;
@@ -225,7 +232,6 @@ a {
 
 .title_site i {
   font-size: 100px;
-  rotate: -20deg;
 }
 
 .subtitle_header {
@@ -268,6 +274,7 @@ a {
   height: 35px;
   border-radius: 35px;
   border: solid 1px;
+  gap: 10px;
   margin: 10px;
 }
 
@@ -275,7 +282,7 @@ a {
   font-size: 18px;
 }
 
-.bubble p {
+.bubble {
   font-size: 18px;
   text-align: center;
   margin: 20px;
@@ -410,17 +417,15 @@ a {
 }
 
 footer {
-  background-color: #181818;
+  background-color: #171717;
   cursor: url("/Assets/logo/cursor-jaune.png"), auto;
-
 }
-
 
 .service_footer {
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   font-size: 80px;
   padding: 20px;
-  color: #808080;
+  color: #cfcfcf;
 }
 
 .dote {
@@ -433,10 +438,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-
 }
-
-
 
 .text_footer {
   width: 30%;
@@ -454,8 +456,6 @@ footer {
   gap: 20px;
 }
 
-
-
 .bulle {
   background-color: transparent;
   border-radius: 20px;
@@ -466,9 +466,16 @@ footer {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-
+  transition: all 0.3s;
+  transform: scale(1);
+  animation-delay: 400ms;
 }
 
+.bulle:hover {
+  transform: scale(1.1);
+  background-color: #000000;
+  border: none;
+}
 
 .bulle-content {
   display: flex;
@@ -476,16 +483,14 @@ footer {
   justify-content: center;
   text-align: center;
   gap: 10px;
-
 }
-
 
 .bulle i {
   font-size: 16px;
   color: #808080;
 }
 
-.bulle p,
+.bulle,
 a {
   font-size: 20px;
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
@@ -503,6 +508,8 @@ a {
   display: none;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  z-index: 2;
 }
 
 .overlay-content {
@@ -568,8 +575,56 @@ a {
 
 .carré_text .img4 img {
   width: 9%;
-
   border-radius: 50px;
+}
+.projet {
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  color: #cfcfcf;
+  font-size: 80px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.phrase_creative {
+  font-size: 16px;
+  width: 30%;
+  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+  font-weight: bold;
+  color: #80808070;
+  padding-top: 60px;
+  padding-right: 5%;
+  line-height: 30px;
+}
+
+.dote3 {
+  padding-top: 30px;
+  padding-left: 60%;
+}
+
+.gallery {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cursor {
+  cursor: url("/Assets/logo/cursor-black.png"), auto;
+}
+.gallery img {
+  width: 77%;
+  object-fit: cover;
+  cursor: url("/Assets/logo/cursor-black.png"), auto;
+
+  transition: all 0.3s;
+  animation-delay: 400ms;
+  transform: scale(1);
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
 }
 
 .contenair_follow_us {
@@ -630,7 +685,9 @@ a {
 }
 */
 .copyright {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   font-size: 12px;
   color: #d5ff3f;
@@ -644,7 +701,7 @@ a {
 /* End verison globlal Desktop */
 
 /* Styles spécifiques aux tablettes (768px < largeur < 1025px) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1075px) {
   * {
     cursor: none;
   }
@@ -691,7 +748,7 @@ a {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 55px;
     padding: 20px;
-    color: #808080;
+    color: #cfcfcf;
   }
   .img_bar_header img {
     display: none;
@@ -782,6 +839,48 @@ a {
     border-radius: 10px;
   }
 
+  .projet {
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    color: #cfcfcf;
+    font-size: 55px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .phrase_creative {
+    font-size: 16px;
+    width: 45%;
+    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    font-weight: bold;
+    color: #80808070;
+    padding-top: 100px;
+    line-height: 30px;
+    text-align: right;
+  }
+
+  .dote3 {
+    padding-top: 10px;
+    padding-left: 10%;
+  }
+
+  .gallery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery img {
+    width: 100%;
+    object-fit: cover;
+    cursor: url("/Assets/logo/cursor-pointer.png"), auto;
+  }
+  .gallery img:hover {
+    transform: scale(1);
+  }
   .contact {
     display: flex;
     align-items: center;
@@ -899,6 +998,7 @@ a {
     height: 35px;
     border-radius: 35px;
     border: solid 1px;
+    gap: 0px;
     margin: 10px;
   }
 
@@ -907,6 +1007,9 @@ a {
   }
 
   .bubble p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 18px;
     text-align: center;
     margin: 20px;
@@ -947,7 +1050,7 @@ a {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 44px;
     padding: 20px;
-    color: #808080;
+    color: #cfcfcf;
   }
 
   .dote {
@@ -1084,6 +1187,54 @@ a {
     width: 300px;
 
     border-radius: 25px;
+  }
+
+  .projet {
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    color: #cfcfcf;
+    font-size: 45px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .phrase_creative {
+    font-size: 16px;
+    width: 90%;
+    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    font-weight: bold;
+    color: #80808070;
+    padding-top: 65px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+  }
+
+  .dote3 {
+    position: absolute;
+    top: 15%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+  }
+
+  .gallery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery img {
+    width: 100%;
+    object-fit: cover;
+    cursor: url("/Assets/logo/cursor-pointer.png"), auto;
+  }
+
+  .gallery img:hover {
+    transform: scale(1);
   }
   .contact {
     display: flex;
