@@ -38,8 +38,16 @@
   </head>
   <body>
     <header>
-      <div class="name">
+      <div class="name" id="accueil">
         <h1>Web Labs</h1>
+        <nav id="nav_desktop">
+          <ul>
+            <a href="#services"><li>serivces</li></a>
+            <a href="#portfolio"><li>portfolio</li></a>
+            <a href="#contact"> <li>contact</li></a>
+          </ul>
+        </nav>
+
         <div class="social">
           <a
             target="_blank"
@@ -56,6 +64,24 @@
             <i class="fa-brands fa-behance"></i>
           </a>
         </div>
+        <nav class="nav_mobile">
+          <div id="myNav" class="overlay_mobile" onclick="closeNav()">
+            <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              ><i class="fa-solid fa-circle-arrow-left"></i>web labs</a
+            >-->
+            <div class="overlay-content_mobile">
+              <!-- Ajoute un onclick pour chaque lien dans ton overlay -->
+              <a href="#accueil" onclick="closeNav()">accueil</a>
+              <a href="#services" onclick="closeNav()">services</a>
+              <a href="#portfolio" onclick="closeNav()">portfolio</a>
+              <a href="#contact" onclick="closeNav()">contact</a>
+            </div>
+          </div>
+
+          <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+            ><i class="fa-solid fa-bars-staggered"></i
+          ></span>
+        </nav>
       </div>
 
       <div class="name_web_site">
@@ -65,20 +91,7 @@
       </div>
 
       <div class="flex_presentation">
-        <div class="excellence">
-          <div class="bubble">
-            <i class="fa-solid fa-crown"></i>
-            <p>Excellence</p>
-          </div>
 
-          <div class="bubble">
-            <i class="fa-solid fa-lightbulb"></i>
-            <p>Innovation</p>
-          </div>
-          <div class="img_bar_header">
-            <img src="Assets/bar-header.webp" alt="bar" />
-          </div>
-        </div>
         <div class="presentation">
           <p>
             Hello, nous sommes spécialisés dans la conception de sites web, avec
@@ -96,20 +109,23 @@
             <i class="fa-solid fa-arrow-right"></i></div
         ></a>
       </div>
+      <div class="excellence">
+        <div class="bubble">
+          <i class="fa-solid fa-crown"></i>
+          <p>Excellence</p>
+        </div>
+
+        <div class="bubble">
+          <i class="fa-solid fa-lightbulb"></i>
+          <p>Innovation</p>
+        </div>
+        <div class="img_bar_header">
+          <img src="Assets/bar-header.webp" alt="bar" />
+        </div>
+      </div>
     </header>
 
     <main>
-      <!-- <div class="video_mobile">
-        <video autoplay muted loop playsinline>
-          <source
-            src="https://cdn.dribbble.com/uploads/39485/original/58f7d3690a4f77fa03c8a2e03f577078.mp4?1657906840"
-          />
-
-        </video>
-      </div>-->
-
-      <!--https://cdn.dribbble.com/userupload/7644665/file/original-63bac7bfa5896c548bd299ba8d7ccf8a.mp4-->
-
       <div class="video">
         <img src="Assets/logo/circle_arrow.webp" alt="" />
         <video autoplay muted loop playsinline>
@@ -136,7 +152,7 @@
     </main>
 
     <footer>
-      <div class="service_footer">
+      <div class="service_footer" id="services">
         <h3>NOS SERVICES <span class="dote">.</span></h3>
       </div>
 
@@ -152,88 +168,71 @@
           </div>
 
           <div class="grid_flex">
-            <div class="bulle">
+            <button
+              class="bulle overlay-link"
+              data-overlay="developpement-overlay"
+            >
               <div class="bulle-content">
                 <i class="fa-solid fa-laptop-code"></i>
-
-                <a
-                  href="#"
-                  class="overlay-link"
-                  data-overlay="developpement-overlay"
-                  ><div>Développement</div></a
-                >
+                <a href="#">
+                  <div>Développement</div>
+                </a>
               </div>
-            </div>
+            </button>
 
-            <div class="bulle">
+            <button class="bulle overlay-link" data-overlay="surmesure-overlay">
               <div class="bulle-content">
                 <i class="fa-solid fa-code"></i>
                 <p>
-                  <a
-                    href="#"
-                    class="overlay-link"
-                    data-overlay="surmesure-overlay"
-                    >Personnalisé</a
-                  >
+                  <a href="#">Personnalisé</a>
                 </p>
               </div>
-            </div>
+            </button>
 
-            <div class="bulle">
+            <button class="bulle overlay-link" data-overlay="refonte-overlay">
               <div class="bulle-content">
                 <i class="fa-solid fa-pen-ruler"></i>
                 <p>
-                  <a
-                    href="#"
-                    class="overlay-link"
-                    data-overlay="refonte-overlay"
-                    >Refonte de site</a
-                  >
+                  <a href="#">Refonte de site</a>
                 </p>
               </div>
-            </div>
+            </button>
 
-            <div class="bulle">
+            <button
+              class="bulle overlay-link"
+              data-overlay="seonaturel-overlay"
+            >
               <div class="bulle-content">
                 <i class="fa-solid fa-gears"></i>
                 <p>
-                  <a
-                    href="#"
-                    class="overlay-link"
-                    data-overlay="seonaturel-overlay"
-                    >SEO</a
-                  >
+                  <a href="#">SEO</a>
                 </p>
               </div>
-            </div>
+            </button>
 
-            <div class="bulle">
+            <button
+              class="bulle overlay-link"
+              data-overlay="propositiondesign-overlay"
+            >
               <div class="bulle-content">
                 <i class="fa-solid fa-wand-magic-sparkles"></i>
                 <p>
-                  <a
-                    href="#"
-                    class="overlay-link"
-                    data-overlay="propositiondesign-overlay"
-                    >Design</a
-                  >
+                  <a href="#">Design</a>
                 </p>
               </div>
-            </div>
+            </button>
 
-            <div class="bulle">
+            <button
+              class="bulle overlay-link"
+              data-overlay="performance-overlay"
+            >
               <div class="bulle-content">
                 <i class="fa-solid fa-rocket"></i>
                 <p>
-                  <a
-                    href="#"
-                    class="overlay-link"
-                    data-overlay="performance-overlay"
-                    >Performance</a
-                  >
+                  <a href="#">Performance</a>
                 </p>
               </div>
-            </div>
+            </button>
 
             <div class="overlay" id="developpement-overlay">
               <div class="overlay-content">
@@ -334,7 +333,7 @@
           </div>
         </div>
       </div>
-      <div class="service_footer projet">
+      <div class="service_footer projet" id="portfolio">
         <h3>projets <span class="dote">.</span></h3>
         <div class="phrase_creative">
           La créativité nourrit le design, le design stimule la créativité.
@@ -345,13 +344,24 @@
           </div>
         </div>
       </div>
-      <a class="cursor" target="_blank" href="https://www.behance.net/mdahyou"
-        ><div class="gallery">
-          <img src="Assets/gallery.webp" alt="gallery de projet réalisé" /></div
-      ></a>
-      <div>
+
+      <div class="contenair_porfolio">
+        <div class="name_behance">behance</div>
+        <div class="barre-verticale"></div>
+
+        <a class="cursor" target="_blank" href="https://www.behance.net/mdahyou"
+          ><div class="gallery">
+            <img
+              src="Assets/gallery.webp"
+              alt="gallery de projet réalisé"
+            /></div
+        ></a>
+      </div>
+
+      <div id="contact">
         <div class="contenair_follow_us">
           <img src="Assets/stars-bar.webp" alt="une barre avec des étoiles" />
+
           <div>
             <h1>ÉCHANGEONS SUR VOS CONCEPTS</h1>
           </div>
