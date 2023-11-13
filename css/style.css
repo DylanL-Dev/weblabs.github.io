@@ -99,6 +99,11 @@ a {
   padding: 20px;
 }
 
+.name img {
+  margin-right: auto;
+  width: 14%;
+}
+
 nav {
   padding-right: 8vh;
 }
@@ -124,9 +129,9 @@ ul li:hover {
   cursor: url("/Assets/logo/cursor-pointer.png"), auto;
 }
 
-.name h1 {
+/*.name h1 {
   margin-right: auto;
-}
+}*/
 
 .social {
   display: flex;
@@ -148,11 +153,11 @@ ul li:hover {
   display: none;
 }
 
-.name h1 {
+/*.name h1 {
   font-size: 20px;
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   color: black;
-}
+}*/
 
 .name_web_site {
   padding-left: 15px;
@@ -689,9 +694,14 @@ a {
     cursor: none;
   }
 
-  .name h1 {
+  .name img {
     margin-right: auto;
+    width: 20%;
   }
+
+  /*.name h1 {
+    margin-right: auto;
+  }*/
 
   nav ul li {
     transition: none;
@@ -941,8 +951,13 @@ a {
     padding: 10px;
   }
 
-  .name h1 {
+  /*.name h1 {
     margin-right: auto;
+  }*/
+
+  .name img {
+    margin-right: auto;
+    width: 30%;
   }
 
   #nav_desktop {
