@@ -7,30 +7,37 @@
   box-sizing: border-box;
 }
 
+/* Gestion du dimensionnement des images et vidéos */
 img,
 video {
   object-fit: cover;
 }
 
+/* Comportement de défilement fluide pour HTML */
 html {
   scroll-behavior: smooth;
 }
 
+/* Style de base pour le corps de la page */
 body {
   width: 100%;
-
+  background-color: #171717;
   cursor: url("/Assets/logo/cursor-black.png"), auto;
 }
 
+/* Styles pour les en-têtes (header) et les sections principales (main) */
 header,
 main {
   background-color: #d5ff3f;
 }
+
+/* Styles pour les liens */
 a {
   text-decoration: none !important;
   cursor: url("/Assets/logo/cursor-pointer.png"), auto;
 }
-/*FONT*/
+
+/* Définition des polices personnalisées */
 @font-face {
   font-family: "IntegralCF-Bold";
   src: url(/Fonts/IntegralCF-Bold.woff2) format("woff2");
@@ -40,29 +47,25 @@ a {
   font-family: "Garrison_Regular";
   src: url(/Fonts/Garrison_Sans_Regular.ttf) format("truetype");
 }
-/*
-@font-face {
-  font-family: "RussoOne-Regular";
-  src: url(/Fonts/RussoOne-Regular.ttf) format("truetype");
-}*/
 
+/* Importation de polices Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap");
 
-/*END FONT*/
+/* Fin des styles de police */
 
-/*scrollbar*/
+/* Styles pour la personnalisation de la barre de défilement */
 /* Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: #d5ff3f #181818;
 }
 
-/* Chrome, Edge and Safari */
+/* Chrome, Edge et Safari */
 *::-webkit-scrollbar {
   width: 10px;
-  width: 10px;
 }
+
 *::-webkit-scrollbar-track {
   border-radius: 5px;
   background-color: #181818;
@@ -88,10 +91,9 @@ a {
 *::-webkit-scrollbar-thumb:active {
   background-color: #d5ff3f;
 }
-/* end scrollbar*/
+/* Fin des styles de personnalisation de la barre de défilement */
 
-/* verison globlal Desktop */
-
+/* Styles pour la version globale sur desktop */
 .name {
   display: flex;
   align-items: center;
@@ -129,10 +131,7 @@ ul li:hover {
   cursor: url("/Assets/logo/cursor-pointer.png"), auto;
 }
 
-/*.name h1 {
-  margin-right: auto;
-}*/
-
+/* Styles pour les icônes sociales */
 .social {
   display: flex;
   gap: 13px;
@@ -149,16 +148,12 @@ ul li:hover {
   cursor: url("/Assets/logo/cursor-pointer.png"), auto;
 }
 
+/* Styles pour la navigation mobile (cachée par défaut) */
 .nav_mobile {
   display: none;
 }
 
-/*.name h1 {
-  font-size: 20px;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  color: black;
-}*/
-
+/* Styles pour le titre du site web */
 .name_web_site {
   padding-left: 15px;
   padding-top: 45px;
@@ -180,23 +175,23 @@ ul li:hover {
   width: 20%;
 }
 
-.title_site i {
-  font-size: 100px;
-}
-
+/* Styles pour le sous-titre du site web */
 .subtitle_header {
   font-size: 40px !important;
   padding-left: 12px;
 }
 
+/* Styles pour la section de présentation */
 .flex_presentation {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .presentation {
   width: 35%;
   text-align: right;
+  margin-left: auto;
 }
 
 .presentation p {
@@ -205,17 +200,19 @@ ul li:hover {
   margin-right: 15%;
 }
 
+/* Styles pour la section "Excellence" */
 .excellence {
   display: flex;
   align-items: center;
-  padding-top: 50px;
   padding-left: 15px;
 }
 
+/* Styles pour l'image de la barre d'en-tête */
 .img_bar_header img {
   width: 60%;
 }
 
+/* Styles pour la bulle d'annonce */
 .bubble {
   display: flex;
   align-items: center;
@@ -239,10 +236,12 @@ ul li:hover {
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
 }
 
+/* Styles pour la version mobile de la section de contact (cachée par défaut) */
 .contact_mobile {
   display: none;
 }
 
+/* Styles pour la section vidéo */
 .video {
   display: flex;
   align-items: center;
@@ -250,6 +249,7 @@ ul li:hover {
   padding-top: 100px;
   position: relative;
 }
+
 .video img {
   position: absolute;
   top: 16%;
@@ -257,6 +257,7 @@ ul li:hover {
   transform: translate(-50%, -50%);
   width: 14%;
 }
+
 .video video {
   width: 90%;
   max-height: 700px;
@@ -266,6 +267,7 @@ ul li:hover {
   border-radius: 80px 80px 0px 0px;
 }
 
+/* Styles pour la zone d'annonce défilante */
 .zone_annonce {
   width: 100%;
   height: 80px;
@@ -282,7 +284,6 @@ ul li:hover {
   letter-spacing: 2px;
   color: #d5ff3f;
   animation: move 30s linear infinite;
-
   animation-delay: 0s;
 }
 
@@ -308,6 +309,7 @@ ul li:hover {
   }
 }
 
+/* Styles pour le pied de page */
 .button_footer {
   position: absolute;
   top: 80%;
@@ -319,6 +321,7 @@ ul li:hover {
   gap: 20px;
 }
 
+/* Styles pour le bouton "Parlons maintenant" */
 .button_footer .parlons-maintenant-button {
   width: 200px;
   height: 50px;
@@ -343,6 +346,7 @@ ul li:hover {
   color: #000000;
 }
 
+/* Styles pour le bouton "Suivez-nous" */
 .button_footer .suivez-nous-button {
   width: 200px;
   height: 50px;
@@ -366,22 +370,32 @@ ul li:hover {
   color: #d5ff3f;
 }
 
+/* Styles pour la section content_main */
+.content_main {
+  background-color: #171717;
+  cursor: url("/Assets/logo/cursor-jaune.png"), auto;
+}
+
+/* Styles pour le pied de page */
 footer {
   background-color: #171717;
   cursor: url("/Assets/logo/cursor-jaune.png"), auto;
 }
 
-.service_footer {
+/* Styles pour le service principal */
+.service_main {
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   font-size: 80px;
   padding: 20px;
   color: #cfcfcf;
 }
 
+/* Styles pour les points (dot) */
 .dote {
   color: #d5ff3f;
 }
 
+/* Styles pour la flexbox container */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -390,7 +404,8 @@ footer {
   gap: 20px;
 }
 
-.text_footer {
+/* Styles pour le texte descriptif */
+.text_descriptif {
   width: 30%;
   padding: 20px;
   color: #808080;
@@ -399,6 +414,7 @@ footer {
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
 }
 
+/* Styles pour la flexbox grid */
 .grid_flex {
   width: 38%;
   display: flex;
@@ -406,6 +422,7 @@ footer {
   gap: 20px;
 }
 
+/* Styles pour les bulles */
 .bulle {
   background-color: transparent;
   border-radius: 20px;
@@ -427,6 +444,7 @@ footer {
   border: none;
 }
 
+/* Styles pour le contenu des bulles */
 .bulle-content {
   display: flex;
   align-items: center;
@@ -435,11 +453,13 @@ footer {
   gap: 10px;
 }
 
+/* Styles pour les icônes dans les bulles */
 .bulle i {
   font-size: 16px;
   color: #808080;
 }
 
+/* Styles généraux pour les liens et les bulles */
 .bulle,
 a {
   font-size: 20px;
@@ -448,6 +468,7 @@ a {
   cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
 }
 
+/* Styles pour l'overlay */
 .overlay {
   position: fixed;
   top: 0;
@@ -462,6 +483,7 @@ a {
   z-index: 2;
 }
 
+/* Styles pour le contenu de l'overlay */
 .overlay-content {
   width: 30%;
   background: #181818;
@@ -470,6 +492,7 @@ a {
   animation: infoOverlay 0.4s ease 0s 1 normal forwards;
 }
 
+/* Animation pour l'overlay */
 @keyframes infoOverlay {
   0% {
     transform: scale(0);
@@ -479,6 +502,8 @@ a {
     transform: scale(1);
   }
 }
+
+/* Styles pour les icônes dans l'overlay */
 .overlay-content i {
   display: flex;
   align-items: center;
@@ -487,6 +512,7 @@ a {
   color: #808080;
 }
 
+/* Styles pour le texte dans l'overlay */
 .overlay-content p {
   padding-top: 15px;
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
@@ -495,6 +521,7 @@ a {
   color: #808080;
 }
 
+/* Styles pour le conteneur de texte */
 .contenair_text {
   width: 73%;
   height: 900px;
@@ -506,6 +533,7 @@ a {
   letter-spacing: 4px;
 }
 
+/* Styles pour le carré de texte */
 .carré_text {
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   color: #cfcfcf;
@@ -515,6 +543,7 @@ a {
   line-height: 70px;
 }
 
+/* Styles pour les images dans le carré de texte */
 .carré_text .img1 img {
   width: 200px;
   height: 50px;
@@ -537,6 +566,8 @@ a {
   width: 9%;
   border-radius: 50px;
 }
+
+/* Styles pour la section "Projet" */
 .projet {
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   color: #cfcfcf;
@@ -547,6 +578,7 @@ a {
   justify-content: space-between;
 }
 
+/* Styles pour la phrase créative */
 .phrase_creative {
   font-size: 16px;
   width: 30%;
@@ -558,15 +590,18 @@ a {
   line-height: 30px;
 }
 
+/* Styles pour le point (dot) */
 .dote3 {
   padding-top: 30px;
   padding-left: 60%;
 }
 
+/* Styles pour le conteneur du portfolio */
 .contenair_porfolio {
   position: relative;
 }
 
+/* Styles pour le nom Behance */
 .name_behance {
   position: absolute;
   top: 66%;
@@ -581,6 +616,7 @@ a {
   transform-origin: 0 50%;
 }
 
+/* Styles pour la barre verticale */
 .barre-verticale {
   position: absolute;
   top: 35%;
@@ -590,6 +626,7 @@ a {
   height: 19.5vh;
 }
 
+/* Styles pour la galerie d'images */
 .gallery {
   width: 100%;
   height: auto;
@@ -598,10 +635,12 @@ a {
   justify-content: center;
 }
 
+/* Styles pour le curseur */
 .cursor {
   cursor: url("/Assets/logo/cursor-black.png"), auto;
 }
 
+/* Styles pour les images dans la galerie */
 .gallery img {
   width: 77%;
   object-fit: cover;
@@ -611,10 +650,12 @@ a {
   transform: scale(1);
 }
 
+/* Animation pour les images de la galerie */
 .gallery img:hover {
   transform: scale(1.03);
 }
 
+/* Styles pour le conteneur "Follow us" */
 .contenair_follow_us {
   width: 90%;
   height: 800px;
@@ -629,6 +670,7 @@ a {
   position: relative;
 }
 
+/* Styles pour l'image dans le conteneur "Follow us" */
 .contenair_follow_us img {
   object-fit: cover;
   width: 90%;
@@ -638,6 +680,7 @@ a {
   transform: translate(-50%, -50%);
 }
 
+/* Styles pour le titre dans le conteneur "Follow us" */
 .contenair_follow_us h1 {
   width: 60%;
   margin: 0 auto;
@@ -647,11 +690,15 @@ a {
 }
 
 /*
+   Styles pour la section de contact
+*/
 .contact {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
+/* Styles pour le paragraphe dans la section de contact */
 .contact p {
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   font-size: 55px;
@@ -659,59 +706,123 @@ a {
   color: #808080;
 }
 
+/* Styles pour l'icône dans la section de contact */
 .contact i {
   padding-top: 10px;
   font-size: 37px;
   color: #808080;
 }
 
+/* Styles pour l'adresse e-mail dans la section de contact */
 .mail {
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   font-size: 25px;
   padding-left: 20px;
   color: #d5ff3f;
 }
+
+/*
+   Styles spécifiques à la version globale Desktop
 */
+.politique,
+.documents,
 .copyright {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   font-size: 12px;
   color: #d5ff3f;
   text-transform: uppercase;
 }
 
+/* Styles pour l'icône dans la section politique */
+.politique i {
+  padding: 0 5px;
+}
+
+/* Styles pour la section "Utilisation du Site" */
+
+.background_politique {
+  background-color: #d5ff3f;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#logo_du_site_politique {
+  width: 100%;
+}
+
+#politique {
+  text-align: center;
+}
+
+.title_politique {
+  color: #000000;
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  font-size: 30px;
+}
+
+.lien_web {
+  color: #0066cc;
+  cursor: url("/Assets/logo/cursor-pointer.png"), auto;
+}
+
+section p {
+  margin-top: 20px;
+  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+}
+
+h2 {
+  padding-top: 20px;
+  color: #000000;
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+}
+
+.informations-collectées{
+  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+}
+
+.police_g{
+  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+}
+/* Styles pour l'espace */
 .space {
   padding-top: 20px;
 }
 
-/* End verison globlal Desktop */
+
+/* Fin de la version globale Desktop */
 
 /* Styles spécifiques aux tablettes (768px < largeur < 1025px) */
 @media screen and (min-width: 769px) and (max-width: 1075px) {
+  /* Désactiver le curseur pour tous les éléments */
   * {
     cursor: none;
   }
 
+  /* Styles spécifiques à l'image du nom */
   .name img {
     margin-right: auto;
     width: 20%;
   }
 
-  /*.name h1 {
-    margin-right: auto;
-  }*/
-
+  /* Styles pour la transition des éléments de la navigation */
   nav ul li {
     transition: none;
   }
 
+  /* Styles pour l'effet de survol des éléments de la navigation */
   ul li:hover {
     transform: none;
     cursor: url("/Assets/logo/cursor-pointer.png"), auto;
   }
 
+  /* Styles pour le nom du site web */
   .name_web_site {
     line-height: 75px;
   }
@@ -720,6 +831,7 @@ a {
     font-size: 100px;
   }
 
+  /* Styles pour l'image du site web */
   .name_web_site img {
     position: absolute;
     top: 50%;
@@ -728,10 +840,12 @@ a {
     width: 20%;
   }
 
+  /* Styles pour le sous-titre de l'en-tête */
   .subtitle_header {
     font-size: 30px !important;
   }
 
+  /* Styles pour la présentation */
   .presentation {
     width: 45%;
   }
@@ -740,22 +854,27 @@ a {
     margin-right: 10%;
   }
 
+  /* Styles pour l'excellence */
   .excellence {
     display: flex;
     align-items: center;
-    padding-top: 50px;
     padding-left: 15px;
   }
 
-  .service_footer {
+  /* Styles pour le service principal */
+  .service_main {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 55px;
     padding: 20px;
     color: #cfcfcf;
   }
+
+  /* Styles pour l'image de la barre d'en-tête */
   .img_bar_header img {
     display: none;
   }
+
+  /* Styles pour le conteneur "follow us" */
   .contenair_follow_us {
     width: 100%;
   }
@@ -764,6 +883,7 @@ a {
     width: 90%;
   }
 
+  /* Styles pour le titre du conteneur "follow us" */
   .contenair_follow_us h1 {
     display: flex;
     align-items: center;
@@ -771,10 +891,12 @@ a {
     font-size: 80px;
   }
 
+  /* Styles pour le point dans le titre du conteneur "follow us" */
   .dote {
     color: #d5ff3f;
   }
 
+  /* Styles pour le conteneur flexible */
   .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -783,7 +905,8 @@ a {
     gap: 20px;
   }
 
-  .text_footer {
+  /* Styles pour le texte descriptif */
+  .text_descriptif {
     width: 60%;
     padding: 20px;
     color: #808080;
@@ -792,6 +915,7 @@ a {
     font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   }
 
+  /* Styles pour le conteneur de texte */
   .contenair_text {
     width: 95%;
     height: 700px;
@@ -803,6 +927,7 @@ a {
     letter-spacing: 4px;
   }
 
+  /* Styles pour le carré de texte */
   .carré_text {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     color: #cfcfcf;
@@ -812,29 +937,33 @@ a {
     line-height: 60px;
   }
 
+  /* Styles pour l'image 1 dans le carré de texte */
   .carré_text .img1 img {
     width: 200px;
     height: 50px;
     border-radius: 50px;
   }
 
+  /* Styles pour l'image 2 dans le carré de texte */
   .carré_text .img2 img {
     width: 100px;
     height: 50px;
     border-radius: 50%;
   }
 
+  /* Styles pour l'image 3 dans le carré de texte */
   .carré_text .img3 img {
     width: 150px;
     height: 50px;
   }
 
+  /* Styles pour le conteneur flexible */
   .grid_flex {
     width: 90%;
-
     margin-left: 14%;
   }
 
+  /* Styles pour le contenu de superposition */
   .overlay-content {
     width: 85%;
     background: #181818;
@@ -842,6 +971,7 @@ a {
     border-radius: 10px;
   }
 
+  /* Styles pour le projet */
   .projet {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     color: #cfcfcf;
@@ -852,6 +982,7 @@ a {
     justify-content: space-between;
   }
 
+  /* Styles pour la phrase créative */
   .phrase_creative {
     font-size: 16px;
     width: 45%;
@@ -863,11 +994,13 @@ a {
     text-align: right;
   }
 
+  /* Styles pour le point 3 dans la phrase créative */
   .dote3 {
     padding-top: 10px;
     padding-left: 10%;
   }
 
+  /* Styles pour le nom Behance */
   .name_behance {
     position: absolute;
     top: 66%;
@@ -882,6 +1015,7 @@ a {
     transform-origin: 0 50%;
   }
 
+  /* Styles pour la barre verticale */
   .barre-verticale {
     position: absolute;
     top: 35%;
@@ -891,6 +1025,7 @@ a {
     height: 8vh;
   }
 
+  /* Styles pour la galerie d'images */
   .gallery {
     width: 100%;
     height: auto;
@@ -899,20 +1034,27 @@ a {
     justify-content: center;
   }
 
+  /* Styles pour les images dans la galerie */
   .gallery img {
     width: 80%;
     object-fit: cover;
     cursor: url("/Assets/logo/cursor-pointer.png"), auto;
   }
+
+  /* Styles pour l'effet de survol des images dans la galerie */
   .gallery img:hover {
     transform: scale(1);
   }
+
+  /* Styles pour la section de contact sur tablette */
   .contact {
     display: flex;
     align-items: center;
     gap: 10px;
     padding-top: 15px;
   }
+
+  /* Styles pour le paragraphe dans la section de contact sur tablette */
   .contact p {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 45px;
@@ -920,30 +1062,29 @@ a {
     color: #808080;
   }
 
+  /* Styles pour l'icône dans la section de contact sur tablette */
   .contact i {
     padding-top: 10px;
     font-size: 27px;
     color: #808080;
   }
 
+  /* Styles pour l'adresse e-mail dans la section de contact sur tablette */
   .mail {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 20px;
     padding-left: 20px;
     color: #d5ff3f;
   }
-
-  .space {
-    padding-top: 20px;
-  }
 }
 
-/* Styles spécifiques aux mobiles (max-width: 768px) */
 @media screen and (max-width: 768px) {
+  /* Désactiver le curseur pour tous les éléments */
   * {
     cursor: none;
   }
 
+  /* Style pour la section 'name' */
   .name {
     display: flex;
     align-items: center;
@@ -951,20 +1092,18 @@ a {
     padding: 10px;
   }
 
-  /*.name h1 {
-    margin-right: auto;
-  }*/
-
+  /* Style pour l'image dans la section 'name' */
   .name img {
     margin-right: auto;
     width: 30%;
   }
 
+  /* Cacher la navigation desktop */
   #nav_desktop {
     display: none;
   }
 
-  /* Nav mobile*/
+  /* Styles pour la navigation mobile */
   .nav_mobile {
     display: contents;
   }
@@ -973,6 +1112,8 @@ a {
     padding: 0 15px;
     font-size: 25px;
   }
+
+  /* Overlay mobile pour la navigation */
   .overlay_mobile {
     height: 100%;
     width: 0;
@@ -994,6 +1135,7 @@ a {
     margin-top: 30px;
   }
 
+  /* Styles pour les liens dans l'overlay mobile */
   .overlay_mobile a {
     padding: 8px;
     text-decoration: none;
@@ -1011,6 +1153,7 @@ a {
     color: #cfcfcf;
   }
 
+  /* Style pour le bouton de fermeture de l'overlay mobile */
   .overlay_mobile .closebtn {
     position: absolute;
     top: 50px;
@@ -1021,6 +1164,7 @@ a {
     font-size: 30px;
   }
 
+  /* Réajuster les styles si la hauteur de l'écran est inférieure à 450px */
   @media screen and (max-height: 450px) {
     .overlay_mobile a {
       font-size: 20px;
@@ -1032,8 +1176,7 @@ a {
     }
   }
 
-  /* End nav mobile*/
-
+  /* Styles pour la section 'social' */
   .social {
     display: flex;
     gap: 13px;
@@ -1044,6 +1187,7 @@ a {
     color: #000000;
   }
 
+  /* Styles pour la section 'name_web_site' */
   .name_web_site {
     padding-left: 15px;
     padding-top: 15px;
@@ -1058,22 +1202,27 @@ a {
     display: none;
   }
 
+  /* Styles pour la sous-section 'subtitle_header' */
   .subtitle_header {
     font-size: 15px !important;
     padding-left: 5px;
   }
 
+  /* Styles pour la section 'flex_presentation' */
   .flex_presentation {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
 
+  /* Cacher l'image de la barre header */
   .img_bar_header img {
     display: none;
   }
+
+  /* Styles pour la section 'presentation' */
   .presentation {
-    width: 90%;
+    width: 95%;
     text-align: left;
     padding-top: 45px;
   }
@@ -1081,9 +1230,9 @@ a {
   .presentation p {
     font-size: 20px;
     font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-    margin-right: 0%;
   }
 
+  /* Styles pour la section 'excellence' */
   .excellence {
     display: flex;
     align-items: center;
@@ -1092,6 +1241,7 @@ a {
     width: 95%;
   }
 
+  /* Styles pour la bulle */
   .bubble {
     display: flex;
     align-items: center;
@@ -1104,12 +1254,14 @@ a {
     margin: 10px;
   }
 
+  /* Styles pour l'icône dans la bulle */
   .bubble i {
     margin-bottom: 4px;
     font-size: 18px;
     color: #000000db;
   }
 
+  /* Styles pour le texte dans la bulle */
   .bubble p {
     display: flex;
     align-items: center;
@@ -1121,6 +1273,7 @@ a {
     color: #000000db;
   }
 
+  /* Styles pour la section 'contact_mobile' */
   .contact_mobile {
     display: flex;
     align-items: center;
@@ -1130,9 +1283,10 @@ a {
     background-color: #000000;
     height: 60px;
     width: 85%;
-    margin: 15% auto 0 auto;
+    margin: 10% auto 0 auto;
   }
 
+  /* Styles pour le texte dans la section 'contactMe' */
   .contactMe {
     display: contents;
     color: #d5ff3f;
@@ -1140,6 +1294,7 @@ a {
     font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   }
 
+  /* Styles pour l'icône dans la section 'contact_mobile' */
   .contact_mobile i {
     padding: 15px;
     font-size: 30px;
@@ -1147,6 +1302,7 @@ a {
     transform: rotate(315deg);
   }
 
+  /* Styles pour la section 'video' */
   .video {
     display: flex;
     align-items: center;
@@ -1154,39 +1310,38 @@ a {
     padding-top: 10px;
     position: relative;
   }
-  /* .video img {
-    position: absolute;
-    top: 27%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-    width: 30%;
-  }*/
 
+  /* Styles pour l'image dans la section 'video' */
   .video img {
     display: none;
   }
 
-  .service_footer {
+  /* Styles pour la section 'service_main' */
+  .service_main {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 44px;
     padding: 20px;
     color: #cfcfcf;
   }
 
+  /* Styles pour la classe 'dote' */
   .dote {
     color: #d5ff3f;
   }
 
+  /* Styles pour la bulle en état normal */
   .bulle {
     transition: none;
   }
 
+  /* Styles pour la bulle au survol */
   .bulle:hover {
     transform: none;
     background-color: transparent;
     border: 2px solid #808080;
   }
 
+  /* Styles pour le conteneur flexible */
   .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -1195,7 +1350,8 @@ a {
     gap: 20px;
   }
 
-  .text_footer {
+  /* Styles pour le texte descriptif */
+  .text_descriptif {
     width: 93%;
     padding: 20px;
     color: #808080;
@@ -1204,6 +1360,7 @@ a {
     font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   }
 
+  /* Styles pour le conteneur de texte */
   .contenair_text {
     width: 100%;
     height: 300px;
@@ -1215,6 +1372,7 @@ a {
     letter-spacing: 2px;
   }
 
+  /* Styles pour le texte carré */
   .carré_text {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     color: #cfcfcf;
@@ -1224,22 +1382,27 @@ a {
     line-height: 23px;
   }
 
+  /* Styles pour l'image 1 dans le texte carré */
   .carré_text .img1 img {
     display: none;
   }
 
+  /* Styles pour l'image 2 dans le texte carré */
   .carré_text .img2 img {
     display: none;
   }
 
+  /* Styles pour l'image 3 dans le texte carré */
   .carré_text .img3 img {
     display: none;
   }
 
+  /* Styles pour l'image 4 dans le texte carré */
   .carré_text .img4 img {
     display: none;
   }
 
+  /* Styles pour le conteneur flexible avec une grille */
   .grid_flex {
     width: 95%;
     display: flex;
@@ -1248,25 +1411,31 @@ a {
     padding-left: 10px;
     gap: 20px;
   }
+
+  /* Styles pour la bulle */
   .bulle {
     width: 90%;
   }
 
+  /* Styles pour le contenu de la bulle */
   .bulle-content {
     text-align: center;
     gap: 10px;
   }
 
+  /* Styles pour l'icône dans la bulle */
   .bulle i {
     font-size: 17px;
   }
 
+  /* Styles pour le texte dans la bulle */
   .bulle p {
     font-size: 17px;
     font-family: "Garrison_Regular", "Martel Sans", sans-serif;
     color: #818181;
   }
 
+  /* Styles pour le contenu de l'overlay */
   .overlay-content {
     width: 90%;
     background: #181818;
@@ -1274,22 +1443,17 @@ a {
     border-radius: 10px;
   }
 
-  .overlay-content i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 80px;
-    color: #808080;
-  }
-
+  /* Styles pour l'icône dans la section 'name_behance' */
   .name_behance {
     display: none;
   }
 
+  /* Styles pour la barre verticale */
   .barre-verticale {
     display: none;
   }
 
+  /* Styles pour le conteneur 'contenair_follow_us' */
   .contenair_follow_us {
     width: 100%;
     height: 500px;
@@ -1297,12 +1461,14 @@ a {
     margin: 50px auto;
   }
 
+  /* Styles pour l'image dans le conteneur 'contenair_follow_us' */
   .contenair_follow_us img {
     object-fit: cover;
     width: 100%;
     top: 10%;
   }
 
+  /* Styles pour le titre dans le conteneur 'contenair_follow_us' */
   .contenair_follow_us h1 {
     width: 60%;
     margin-bottom: 100px;
@@ -1313,20 +1479,23 @@ a {
     justify-content: center;
   }
 
+  /* Styles pour le conteneur des boutons dans le pied de page */
   .button_footer {
     flex-direction: column;
   }
 
+  /* Styles pour le bouton 'parlons-maintenant-button' dans le pied de page */
   .button_footer .parlons-maintenant-button {
     width: 300px;
   }
 
+  /* Styles pour le bouton 'suivez-nous-button' dans le pied de page */
   .button_footer .suivez-nous-button {
     width: 300px;
-
     border-radius: 25px;
   }
 
+  /* Styles pour la section 'projet' */
   .projet {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     color: #cfcfcf;
@@ -1338,6 +1507,7 @@ a {
     flex-direction: column;
   }
 
+  /* Styles pour la phrase créative */
   .phrase_creative {
     font-size: 16px;
     width: 90%;
@@ -1350,6 +1520,7 @@ a {
     position: relative;
   }
 
+  /* Styles pour le point 3 dans la phrase créative */
   .dote3 {
     position: absolute;
     top: 15%;
@@ -1357,6 +1528,7 @@ a {
     transform: translate(-50%, -50%);
   }
 
+  /* Styles pour la section 'gallery' */
   .gallery {
     width: 100%;
     height: auto;
@@ -1365,15 +1537,19 @@ a {
     justify-content: center;
   }
 
+  /* Styles pour les images dans la section 'gallery' */
   .gallery img {
     width: 100%;
     object-fit: cover;
     cursor: url("/Assets/logo/cursor-pointer.png"), auto;
   }
 
+  /* Styles pour les images au survol dans la section 'gallery' */
   .gallery img:hover {
     transform: scale(1);
   }
+
+  /* Styles pour la section 'contact' */
   .contact {
     display: flex;
     align-items: center;
@@ -1382,18 +1558,22 @@ a {
     width: 100%;
     padding-right: 20px;
   }
+
+  /* Styles pour le texte dans la section 'contact' */
   .contact p {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 25px;
     color: #808080;
   }
 
+  /* Styles pour l'icône dans la section 'contact' */
   .contact i {
     padding-top: 10px;
     font-size: 20px;
     color: #808080;
   }
 
+  /* Styles pour la section 'mail' */
   .mail {
     display: flex;
     align-items: center;
@@ -1402,5 +1582,23 @@ a {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 15px;
     color: #d5ff3f;
+  }
+
+  /* Styles pour les sections 'politique', 'documents', et 'copyright' */
+  .politique,
+  .documents,
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4%;
+    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    font-size: 8px;
+    color: #d5ff3f;
+    text-transform: uppercase;
+  }
+
+  .logo_du_site_politique img {
+    width: 100%;
   }
 }

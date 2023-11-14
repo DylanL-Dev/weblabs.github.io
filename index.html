@@ -25,32 +25,44 @@
     <link rel="stylesheet" href="css/style.css" />
     <!--END CSS-->
 
+    <!-- Ajout du script Font Awesome avec l'attribut 'defer' pour le rendre non bloquant -->
     <script
       defer
       src="https://kit.fontawesome.com/79857fa36d.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Balise de titre de la page -->
     <title>Web-Labs</title>
+
+    <!-- Balise meta pour la description de la page -->
+    <meta name="description" content=" " />
     <meta
       name="description"
-      content="Web Labs, votre développeur web indépendant spécialisé dans la conception de sites web et la création d'interfaces utilisateur intuitives."
+      content="Web Labs, vos développeurs web spécialisés dans la conception de sites web et la création d'interfaces utilisateur intuitives. Développement web, design personnalisé, refonte de site, SEO, performance. Contactez-nous pour discuter de votre projet."
     />
   </head>
   <body>
     <header>
+      <!-- La div "name" englobe le logo, la navigation (desktop et mobile) et la section des icônes sociales -->
       <div class="name" id="accueil">
+        <!-- Logo du site avec un texte alternatif (alt) pour l'accessibilité -->
+        <img src="Assets/logo/Logo.webp" alt="logo du site Web Labs" />
 
-        <img src="Assets/logo/Logo.webp" alt="logo du site Web Labs">
-   
+        <!-- Navigation pour la version desktop -->
         <nav id="nav_desktop">
+          <!-- Liste non ordonnée (ul) contenant les liens de navigation -->
           <ul>
-            <a href="#services"><li>serivces</li></a>
+            <!-- Chaque lien est enveloppé dans une balise "a" avec un attribut "href" pointant vers une section spécifique -->
+            <a href="#services"><li>services</li></a>
             <a href="#portfolio"><li>portfolio</li></a>
-            <a href="#contact"> <li>contact</li></a>
+            <a href="#contact"><li>contact</li></a>
           </ul>
         </nav>
 
+        <!-- Section des icônes sociales -->
         <div class="social">
+          <!-- Icône Instagram avec un lien vers le profil correspondant -->
           <a
             target="_blank"
             href="https://www.instagram.com/weblabs_inc"
@@ -58,6 +70,8 @@
           >
             <i class="fa-brands fa-instagram"></i>
           </a>
+
+          <!-- Icône Behance avec un lien vers le profil correspondant -->
           <a
             target="_blank"
             href="https://www.behance.net/mdahyou"
@@ -66,13 +80,14 @@
             <i class="fa-brands fa-behance"></i>
           </a>
         </div>
+
+        <!-- Navigation pour la version mobile -->
         <nav class="nav_mobile">
+          <!-- Overlay mobile utilisé pour la navigation -->
           <div id="myNav" class="overlay_mobile" onclick="closeNav()">
-            <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-              ><i class="fa-solid fa-circle-arrow-left"></i>web labs</a
-            >-->
+            <!-- Contenu de l'overlay mobile avec des liens pointant vers des sections spécifiques -->
             <div class="overlay-content_mobile">
-              <!-- Ajoute un onclick pour chaque lien dans ton overlay -->
+              <!-- Chaque lien a un onclick pour fermer l'overlay lorsqu'il est cliqué -->
               <a href="#accueil" onclick="closeNav()">accueil</a>
               <a href="#services" onclick="closeNav()">services</a>
               <a href="#portfolio" onclick="closeNav()">portfolio</a>
@@ -80,21 +95,30 @@
             </div>
           </div>
 
-          <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
-            ><i class="fa-solid fa-bars-staggered"></i
-          ></span>
+          <!-- Bouton pour ouvrir l'overlay mobile avec une icône de barres -->
+          <span style="font-size: 30px; cursor: pointer" onclick="openNav()">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </span>
         </nav>
       </div>
 
+      <!-- La div "name_web_site" contient le titre principal du site -->
       <div class="name_web_site">
+        <!-- Le titre principal "Web Labs" enveloppé dans une balise de titre de niveau 2 (h2) avec une classe "title_site" -->
         <h2 class="title_site">Web Labs</h2>
-        <img src="Assets/stars-header.webp" alt="" />
+
+        <!-- Image d'étoiles utilisée comme séparateur ou décoration -->
+        <img src="Assets/stars-header.webp" alt="étoiles avec ilustration" />
+
+        <!-- Sous-titre du site "Créons le web de demain" enveloppé dans une balise de titre de niveau 2 (h2) avec une classe "subtitle_header" -->
         <h2 class="subtitle_header">Créons le web de demain</h2>
       </div>
 
+      <!-- La div "flex_presentation" englobe la section de présentation du site -->
       <div class="flex_presentation">
-
+        <!-- La div "presentation" contient le paragraphe de présentation -->
         <div class="presentation">
+          <!-- Paragraphe de présentation -->
           <p>
             Hello, nous sommes spécialisés dans la conception de sites web, avec
             pour objectif de répondre aux besoins spécifiques de chaque client.
@@ -104,33 +128,55 @@
           </p>
         </div>
       </div>
+
+      <!-- La div contient un lien vers la section d'email -->
       <div>
-        <a href="#email"
-          ><div class="contact_mobile">
+        <a href="#email">
+          <!-- La div "contact_mobile" contient un bouton de contact mobile -->
+          <div class="contact_mobile">
+            <!-- La div "contactMe" contient le texte du bouton -->
             <div class="contactMe">Discutons-en</div>
-            <i class="fa-solid fa-arrow-right"></i></div
-        ></a>
+            <!-- L'icône de flèche vers la droite provenant de Font Awesome -->
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </a>
       </div>
+
+      <!-- La div "excellence" contient des éléments représentant les valeurs de l'entreprise -->
       <div class="excellence">
+        <!-- La première "bubble" représentant l'excellence -->
         <div class="bubble">
+          <!-- Icône de couronne provenant de Font Awesome -->
           <i class="fa-solid fa-crown"></i>
+          <!-- Texte indiquant l'excellence -->
           <p>Excellence</p>
         </div>
 
+        <!-- La deuxième "bubble" représentant l'innovation -->
         <div class="bubble">
+          <!-- Icône d'ampoule provenant de Font Awesome -->
           <i class="fa-solid fa-lightbulb"></i>
+          <!-- Texte indiquant l'innovation -->
           <p>Innovation</p>
         </div>
+
+        <!-- Une image de barre provenant de la source "Assets/bar-header.webp" -->
         <div class="img_bar_header">
-          <img src="Assets/bar-header.webp" alt="bar" />
+          <img src="Assets/bar-header.webp" alt="barre" />
         </div>
       </div>
     </header>
 
+    <!-- La balise <main> représente la section principale du contenu de la page -->
     <main>
+      <!-- La div "video" contient une image et une balise vidéo -->
       <div class="video">
-        <img src="Assets/logo/circle_arrow.webp" alt="" />
+        <!-- Image représentant une flèche circulaire provenant de la source "Assets/logo/circle_arrow.webp" -->
+        <img src="Assets/logo/circle_arrow.webp" alt="cercle avec une fleche" />
+
+        <!-- Balise vidéo avec les attributs autoplay, muted, loop, playsinline -->
         <video autoplay muted loop playsinline>
+          <!-- Source de la vidéo provenant d'une URL externe -->
           <source
             src="https://cdn.dribbble.com/uploads/39485/original/58f7d3690a4f77fa03c8a2e03f577078.mp4?1657906840"
           />
@@ -139,8 +185,9 @@
         </video>
       </div>
 
-      <!-- ANNONCE DESKTOP-->
+      <!-- ANNONCE DESKTOP -->
       <div class="zone_annonce">
+        <!-- Un span contenant du texte annonçant de discuter du projet -->
         <span class="annonce_content">
           * DISCUTONS DE VOTRE PROJET * DISCUTONS DE VOTRE PROJET * DISCUTONS DE
           VOTRE PROJET * DISCUTONS DE VOTRE PROJET * DISCUTONS DE VOTRE PROJET *
@@ -150,233 +197,268 @@
           VOTRE PROJET * DISCUTONS DE VOTRE PROJET * DISCUTONS DE VOTRE PROJET *
         </span>
       </div>
-      <!-- END ANNONCE DESKTOP-->
+      <!-- END ANNONCE DESKTOP -->
+      <div class="content_main">
+        <!-- Section "Nos Services" avec un identifiant "services" -->
+        <div class="service_main" id="services">
+          <!-- Titre avec une classe "dote" pour le point décoratif -->
+          <h3>NOS SERVICES <span class="dote">.</span></h3>
+        </div>
+
+        <!-- Conteneur flex avec deux niveaux imbriqués -->
+        <div class="flex-container">
+          <div class="flex-container">
+            <!-- Bloc de texte descriptif des services -->
+            <div class="text_descriptif">
+              <p>
+                En tant que développeurs web, nous sommes passionnés par la
+                création de sites web, la mise à jour et l'amélioration de sites
+                existants, ainsi que le suivi continu des sites de nos clients.
+                Nous mettons nos compétences à votre service.
+              </p>
+            </div>
+            <!-- Grille de boutons représentant différents services -->
+            <div class="grid_flex">
+              <button
+                class="bulle overlay-link"
+                data-overlay="developpement-overlay"
+              >
+                <div class="bulle-content">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <a href="#">
+                    <div>Développement</div>
+                  </a>
+                </div>
+              </button>
+
+              <button
+                class="bulle overlay-link"
+                data-overlay="surmesure-overlay"
+              >
+                <div class="bulle-content">
+                  <i class="fa-solid fa-code"></i>
+                  <p>
+                    <a href="#">Personnalisé</a>
+                  </p>
+                </div>
+              </button>
+
+              <button class="bulle overlay-link" data-overlay="refonte-overlay">
+                <div class="bulle-content">
+                  <i class="fa-solid fa-pen-ruler"></i>
+                  <p>
+                    <a href="#">Refonte de site</a>
+                  </p>
+                </div>
+              </button>
+
+              <button
+                class="bulle overlay-link"
+                data-overlay="seonaturel-overlay"
+              >
+                <div class="bulle-content">
+                  <i class="fa-solid fa-gears"></i>
+                  <p>
+                    <a href="#">SEO</a>
+                  </p>
+                </div>
+              </button>
+
+              <button
+                class="bulle overlay-link"
+                data-overlay="propositiondesign-overlay"
+              >
+                <div class="bulle-content">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  <p>
+                    <a href="#">Design</a>
+                  </p>
+                </div>
+              </button>
+
+              <button
+                class="bulle overlay-link"
+                data-overlay="performance-overlay"
+              >
+                <div class="bulle-content">
+                  <i class="fa-solid fa-rocket"></i>
+                  <p>
+                    <a href="#">Performance</a>
+                  </p>
+                </div>
+              </button>
+
+              <!-- Overlay pour le service "Développement" -->
+              <div class="overlay" id="developpement-overlay">
+                <div class="overlay-content">
+                  <!-- Icône associée au service "Développement" -->
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <p>
+                    <!-- Description détaillée du service "Développement" -->
+                    Dans le cadre de Web Labs, nous nous consacrons pleinement
+                    au développement de sites web et web mobile. Notre
+                    engagement consiste à créer des solutions numériques
+                    innovantes, mettant en avant la simplicité et la
+                    performance.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Overlay pour le service "Sur Mesure" -->
+              <div class="overlay" id="surmesure-overlay">
+                <div class="overlay-content">
+                  <!-- Icône associée au service "Sur Mesure" -->
+                  <i class="fa-solid fa-code"></i>
+                  <p>
+                    <!-- Description détaillée du service "Sur Mesure" -->
+                    La conception personnalisée est au cœur de notre approche.
+                    Notre engagement envers la création de sites web et web
+                    mobile sur mesure est inébranlable. Chaque projet représente
+                    une opportunité unique, en mettant l'accent sur
+                    l'originalité et l'individualisation.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Overlay pour le service "Refonte" -->
+              <div class="overlay" id="refonte-overlay">
+                <div class="overlay-content">
+                  <!-- Icône associée au service "Refonte" -->
+                  <i class="fa-solid fa-pen-ruler"></i>
+                  <p>
+                    <!-- Description détaillée du service "Refonte" -->
+                    Notre engagement consiste à revitaliser et à améliorer les
+                    sites web pour les rendre plus performants et captivants.
+                    Notre objectif est de donner une nouvelle vie aux sites web,
+                    en les rendant plus efficaces et mieux adaptés aux besoins
+                    actuels.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Overlay pour le service "SEO Naturel" -->
+              <div class="overlay" id="seonaturel-overlay">
+                <div class="overlay-content">
+                  <!-- Icône associée au service "SEO Naturel" -->
+                  <i class="fa-solid fa-gears"></i>
+                  <p>
+                    <!-- Description détaillée du service "SEO Naturel" -->
+                    Le SEO est au cœur de notre démarche, avec pour objectif de
+                    propulser nos clients en tête des résultats des moteurs de
+                    recherche.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Overlay pour le service "Proposition Design" -->
+              <div class="overlay" id="propositiondesign-overlay">
+                <div class="overlay-content">
+                  <!-- Icône associée au service "Proposition Design" -->
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  <p>
+                    <!-- Description détaillée du service "Proposition Design" -->
+                    La recherche de design tendance est essentielle dans notre
+                    démarche. Nous nous concentrons sur la découverte et la
+                    proposition de designs novateurs, en accordant une attention
+                    particulière aux dernières tendances.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Overlay pour le service "Performance" -->
+              <div class="overlay" id="performance-overlay">
+                <div class="overlay-content">
+                  <!-- Icône associée au service "Performance" -->
+                  <i class="fa-solid fa-rocket"></i>
+                  <p>
+                    <!-- Description détaillée du service "Performance" -->
+                    Notre démarche vise à optimiser les sites web et le web
+                    mobile que nous développons pour garantir une expérience
+                    utilisateur. Dans le but de proposer des solutions de
+                    qualité, en matière de performance en termes de vitesse,
+                    d'efficacité et de réactivité.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- Section contenant du texte et des images -->
+          <div class="contenair_text">
+            <div class="carré_text">
+              L'innovation est
+              <span class="img1"
+                ><img src="Assets//img-texte.webp" alt="abstrait"
+              /></span>
+              le moteur qui nous pousse à repousser les limites de la
+              <span class="img2"
+                ><img src="Assets/img-texte.webp" alt="abstrait"
+              /></span>
+              créativité, à explorer
+              <span class="img4"
+                ><img src="Assets/fleche-texte.webp" alt="abstrait"
+              /></span>
+              de nouvelles idées et à
+              <span class="img3"
+                ><img src="Assets/img-texte.webp" alt="abstrait"
+              /></span>
+              créer un avenir où les possibilités sont infinies
+            </div>
+          </div>
+
+          <!-- Section des projets avec une phrase créative -->
+          <div class="service_main projet" id="portfolio">
+            <h3>projets <span class="dote">.</span></h3>
+            <div class="phrase_creative">
+              La créativité nourrit le design, le design stimule la créativité.
+              Soyez présents pour en apprendre davantage. Êtes-vous épris d'un
+              esprit créatif ?
+              <div class="dote3">
+                <img src="Assets/dote.png" alt="illustration de 3 points" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Section du portfolio avec un lien vers Behance -->
+          <div class="contenair_porfolio">
+            <div class="name_behance">behance</div>
+            <div class="barre-verticale"></div>
+            <a
+              class="cursor"
+              target="_blank"
+              href="https://www.behance.net/mdahyou"
+            >
+              <div class="gallery">
+                <img
+                  src="Assets/gallery.webp"
+                  alt="gallery de projet réalisé"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
-      <div class="service_footer" id="services">
-        <h3>NOS SERVICES <span class="dote">.</span></h3>
-      </div>
-
-      <div class="flex-container">
-        <div class="flex-container">
-          <div class="text_footer">
-            <p>
-              En tant que développeurs web, nous sommes passionnés par la
-              création de sites web, la mise à jour et l'amélioration de sites
-              existants, ainsi que le suivi continu des sites de nos clients.
-              Nous mettons nos compétences à votre service.
-            </p>
-          </div>
-
-          <div class="grid_flex">
-            <button
-              class="bulle overlay-link"
-              data-overlay="developpement-overlay"
-            >
-              <div class="bulle-content">
-                <i class="fa-solid fa-laptop-code"></i>
-                <a href="#">
-                  <div>Développement</div>
-                </a>
-              </div>
-            </button>
-
-            <button class="bulle overlay-link" data-overlay="surmesure-overlay">
-              <div class="bulle-content">
-                <i class="fa-solid fa-code"></i>
-                <p>
-                  <a href="#">Personnalisé</a>
-                </p>
-              </div>
-            </button>
-
-            <button class="bulle overlay-link" data-overlay="refonte-overlay">
-              <div class="bulle-content">
-                <i class="fa-solid fa-pen-ruler"></i>
-                <p>
-                  <a href="#">Refonte de site</a>
-                </p>
-              </div>
-            </button>
-
-            <button
-              class="bulle overlay-link"
-              data-overlay="seonaturel-overlay"
-            >
-              <div class="bulle-content">
-                <i class="fa-solid fa-gears"></i>
-                <p>
-                  <a href="#">SEO</a>
-                </p>
-              </div>
-            </button>
-
-            <button
-              class="bulle overlay-link"
-              data-overlay="propositiondesign-overlay"
-            >
-              <div class="bulle-content">
-                <i class="fa-solid fa-wand-magic-sparkles"></i>
-                <p>
-                  <a href="#">Design</a>
-                </p>
-              </div>
-            </button>
-
-            <button
-              class="bulle overlay-link"
-              data-overlay="performance-overlay"
-            >
-              <div class="bulle-content">
-                <i class="fa-solid fa-rocket"></i>
-                <p>
-                  <a href="#">Performance</a>
-                </p>
-              </div>
-            </button>
-
-            <div class="overlay" id="developpement-overlay">
-              <div class="overlay-content">
-                <i class="fa-solid fa-laptop-code"></i>
-                <p>
-                  Dans le cadre de Web Labs, nous nous consacrons pleinement au
-                  développement de sites web et web mobile. Notre engagement
-                  consiste à créer des solutions numériques innovantes, mettant
-                  en avant la simplicité et la performance.
-                </p>
-              </div>
-            </div>
-
-            <div class="overlay" id="surmesure-overlay">
-              <div class="overlay-content">
-                <i class="fa-solid fa-code"></i>
-                <p>
-                  La conception personnalisée est au cœur de notre approche.
-                  Notre engagement envers la création de sites web et web mobile
-                  sur mesure est inébranlable. Chaque projet représente une
-                  opportunité unique, en mettant l'accent sur l'originalité et
-                  l'individualisation.
-                </p>
-              </div>
-            </div>
-
-            <div class="overlay" id="refonte-overlay">
-              <div class="overlay-content">
-                <i class="fa-solid fa-pen-ruler"></i>
-                <p>
-                  Notre engagement consiste à revitaliser et à améliorer les
-                  sites web pour les rendre plus performants et captivants.
-                  Notre objectif est de donner une nouvelle vie aux sites web,
-                  en les rendant plus efficaces et mieux adaptés aux besoins
-                  actuels.
-                </p>
-              </div>
-            </div>
-
-            <div class="overlay" id="seonaturel-overlay">
-              <div class="overlay-content">
-                <i class="fa-solid fa-gears"></i>
-                <p>
-                  Le SEO est au cœur de notre démarche, avec pour objectif de
-                  propulser nos clients en tête des résultats des moteurs de
-                  recherche.
-                </p>
-              </div>
-            </div>
-
-            <div class="overlay" id="propositiondesign-overlay">
-              <div class="overlay-content">
-                <i class="fa-solid fa-wand-magic-sparkles"></i>
-                <p>
-                  La recherche de design tendance est essentielle dans notre
-                  démarche. Nous nous concentrons sur la découverte et la
-                  proposition de designs novateurs, en accordant une attention
-                  particulière aux dernières tendances.
-                </p>
-              </div>
-            </div>
-
-            <div class="overlay" id="performance-overlay">
-              <div class="overlay-content">
-                <i class="fa-solid fa-wand-magic-sparkles"></i>
-                <p>
-                  Notre démarche vise à optimiser les sites web et le web mobile
-                  que nous développons pour garantir une expérience utilisateur.
-                  Dans le but de proposer des solutions de qualité, en matière
-                  de performance en termes de vitesse, d'efficacité et de
-                  réactivité.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="contenair_text">
-          <div class="carré_text">
-            L'innovation est
-            <span class="img1"
-              ><img src="Assets//img-texte.webp" alt="abstrait"
-            /></span>
-            le moteur qui nous pousse à repousser les limites de la
-            <span class="img2"
-              ><img src="Assets/img-texte.webp" alt="abstrait"
-            /></span>
-            créativité, à explorer
-            <span class="img4"
-              ><img src="Assets/fleche-texte.webp" alt="abstrait"
-            /></span>
-            de nouvelles idées et à
-            <span class="img3"
-              ><img src="Assets/img-texte.webp" alt="abstrait"
-            /></span>
-            créer un avenir où les possibilités sont infinies
-          </div>
-        </div>
-      </div>
-      <div class="service_footer projet" id="portfolio">
-        <h3>projets <span class="dote">.</span></h3>
-        <div class="phrase_creative">
-          La créativité nourrit le design, le design stimule la créativité.
-          Soyez présents pour en apprendre davantage. Êtes-vous épris d'un
-          esprit créatif ?
-          <div class="dote3">
-            <img src="Assets/dote.png" alt="ilustration de 3 point" />
-          </div>
-        </div>
-      </div>
-
-      <div class="contenair_porfolio">
-        <div class="name_behance">behance</div>
-        <div class="barre-verticale"></div>
-
-        <a class="cursor" target="_blank" href="https://www.behance.net/mdahyou"
-          ><div class="gallery">
-            <img
-              src="Assets/gallery.webp"
-              alt="gallery de projet réalisé"
-            /></div
-        ></a>
-      </div>
-
+      <!-- Section de contact -->
       <div id="contact">
         <div class="contenair_follow_us">
           <img src="Assets/stars-bar.webp" alt="une barre avec des étoiles" />
-
           <div>
             <h1>ÉCHANGEONS SUR VOS CONCEPTS</h1>
           </div>
           <div class="button_footer">
             <a
               id="email"
-              href="mailto:weblabs@contact.fr?subject=Demande%20de%20contact&a=cm"
-              ><div class="parlons-maintenant-button">CONTACT</div></a
+              href="mailto:contact@web-labs.fr?subject=Demande%20de%20contact&a=cm"
             >
-
+              <div class="parlons-maintenant-button">CONTACT</div>
+            </a>
             <a target="_blank" href="https://www.instagram.com/weblabs_inc">
-              <div class="suivez-nous-button">SUIVEZ-NOUS</div></a
-            >
+              <div class="suivez-nous-button">SUIVEZ-NOUS</div>
+            </a>
           </div>
         </div>
       </div>
@@ -398,7 +480,26 @@
         </p>
       </div>
       -->
-      <div class="copyright">©2023 Web-Labs - tous droits réservés</div>
+      <!-- Section politique -->
+      <div class="politique">
+        <!-- Premier lien vers les conditions générales d'utilisation -->
+        <div>
+          <a href="documents/CGU.html" class="documents">
+            conditions générales d'utilisation
+          </a>
+        </div>
+
+        <!-- Informations de copyright -->
+        <div class="copyright">©2023 Web-Labs - tous droits réservés</div>
+
+        <!-- Deuxième lien vers la politique de confidentialité avec une icône de cadenas -->
+        <div>
+          <a href="documents/privacy-policy.html" class="documents">
+            <i class="fa-solid fa-lock"></i>Politique de Confidentialité
+          </a>
+        </div>
+      </div>
+
       <div class="space"></div>
     </footer>
     <script defer src="script.js"></script>
