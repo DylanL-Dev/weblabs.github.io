@@ -929,7 +929,7 @@ a {
 .title_politique {
   color: #000000;
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .lien_web {
@@ -2124,10 +2124,9 @@ input[type="submit"]:hover {
   .copyright {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-left: 4%;
+    justify-content: space-evenly;
     font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-    font-size: 8px;
+    font-size: 10px;
     color: #d5ff3f;
     text-transform: uppercase;
   }
