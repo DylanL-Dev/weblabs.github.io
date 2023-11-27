@@ -104,29 +104,32 @@ a {
 .name img {
   margin-right: auto;
   width: 14%;
+  height: auto;
 }
 
 nav {
   padding-right: 8vh;
-}
-
-nav ul {
-  display: flex;
-  align-items: center;
-}
-
-nav ul li {
-  list-style: none;
-  padding: 0 15px;
-  color: #000000;
-  text-transform: uppercase;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   transition: all 0.3s;
   animation-delay: 400ms;
   transform: scale(1);
 }
 
-ul li:hover {
+nav ul,
+nav li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav ul li a {
+  padding: 0 15px;
+  color: #000000;
+  text-transform: uppercase;
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  transition: transform 0.3s;
+}
+
+nav ul li a:hover {
   transform: scale(1.2);
   cursor: url("/Assets/logo/cursor-pointer.png"), auto;
 }
@@ -157,11 +160,11 @@ ul li:hover {
 .name_web_site {
   padding-left: 15px;
   padding-top: 45px;
-  line-height: 100px;
+  line-height: 0px;
   position: relative;
 }
 
-.name_web_site h2 {
+.name_web_site h1 {
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   font-size: 150px;
   color: black;
@@ -521,6 +524,195 @@ a {
   color: #808080;
 }
 
+/*Parti pack*/
+.bg_ifo_création {
+  margin-top: 10px;
+  background-color: #d5ff3f;
+  width: 100%;
+  height: 600px;
+  cursor: url("/Assets/logo/cursor-black.png"), auto;
+  position: relative;
+}
+
+.flex_info {
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  padding-top: 7%;
+  padding-left: 16%;
+  line-height: 20px;
+}
+
+.flex_info h1 {
+  font-size: 75px;
+}
+
+.flex_info h2 {
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.ifo_création {
+  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+  padding-left: 16.5%;
+  font-size: 20px;
+  width: 65%;
+}
+
+.scroll_contact {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+  border: none;
+  width: 23%;
+  height: 60px;
+  color: #d5ff3f;
+  background-color: #000000;
+  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
+  transition: all 0.3s;
+  animation-delay: 400ms;
+  transform: scale(1);
+}
+
+.scroll_contact:hover {
+  transform: scale(1.04);
+}
+
+.title_pack {
+  background-color: #d5ff3f;
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  text-align: center;
+  font-size: 42px;
+  cursor: url("/Assets/logo/cursor-black.png"), auto;
+}
+
+/*card pack*/
+
+.container_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  height: 1100px;
+  background-color: #d5ff3f;
+  cursor: url("/Assets/logo/cursor-black.png"), auto;
+}
+
+.card {
+  width: 22%;
+  height: auto;
+
+  background-color: #171717;
+  transition: all 0.3s;
+  animation-delay: 400ms;
+  transform: scale(1);
+  cursor: url("/Assets/logo/cursor-jaune.png"), auto;
+}
+
+.card:hover {
+  transform: scale(1.06);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.card_special {
+  background-color: #000000;
+  margin-bottom: 20px;
+}
+
+.card_special:hover {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.card h1 {
+  text-align: center;
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  font-size: 25px;
+  padding-top: 15px;
+  color: #cfcfcf;
+}
+
+.card p {
+  text-align: center;
+  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+  color: #cfcfcf;
+  font-weight: bold;
+}
+
+.def_prix {
+  padding-top: 20px;
+  padding-right: 50%;
+  font-size: 25px;
+}
+
+.prix {
+  text-align: center;
+  font-size: 80px;
+}
+
+.proposition {
+  font-size: 15px;
+}
+
+.proposition2 {
+  font-size: 10px;
+}
+
+.contact_pack {
+  margin-top: 10%;
+  width: 100%;
+  height: 60px;
+  background-color: #000000;
+  color: #d5ff3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+}
+.contact_pack_special {
+  background-color: #292929;
+  color: #d5ff3f;
+  margin-top: 21%;
+}
+
+.card .conseil {
+  width: 100%;
+  height: 55px;
+  background-color: #292929;
+  color: #d5ff3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  animation: blink 2s ease 0s infinite normal forwards;
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.card2 {
+  padding-top: 5px;
+}
+
+.fa-hand-holding-usd {
+  padding-left: 5px;
+}
+
+/*End Parti pack*/
+
 /* Styles pour le conteneur de texte */
 .contenair_text {
   width: 73%;
@@ -584,7 +776,7 @@ a {
   width: 30%;
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   font-weight: bold;
-  color: #80808070;
+  color: #808080;
   padding-top: 60px;
   padding-right: 5%;
   line-height: 30px;
@@ -596,6 +788,11 @@ a {
   padding-left: 60%;
 }
 
+.dote3 img {
+  width: 100%;
+  height: auto;
+}
+
 /* Styles pour le conteneur du portfolio */
 .contenair_porfolio {
   position: relative;
@@ -604,10 +801,10 @@ a {
 /* Styles pour le nom Behance */
 .name_behance {
   position: absolute;
-  top: 66%;
+  top: 70%;
   left: 5vw;
   color: #cfcfcf;
-  font-size: 4vw;
+  font-size: 5vw;
   text-transform: uppercase;
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   display: flex;
@@ -643,7 +840,7 @@ a {
 /* Styles pour les images dans la galerie */
 .gallery img {
   width: 77%;
-  object-fit: cover;
+  height: auto;
   cursor: url("/Assets/logo/cursor-black.png"), auto;
   transition: all 0.3s;
   animation-delay: 400ms;
@@ -681,44 +878,12 @@ a {
 }
 
 /* Styles pour le titre dans le conteneur "Follow us" */
-.contenair_follow_us h1 {
+.contenair_follow_us h6 {
   width: 60%;
   margin: 0 auto;
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   font-size: 100px;
   text-align: center;
-}
-
-/*
-   Styles pour la section de contact
-*/
-.contact {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* Styles pour le paragraphe dans la section de contact */
-.contact p {
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  font-size: 55px;
-  padding: 20px;
-  color: #808080;
-}
-
-/* Styles pour l'icône dans la section de contact */
-.contact i {
-  padding-top: 10px;
-  font-size: 37px;
-  color: #808080;
-}
-
-/* Styles pour l'adresse e-mail dans la section de contact */
-.mail {
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  font-size: 25px;
-  padding-left: 20px;
-  color: #d5ff3f;
 }
 
 /*
@@ -783,18 +948,131 @@ h2 {
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
 }
 
-.informations-collectées{
+.informations-collectées {
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
 }
 
-.police_g{
+.police_g {
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
 }
+
+/* Formulaire de contact */
+/* Ajoutez votre style CSS ici */
+.background_form {
+  background-color: #d5ff3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.title_form {
+  text-align: center;
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  font-size: 55px;
+  color: #000000;
+}
+
+.contenaire_instructions {
+  text-align: left;
+  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+  font-size: 20px;
+  color: #333; /* Couleur du texte */
+  margin-top: 10px;
+  padding: 0 15px;
+  width: 60%;
+}
+
+.instructions {
+  padding-top: 50px;
+}
+
+.contenaire_instructions ol {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+form {
+  cursor: url("/Assets/logo/cursor-black.png"), auto;
+  min-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #171717;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  font-size: 17px;
+  color: #d5ff3f;
+  margin-bottom: 5px;
+  cursor: url("/Assets/logo/cursor-black.png"), auto;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #f8f8f83e;
+  border: 1px solid #292929;
+  color: #000000;
+  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  border-radius: 5px;
+  cursor: url("/Assets/logo/cursor-black.png"), auto;
+}
+
+textarea::placeholder {
+  color: #cfcfcf;
+}
+
+input::placeholder,
+select::placeholder {
+  color: #cfcfcf;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  background-color: #000000;
+  color: #d5ff3f;
+  cursor: pointer;
+  height: 50px;
+  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #333;
+}
+
+.confirmation {
+  color: #4caf50;
+  margin-top: 10px;
+}
+
+.erreur {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+/* End Formulaire de contact */
 /* Styles pour l'espace */
 .space {
   padding-top: 20px;
 }
-
 
 /* Fin de la version globale Desktop */
 
@@ -805,10 +1083,15 @@ h2 {
     cursor: none;
   }
 
+  #nav_desktop {
+    width: 70%;
+  }
+
   /* Styles spécifiques à l'image du nom */
   .name img {
     margin-right: auto;
     width: 20%;
+    height: auto;
   }
 
   /* Styles pour la transition des éléments de la navigation */
@@ -823,18 +1106,15 @@ h2 {
   }
 
   /* Styles pour le nom du site web */
-  .name_web_site {
-    line-height: 75px;
-  }
 
-  .name_web_site h2 {
+  .name_web_site h1 {
     font-size: 100px;
   }
 
   /* Styles pour l'image du site web */
   .name_web_site img {
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 85%;
     transform: translate(-50%, -50%);
     width: 20%;
@@ -847,11 +1127,12 @@ h2 {
 
   /* Styles pour la présentation */
   .presentation {
-    width: 45%;
+    width: 50%;
   }
 
   .presentation p {
     margin-right: 10%;
+    padding-top: 10%;
   }
 
   /* Styles pour l'excellence */
@@ -864,10 +1145,164 @@ h2 {
   /* Styles pour le service principal */
   .service_main {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-    font-size: 55px;
+    font-size: 60px;
     padding: 20px;
     color: #cfcfcf;
   }
+
+  /*Parti pack*/
+  .bg_ifo_création {
+    margin-top: 5%;
+    background-color: #d5ff3f;
+    width: 100%;
+    height: 600px;
+    cursor: url("/Assets/logo/cursor-black.png"), auto;
+    position: relative;
+  }
+
+  .flex_info {
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    padding-top: 7%;
+    padding-left: 5%;
+    line-height: 10px;
+  }
+
+  .flex_info h1 {
+    font-size: 30px;
+    padding-left: 5px;
+  }
+
+  .flex_info h2 {
+    font-size: 15px;
+  }
+
+  .ifo_création {
+    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    padding-left: 6%;
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .scroll_contact {
+    position: absolute;
+    top: 75%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    border: none;
+    width: 45%;
+    height: 60px;
+    color: #d5ff3f;
+    background-color: #000000;
+    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
+    transition: all 0.3s;
+    animation-delay: 400ms;
+    transform: scale(1);
+  }
+
+  .scroll_contact:hover {
+    transform: scale(1.04);
+  }
+
+  /*card pack*/
+  .container_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 3000px;
+    background-color: #d5ff3f;
+  }
+
+  .card {
+    width: 60%;
+    height: auto;
+    background-color: #171717;
+    transition: none;
+    animation-delay: none;
+    transform: scale(1);
+  }
+
+  .card:hover {
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+
+  .card_special {
+    background-color: #000000;
+  }
+
+  .card_special:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+
+  .card h1 {
+    text-align: center;
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-size: 20px;
+    padding-top: 15px;
+    color: #cfcfcf;
+  }
+
+  .card p {
+    text-align: center;
+    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    color: #cfcfcf;
+    font-weight: bold;
+  }
+
+  .def_prix {
+    padding-top: 20px;
+    padding-right: 30%;
+    font-size: 25px;
+  }
+
+  .prix {
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .proposition {
+    font-size: 16px;
+  }
+
+  .contact_pack {
+    margin-top: 16%;
+    width: 100%;
+    height: 60px;
+    background-color: #000000;
+    color: #d5ff3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  }
+  .contact_pack_special {
+    background-color: #292929;
+    color: #d5ff3f;
+    margin-top: 21%;
+  }
+
+  .conseil {
+    width: 100%;
+    height: 55px;
+    background-color: #292929;
+    color: #d5ff3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  }
+
+  .card-top {
+    margin-top: 0px;
+  }
+  /*End Parti pack*/
 
   /* Styles pour l'image de la barre d'en-tête */
   .img_bar_header img {
@@ -884,7 +1319,7 @@ h2 {
   }
 
   /* Styles pour le titre du conteneur "follow us" */
-  .contenair_follow_us h1 {
+  .contenair_follow_us h6 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -988,7 +1423,7 @@ h2 {
     width: 45%;
     font-family: "Garrison_Regular", "Martel Sans", sans-serif;
     font-weight: bold;
-    color: #80808070;
+
     padding-top: 100px;
     line-height: 30px;
     text-align: right;
@@ -1037,6 +1472,7 @@ h2 {
   /* Styles pour les images dans la galerie */
   .gallery img {
     width: 80%;
+    height: auto;
     object-fit: cover;
     cursor: url("/Assets/logo/cursor-pointer.png"), auto;
   }
@@ -1045,39 +1481,9 @@ h2 {
   .gallery img:hover {
     transform: scale(1);
   }
-
-  /* Styles pour la section de contact sur tablette */
-  .contact {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-top: 15px;
-  }
-
-  /* Styles pour le paragraphe dans la section de contact sur tablette */
-  .contact p {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-    font-size: 45px;
-    padding: 20px;
-    color: #808080;
-  }
-
-  /* Styles pour l'icône dans la section de contact sur tablette */
-  .contact i {
-    padding-top: 10px;
-    font-size: 27px;
-    color: #808080;
-  }
-
-  /* Styles pour l'adresse e-mail dans la section de contact sur tablette */
-  .mail {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-    font-size: 20px;
-    padding-left: 20px;
-    color: #d5ff3f;
-  }
 }
 
+/*Styles spécifiques aux mobile*/
 @media screen and (max-width: 768px) {
   /* Désactiver le curseur pour tous les éléments */
   * {
@@ -1096,6 +1502,7 @@ h2 {
   .name img {
     margin-right: auto;
     width: 30%;
+    height: auto;
   }
 
   /* Cacher la navigation desktop */
@@ -1114,6 +1521,11 @@ h2 {
   }
 
   /* Overlay mobile pour la navigation */
+
+  .ouvrir-overlay-mobile {
+    font-size: 30px;
+  }
+
   .overlay_mobile {
     height: 100%;
     width: 0;
@@ -1191,10 +1603,9 @@ h2 {
   .name_web_site {
     padding-left: 15px;
     padding-top: 15px;
-    line-height: 35px;
   }
 
-  .name_web_site h2 {
+  .name_web_site h1 {
     font-size: 50px;
   }
 
@@ -1319,7 +1730,7 @@ h2 {
   /* Styles pour la section 'service_main' */
   .service_main {
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-    font-size: 44px;
+    font-size: 45px;
     padding: 20px;
     color: #cfcfcf;
   }
@@ -1359,6 +1770,161 @@ h2 {
     font-size: 25px;
     font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   }
+
+  /*Parti pack*/
+  .bg_ifo_création {
+    margin-top: 25px;
+    background-color: #d5ff3f;
+    width: 100%;
+    height: 600px;
+    cursor: url("/Assets/logo/cursor-black.png"), auto;
+    position: relative;
+  }
+
+  .flex_info {
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    padding-top: 7%;
+    padding-left: 4.5%;
+    line-height: 20px;
+  }
+
+  .flex_info h1 {
+    font-size: 25px;
+  }
+
+  .flex_info h2 {
+    font-size: 13px;
+    padding-right: 20px;
+  }
+
+  .ifo_création {
+    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    padding-left: 7%;
+    font-size: 20px;
+    width: 95%;
+  }
+
+  .scroll_contact {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    border: none;
+    width: 80%;
+    height: 60px;
+    color: #d5ff3f;
+    background-color: #000000;
+    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
+    transition: all 0.3s;
+    animation-delay: 400ms;
+    transform: scale(1);
+  }
+
+  .scroll_contact:hover {
+    transform: scale(1.04);
+  }
+
+  /*card pack*/
+  .container_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 2592px;
+    background-color: #d5ff3f;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    background-color: #171717;
+    transition: none;
+    animation-delay: none;
+    transform: scale(1);
+  }
+
+  .card:hover {
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+
+  .card_special {
+    background-color: #000000;
+  }
+
+  .card_special:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  }
+
+  .card h1 {
+    text-align: center;
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-size: 23px;
+    padding-top: 15px;
+    color: #cfcfcf;
+  }
+
+  .card p {
+    text-align: center;
+    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    color: #cfcfcf;
+    font-weight: bold;
+  }
+
+  .def_prix {
+    padding-top: 20px;
+    padding-right: 30%;
+    font-size: 18px;
+  }
+
+  .prix {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .proposition {
+    font-size: 16px;
+  }
+
+  .contact_pack {
+    margin-top: 16%;
+    width: 100%;
+    height: 60px;
+    background-color: #000000;
+    color: #d5ff3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  }
+  .contact_pack_special {
+    background-color: #292929;
+    color: #d5ff3f;
+    margin-top: 21%;
+  }
+
+  .conseil {
+    width: 100%;
+    height: 55px;
+    background-color: #292929;
+    color: #d5ff3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  }
+
+  .card-top {
+    margin-top: 0px;
+  }
+  /*End Parti pack*/
+  /*End Parti pack*/
 
   /* Styles pour le conteneur de texte */
   .contenair_text {
@@ -1469,7 +2035,7 @@ h2 {
   }
 
   /* Styles pour le titre dans le conteneur 'contenair_follow_us' */
-  .contenair_follow_us h1 {
+  .contenair_follow_us h6 {
     width: 60%;
     margin-bottom: 100px;
     font-family: "IntegralCF-Bold", "Russo One", sans-serif;
@@ -1513,7 +2079,6 @@ h2 {
     width: 90%;
     font-family: "Garrison_Regular", "Martel Sans", sans-serif;
     font-weight: bold;
-    color: #80808070;
     padding-top: 65px;
     line-height: 25px;
     text-align: center;
@@ -1527,7 +2092,10 @@ h2 {
     left: 16%;
     transform: translate(-50%, -50%);
   }
-
+  .dote3 {
+    width: 100%;
+    height: auto;
+  }
   /* Styles pour la section 'gallery' */
   .gallery {
     width: 100%;
@@ -1540,6 +2108,7 @@ h2 {
   /* Styles pour les images dans la section 'gallery' */
   .gallery img {
     width: 100%;
+    height: auto;
     object-fit: cover;
     cursor: url("/Assets/logo/cursor-pointer.png"), auto;
   }
@@ -1547,41 +2116,6 @@ h2 {
   /* Styles pour les images au survol dans la section 'gallery' */
   .gallery img:hover {
     transform: scale(1);
-  }
-
-  /* Styles pour la section 'contact' */
-  .contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0px;
-    width: 100%;
-    padding-right: 20px;
-  }
-
-  /* Styles pour le texte dans la section 'contact' */
-  .contact p {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-    font-size: 25px;
-    color: #808080;
-  }
-
-  /* Styles pour l'icône dans la section 'contact' */
-  .contact i {
-    padding-top: 10px;
-    font-size: 20px;
-    color: #808080;
-  }
-
-  /* Styles pour la section 'mail' */
-  .mail {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 25px;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-    font-size: 15px;
-    color: #d5ff3f;
   }
 
   /* Styles pour les sections 'politique', 'documents', et 'copyright' */

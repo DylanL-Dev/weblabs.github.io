@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Web Labs" />
+    <meta name="theme-color" content="#d5ff3f" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,6 +30,142 @@
     <link rel="stylesheet" href="css/style.css" />
     <!--END CSS-->
 
+    <!--manifest.json-->
+    <link rel="manifest" href="manifest.json" />
+
+    <link rel="canonical" href="https://web-labs.fr/" />
+
+    <!--schema.org-->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Organization",
+        "name": "Web Labs",
+        "url": "https://web-labs.fr/",
+        "logo": "https://web-labs.fr/Assets/logo/Logo.webp",
+        "description": "Conception de sites web, avec pour objectif de répondre aux besoins spécifiques de chaque client.",
+        "keywords": "Développement web, web mobile, SEO, design personnalisé, performance, refonte, créations web",
+        "sameAs": [
+          "https://www.instagram.com/weblabs_inc/?next=%2Fweblabs_inc%2F",
+          "https://www.behance.net/mdahyou"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+33-XXXXXXXXX",
+          "contactType": "customer service",
+          "email": "contact@web-labs.fr"
+        }
+      }
+    </script>
+
+    <!--BreadcrumbList-->
+    <!-- Premier produit Pack -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "PACK LANDING PAGE",
+        "description": "UNE LONGUE PAGE OPTIMISÉE POUR RÉALISER VOS OBJECTIFS.",
+        "brand": {
+          "@type": "Organization",
+          "name": "Web Labs"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "890",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@type": "Organization",
+            "name": "Web Labs"
+          }
+        }
+      }
+    </script>
+
+    <!-- Deuxième produit Pack -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "PACK SITE VITRINE",
+        "description": "UN SITE OPTIMISÉ POUR GÉNÉRER DES CONTACTS.",
+        "brand": {
+          "@type": "Organization",
+          "name": "Web Labs"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "2599",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@type": "Organization",
+            "name": "Web Labs"
+          }
+        }
+      }
+    </script>
+
+    <!-- Troisième produit Pack -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "PACK DÉVELOPPEMENT WEB",
+        "description": "Le Pack Ultime Élevez votre Présence en Ligne à des Sommets Inégalés !",
+        "brand": {
+          "@type": "Organization",
+          "name": "Web Labs"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "4990",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@type": "Organization",
+            "name": "Web Labs"
+          }
+        }
+      }
+    </script>
+
+    <!--BreadcrumbList (fil d'Ariane) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Accueil",
+            "item": "https://www.web-labs.fr/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://www.web-labs.fr/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Pack Création de Site Web",
+            "item": "https://www.web-labs.fr/#tarif"
+          },
+
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Contact",
+            "item": "https://www.web-labs.fr/#contact"
+          }
+        ]
+      }
+    </script>
+
     <!-- Ajout du script Font Awesome avec l'attribut 'defer' pour le rendre non bloquant -->
     <script
       defer
@@ -33,13 +174,24 @@
     ></script>
 
     <!-- Balise de titre de la page -->
-    <title>Web-Labs</title>
+    <title>Web-Labs : Votre Partenaire Web</title>
 
     <!-- Balise meta pour la description de la page -->
-    <meta name="description" content=" " />
     <meta
       name="description"
-      content="Web Labs, vos développeurs web spécialisés dans la conception de sites web et la création d'interfaces utilisateur intuitives. Développement web, design personnalisé, refonte de site, SEO, performance. Contactez-nous pour discuter de votre projet."
+      content="Conception de sites web & créations web mobile, avec pour objectif de répondre aux besoins spécifiques de chaque client."
+    />
+
+    <!-- Balises Open Graph -->
+    <meta property="og:title" content="Web Labs" />
+    <meta
+      property="og:description"
+      content="Conception de sites web, avec pour objectif de répondre aux besoins spécifiques de chaque client."
+    />
+    <meta property="og:url" content="https://web-labs.fr/" />
+    <meta
+      property="og:image"
+      content="https://web-labs.fr/Assets/logo/Logo.webp"
     />
   </head>
   <body>
@@ -47,16 +199,40 @@
       <!-- La div "name" englobe le logo, la navigation (desktop et mobile) et la section des icônes sociales -->
       <div class="name" id="accueil">
         <!-- Logo du site avec un texte alternatif (alt) pour l'accessibilité -->
-        <img src="Assets/logo/Logo.webp" alt="logo du site Web Labs" />
+        <img
+          id="Accueil"
+          src="Assets/logo/Logo.webp"
+          alt="logo du site Web Labs"
+        />
 
         <!-- Navigation pour la version desktop -->
         <nav id="nav_desktop">
           <!-- Liste non ordonnée (ul) contenant les liens de navigation -->
           <ul>
             <!-- Chaque lien est enveloppé dans une balise "a" avec un attribut "href" pointant vers une section spécifique -->
-            <a href="#services"><li>services</li></a>
-            <a href="#portfolio"><li>portfolio</li></a>
-            <a href="#contact"><li>contact</li></a>
+            <li>
+              <!--<a href="#tarif" onclick="closeNav()">tarif</a>-->
+            </li>
+            <li>
+              <a href="#Accueil" aria-label="Vers la section Accueil"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a href="#services" aria-label="Vers la section Services"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" aria-label="Vers la section Portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact" aria-label="Vers la section Contact"
+                >Contact</a
+              >
+            </li>
           </ul>
         </nav>
 
@@ -66,6 +242,7 @@
           <a
             target="_blank"
             href="https://www.instagram.com/weblabs_inc"
+            rel="noopener"
             aria-label="Instagram"
           >
             <i class="fa-brands fa-instagram"></i>
@@ -75,6 +252,7 @@
           <a
             target="_blank"
             href="https://www.behance.net/mdahyou"
+            rel="noopener"
             aria-label="Behance"
           >
             <i class="fa-brands fa-behance"></i>
@@ -88,15 +266,20 @@
             <!-- Contenu de l'overlay mobile avec des liens pointant vers des sections spécifiques -->
             <div class="overlay-content_mobile">
               <!-- Chaque lien a un onclick pour fermer l'overlay lorsqu'il est cliqué -->
-              <a href="#accueil" onclick="closeNav()">accueil</a>
+
+              <a href="#Accueil" aria-label="Vers la section Accueil"
+                >Accueil</a
+              >
               <a href="#services" onclick="closeNav()">services</a>
               <a href="#portfolio" onclick="closeNav()">portfolio</a>
+
               <a href="#contact" onclick="closeNav()">contact</a>
+              <!--<a href="#tarif" onclick="closeNav()">tarif</a>-->
             </div>
           </div>
 
           <!-- Bouton pour ouvrir l'overlay mobile avec une icône de barres -->
-          <span style="font-size: 30px; cursor: pointer" onclick="openNav()">
+          <span class="ouvrir-overlay-mobile" onclick="openNav()">
             <i class="fa-solid fa-bars-staggered"></i>
           </span>
         </nav>
@@ -104,8 +287,8 @@
 
       <!-- La div "name_web_site" contient le titre principal du site -->
       <div class="name_web_site">
-        <!-- Le titre principal "Web Labs" enveloppé dans une balise de titre de niveau 2 (h2) avec une classe "title_site" -->
-        <h2 class="title_site">Web Labs</h2>
+        <!-- Le titre principal "Web Labs" enveloppé dans une balise de titre de niveau 1 (h1) avec une classe "title_site" -->
+        <h1 class="title_site">Web Labs</h1>
 
         <!-- Image d'étoiles utilisée comme séparateur ou décoration -->
         <img src="Assets/stars-header.webp" alt="étoiles avec ilustration" />
@@ -120,11 +303,12 @@
         <div class="presentation">
           <!-- Paragraphe de présentation -->
           <p>
-            Hello, nous sommes spécialisés dans la conception de sites web, avec
-            pour objectif de répondre aux besoins spécifiques de chaque client.
-            Notre expertise réside dans la création d'interfaces utilisateur
-            offrant une facilité d'utilisation et une optimisation adaptée à
-            tous les utilisateurs.
+            Hello, je suis Dylan, représentant de WEB LABS. nous sommes
+            spécialisés dans la conception de sites web & web mobiles, pour
+            objectif de répondre aux besoins spécifiques de chaque client. Notre
+            expertise réside dans la création d'interfaces utilisateur offrant
+            une facilité d'utilisation et une optimisation adaptée à tous les
+            utilisateurs.
           </p>
         </div>
       </div>
@@ -135,7 +319,7 @@
           <!-- La div "contact_mobile" contient un bouton de contact mobile -->
           <div class="contact_mobile">
             <!-- La div "contactMe" contient le texte du bouton -->
-            <div class="contactMe">Discutons-en</div>
+            <div class="contactMe"><p>Discutons-en</p></div>
             <!-- L'icône de flèche vers la droite provenant de Font Awesome -->
             <i class="fa-solid fa-arrow-right"></i>
           </div>
@@ -177,9 +361,7 @@
         <!-- Balise vidéo avec les attributs autoplay, muted, loop, playsinline -->
         <video autoplay muted loop playsinline>
           <!-- Source de la vidéo provenant d'une URL externe -->
-          <source
-            src="https://cdn.dribbble.com/uploads/39485/original/58f7d3690a4f77fa03c8a2e03f577078.mp4?1657906840"
-          />
+          <source src="Assets/video/58f7d3690a4f77fa03c8a2e03f577078.mp4" />
           <!-- Élément <track> vide pour indiquer l'absence de légendes -->
           <track kind="captions" src="" label="No Captions" />
         </video>
@@ -219,74 +401,89 @@
             </div>
             <!-- Grille de boutons représentant différents services -->
             <div class="grid_flex">
-              <button
+              <!-- Premier bouton -->
+              <a
+                href="#"
                 class="bulle overlay-link"
                 data-overlay="developpement-overlay"
               >
-                <div class="bulle-content">
-                  <i class="fa-solid fa-laptop-code"></i>
-                  <a href="#">
+                <div class="button-like">
+                  <div class="bulle-content">
+                    <i class="fa-solid fa-laptop-code"></i>
                     <div>Développement</div>
-                  </a>
+                  </div>
                 </div>
-              </button>
+              </a>
 
-              <button
+              <!-- Deuxième bouton -->
+              <a
+                href="#"
                 class="bulle overlay-link"
                 data-overlay="surmesure-overlay"
               >
-                <div class="bulle-content">
-                  <i class="fa-solid fa-code"></i>
-                  <p>
-                    <a href="#">Personnalisé</a>
-                  </p>
+                <div class="button-like">
+                  <div class="bulle-content">
+                    <i class="fa-solid fa-code"></i>
+                    <p>Personnalisé</p>
+                  </div>
                 </div>
-              </button>
+              </a>
 
-              <button class="bulle overlay-link" data-overlay="refonte-overlay">
-                <div class="bulle-content">
-                  <i class="fa-solid fa-pen-ruler"></i>
-                  <p>
-                    <a href="#">Refonte de site</a>
-                  </p>
+              <!-- Troisième bouton -->
+              <a
+                href="#"
+                class="bulle overlay-link"
+                data-overlay="refonte-overlay"
+              >
+                <div class="button-like">
+                  <div class="bulle-content">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <p>Refonte de site</p>
+                  </div>
                 </div>
-              </button>
+              </a>
 
-              <button
+              <!-- Quatrième bouton -->
+              <a
+                href="#"
                 class="bulle overlay-link"
                 data-overlay="seonaturel-overlay"
               >
-                <div class="bulle-content">
-                  <i class="fa-solid fa-gears"></i>
-                  <p>
-                    <a href="#">SEO</a>
-                  </p>
+                <div class="button-like">
+                  <div class="bulle-content">
+                    <i class="fa-solid fa-gears"></i>
+                    <p>SEO</p>
+                  </div>
                 </div>
-              </button>
+              </a>
 
-              <button
+              <!-- Cinquième bouton -->
+              <a
+                href="#"
                 class="bulle overlay-link"
                 data-overlay="propositiondesign-overlay"
               >
-                <div class="bulle-content">
-                  <i class="fa-solid fa-wand-magic-sparkles"></i>
-                  <p>
-                    <a href="#">Design</a>
-                  </p>
+                <div class="button-like">
+                  <div class="bulle-content">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <p>Design</p>
+                  </div>
                 </div>
-              </button>
+              </a>
 
-              <button
+              <!-- Sixième bouton -->
+              <a
+                href="#"
                 class="bulle overlay-link"
                 data-overlay="performance-overlay"
               >
-                <div class="bulle-content">
-                  <i class="fa-solid fa-rocket"></i>
-                  <p>
-                    <a href="#">Performance</a>
-                  </p>
+                <div class="button-like">
+                  <div class="bulle-content">
+                    <i class="fa-solid fa-rocket"></i>
+                    <p>Performance</p>
+                  </div>
                 </div>
-              </button>
+              </a>
 
               <!-- Overlay pour le service "Développement" -->
               <div class="overlay" id="developpement-overlay">
@@ -383,37 +580,156 @@
             </div>
           </div>
         </div>
+        <section class="bg_ifo_création">
+          <div class="flex_info">
+            <h1>CRÉATION DE SITE WEB</h1>
+            <h2>VOUS AVEZ BESOIN D’UN SITE WEB ADAPTÉ À VOS OBJECTIFS !</h2>
+          </div>
+          <div class="ifo_création">
+            <p>
+              Un site web est un outil conçu et réalisé pour tenir des objectifs
+              de business. Pour ce faire, nous concevons avec vous le dispositif
+              qui conviendra le mieux à votre contexte.
+            </p>
+
+            <p>
+              <!--    Les packs création du site web Web Labs sont des offres claires,
+              transparentes et personnalisables, issues de l’expérience du
+              studio Web Labs en matière de développement web.-->
+
+              Notre engagement principal consiste à forger une expérience client
+              exceptionnelle en offrant un soutien personnalisé, où chaque étape
+              est méticuleusement orchestrée pour répondre aux besoins
+              spécifiques.
+            </p>
+            <a
+              id="email"
+              href="mailto:contact@web-labs.fr?subject=Demande%20de%20contact&a=cm"
+              rel="noopener"
+            >
+              <button class="scroll_contact">
+                Parlez-nous de votre projet web !
+              </button></a
+            >
+          </div>
+        </section>
+
+        <!--<div class="title_pack">PACK CRÉATION DE SITE WEB</div>
+
+        <section>
+          <div class="container_card" id="tarif">
+            <div class="card card2">
+              <h1>PACK LANDING PAGE</h1>
+              <p>
+                Découvrez une page étendue finement optimisée, pensée pour
+                répondre à vos besoins uniques et offrant une expérience
+                immersive pour vous guider vers vos objectifs
+              </p>
+              <div>
+                <p class="def_prix">À PARTIR DE</p>
+                <p class="prix">350€ TTC</p>
+                <p class="proposition">ONE PAGE</p>
+                <p class="proposition">Optimisé pour le référencement</p>
+                <p class="proposition">Animations incluses</p>
+                <p class="proposition">Formulaire de contact</p>
+                <p class="proposition">Design personnalisé</p>
+                <p class="proposition">Hébergement web</p>
+                <p class="proposition">Maintenance 1 mois incluse</p>
+                <p class="proposition"><i class="fa-solid fa-plus"></i></p>
+                <p>Options Personnalisables</p>
+                <p class="proposition">17.99€ / mensuelle sans engagement</p>
+                <p class="proposition">29.99€ / avec engagement</p>
+                <div></div>
+                <a href="#"><div class="contact_pack">CONTACTEZ-NOUS</div></a>
+              </div>
+            </div>
+            <div class="card card_special">
+              <div class="conseil">Nous vous conseillons :</div>
+              <h1>PACK SITE VITRINE</h1>
+              <p>UN SITE OPTIMISÉ POUR GÉNÉRER DES CONTACTS</p>
+              <div>
+                <p class="def_prix">À PARTIR DE</p>
+                <p class="prix">599€ TTC</p>
+                <p class="proposition">Nombre de pages 5</p>
+                <p class="proposition">Optimisé pour le référencement</p>
+                <p class="proposition">Formulaires de contac</p>
+                <p class="proposition">Design personnalisé</p>
+                <p class="proposition">Hébergement web</p>
+                <p class="proposition">Maintenance 3 mois incluse</p>
+                <p class="proposition"><i class="fa-solid fa-plus"></i></p>
+                <p>Options Personnalisables</p>
+                <p class="proposition">8.99€ / mensuelle sans engagement</p>
+                <p class="proposition">14.99€ / avec engagement</p>
+                <a href="#"
+                  ><div class="contact_pack contact_pack_special">
+                    CONTACTEZ-NOUS
+                  </div></a
+                >
+              </div>
+            </div>
+            <div class="card">
+              <h1>PACK DÉVELOPPEMENT WEB</h1>
+              <p>Le Pack Ultime Élevez votre Présence en Ligne !</p>
+              <div>
+                <p class="def_prix">À PARTIR DE</p>
+                <p class="prix">799€ TTC</p>
+                <p class="proposition">Nombre de pages illimité</p>
+                <p class="proposition">
+                  E-commerce peux avoir un budget supplémentaire
+                  <i class="fas fa-hand-holding-usd"></i>
+                </p>
+                <p class="proposition">Optimisé pour le référencement</p>
+                <p class="proposition">Animations incluses</p>
+                <p class="proposition">Formulaire de contact</p>
+                <p class="proposition">Design personnalisé</p>
+                <p class="proposition">Hébergement web</p>
+                <p class="proposition">Maintenance 6 mois inclus</p>
+                <p class="proposition"><i class="fa-solid fa-plus"></i></p>
+                <p>Options Personnalisables</p>
+                <p class="proposition">8.99€ / mensuelle sans engagement</p>
+                <p class="proposition">14.99€ / avec engagement</p>
+                <a href="#"><div class="contact_pack">CONTACTEZ-NOUS</div></a>
+              </div>
+            </div>
+          </div>
+        </section>-->
+
         <div>
           <!-- Section contenant du texte et des images -->
           <div class="contenair_text">
             <div class="carré_text">
-              L'innovation est
-              <span class="img1"
-                ><img src="Assets//img-texte.webp" alt="abstrait"
-              /></span>
-              le moteur qui nous pousse à repousser les limites de la
-              <span class="img2"
-                ><img src="Assets/img-texte.webp" alt="abstrait"
-              /></span>
-              créativité, à explorer
-              <span class="img4"
-                ><img src="Assets/fleche-texte.webp" alt="abstrait"
-              /></span>
-              de nouvelles idées et à
-              <span class="img3"
-                ><img src="Assets/img-texte.webp" alt="abstrait"
-              /></span>
-              créer un avenir où les possibilités sont infinies
+              <p>
+                L'innovation est
+                <span class="img1"
+                  ><img src="Assets//img-texte.webp" alt="abstrait"
+                /></span>
+                le moteur qui nous pousse à repousser les limites de la
+                <span class="img2"
+                  ><img src="Assets/img-texte.webp" alt="abstrait"
+                /></span>
+                créativité, à explorer
+                <span class="img4"
+                  ><img src="Assets/fleche-texte.webp" alt="fleche"
+                /></span>
+                de nouvelles idées et à
+                <span class="img3"
+                  ><img src="Assets/img-texte.webp" alt="abstrait"
+                /></span>
+                créer un avenir où les possibilités sont infinies
+              </p>
             </div>
           </div>
 
           <!-- Section des projets avec une phrase créative -->
           <div class="service_main projet" id="portfolio">
-            <h3>projets <span class="dote">.</span></h3>
+            <p>projets <span class="dote">.</span></p>
             <div class="phrase_creative">
-              La créativité nourrit le design, le design stimule la créativité.
-              Soyez présents pour en apprendre davantage. Êtes-vous épris d'un
-              esprit créatif ?
+              <p>
+                La créativité nourrit le design, le design stimule la
+                créativité. Soyez présents pour en apprendre davantage.
+                Êtes-vous épris d'un esprit créatif ?
+              </p>
+
               <div class="dote3">
                 <img src="Assets/dote.png" alt="illustration de 3 points" />
               </div>
@@ -422,11 +738,12 @@
 
           <!-- Section du portfolio avec un lien vers Behance -->
           <div class="contenair_porfolio">
-            <div class="name_behance">behance</div>
+            <div class="name_behance"><p>behance</p></div>
             <div class="barre-verticale"></div>
             <a
               class="cursor"
               target="_blank"
+              rel="noopener"
               href="https://www.behance.net/mdahyou"
             >
               <div class="gallery">
@@ -447,61 +764,66 @@
         <div class="contenair_follow_us">
           <img src="Assets/stars-bar.webp" alt="une barre avec des étoiles" />
           <div>
-            <h1>ÉCHANGEONS SUR VOS CONCEPTS</h1>
+            <h6>ÉCHANGEONS SUR VOS CONCEPTS</h6>
           </div>
           <div class="button_footer">
             <a
-              id="email"
               href="mailto:contact@web-labs.fr?subject=Demande%20de%20contact&a=cm"
+              rel="noopener"
+              aria-label="contact"
             >
-              <div class="parlons-maintenant-button">CONTACT</div>
+              <div class="parlons-maintenant-button">
+                <p>CONTACT</p>
+              </div>
             </a>
-            <a target="_blank" href="https://www.instagram.com/weblabs_inc">
-              <div class="suivez-nous-button">SUIVEZ-NOUS</div>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/weblabs_inc"
+              rel="noopener"
+              aria-label="SUIVEZ-NOUS"
+            >
+              <div class="suivez-nous-button"><p>SUIVEZ-NOUS</p></div>
             </a>
           </div>
         </div>
       </div>
-      <!--
-      <div class="contact">
-        <p>contactez-nous</p>
-        <i class="fa-solid fa-envelope"></i>
-      </div>
 
-      <div>
-        <p>
-          <a
-            class="mail"
-            target="_blank"
-            aria-label="Gmail envoyer un courrier élétronique"
-            href="mailto:contact@weblabs.fr"
-            >contact@weblabs.fr</a
-          >
-        </p>
-      </div>
-      -->
       <!-- Section politique -->
       <div class="politique">
         <!-- Premier lien vers les conditions générales d'utilisation -->
         <div>
-          <a href="documents/CGU.html" class="documents">
-            conditions générales d'utilisation
+          <a
+            href="documents/CGU.html"
+            class="documents"
+            aria-label="Conditions Générales d'Utilisation"
+          >
+            Conditions Générales d'Utilisation
           </a>
         </div>
 
         <!-- Informations de copyright -->
         <div class="copyright">©2023 Web-Labs - tous droits réservés</div>
+        <a
+          class="politique"
+          href="mailto:contact@web-labs.fr?subject=Demande%20de%20contact&a=cm"
+          rel="noopener"
+          aria-label="contact@web-labs.fr"
+          ><div><p>contact@web-labs.fr</p></div></a
+        >
 
         <!-- Deuxième lien vers la politique de confidentialité avec une icône de cadenas -->
         <div>
-          <a href="documents/privacy-policy.html" class="documents">
+          <a
+            href="documents/privacy-policy.html"
+            class="documents"
+            aria-label="Politique de Confidentialité"
+          >
             <i class="fa-solid fa-lock"></i>Politique de Confidentialité
           </a>
         </div>
       </div>
-
       <div class="space"></div>
     </footer>
-    <script defer src="script.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
   </body>
 </html>
