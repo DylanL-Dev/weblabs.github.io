@@ -1,3 +1,4 @@
+// overlay boutton
 document.addEventListener("DOMContentLoaded", function () {
   const overlayLinks = document.querySelectorAll(".overlay-link");
 
@@ -31,6 +32,33 @@ function closeNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0";
 }
+
+//scroll boutton
+document.addEventListener("DOMContentLoaded", function () {
+  var lastScrollTop = 0;
+
+  window.addEventListener("scroll", function () {
+    var scrollPosition = window.scrollY;
+    var scrollThreshold = 0;
+
+    if (scrollPosition > lastScrollTop) {
+      // Faire défiler vers le bas
+      document
+        .querySelectorAll(".scroll-animation")
+        .forEach(function (element) {
+          var elementOffset = element.offsetTop;
+          if (
+            scrollPosition + window.innerHeight >
+            elementOffset + scrollThreshold
+          ) {
+            element.classList.add("active");
+          }
+        });
+    }
+
+    lastScrollTop = scrollPosition <= 0 ? 0 : scrollPosition; // Gestion des valeurs négatives
+  });
+});
 
 // Vérifie si le navigateur prend en charge les service workers
 if ("serviceWorker" in navigator) {

@@ -196,14 +196,12 @@
   </head>
   <body>
     <header>
+      <!--Div pour scroller vers l'accueil-->
+      <div id="Accueil"></div>
       <!-- La div "name" englobe le logo, la navigation (desktop et mobile) et la section des icônes sociales -->
-      <div class="name" id="accueil">
+      <div class="name">
         <!-- Logo du site avec un texte alternatif (alt) pour l'accessibilité -->
-        <img
-          id="Accueil"
-          src="Assets/logo/Logo.webp"
-          alt="logo du site Web Labs"
-        />
+        <img src="Assets/logo/Logo.webp" alt="logo du site Web Labs" />
 
         <!-- Navigation pour la version desktop -->
         <nav id="nav_desktop">
@@ -271,8 +269,7 @@
                 >Accueil</a
               >
               <a href="#services" onclick="closeNav()">services</a>
-              <a href="#portfolio" onclick="closeNav()">portfolio</a>
-
+              <a href="#portfolio_behance" onclick="closeNav()">portfolio</a>
               <a href="#contact" onclick="closeNav()">contact</a>
               <!--<a href="#tarif" onclick="closeNav()">tarif</a>-->
             </div>
@@ -368,7 +365,7 @@
       </div>
 
       <!-- ANNONCE DESKTOP -->
-      <div class="zone_annonce">
+      <div class="zone_annonce" id="services">
         <!-- Un span contenant du texte annonçant de discuter du projet -->
         <span class="annonce_content">
           * DISCUTONS DE VOTRE PROJET * DISCUTONS DE VOTRE PROJET * DISCUTONS DE
@@ -380,9 +377,10 @@
         </span>
       </div>
       <!-- END ANNONCE DESKTOP -->
+
       <div class="content_main">
         <!-- Section "Nos Services" avec un identifiant "services" -->
-        <div class="service_main" id="services">
+        <div class="service_main">
           <!-- Titre avec une classe "dote" pour le point décoratif -->
           <h3>NOS SERVICES <span class="dote">.</span></h3>
         </div>
@@ -404,7 +402,7 @@
               <!-- Premier bouton -->
               <a
                 href="#"
-                class="bulle overlay-link"
+                class="bulle overlay-link scroll-animation"
                 data-overlay="developpement-overlay"
               >
                 <div class="button-like">
@@ -418,7 +416,7 @@
               <!-- Deuxième bouton -->
               <a
                 href="#"
-                class="bulle overlay-link"
+                class="bulle overlay-link scroll-animation"
                 data-overlay="surmesure-overlay"
               >
                 <div class="button-like">
@@ -432,7 +430,7 @@
               <!-- Troisième bouton -->
               <a
                 href="#"
-                class="bulle overlay-link"
+                class="bulle overlay-link scroll-animation"
                 data-overlay="refonte-overlay"
               >
                 <div class="button-like">
@@ -446,7 +444,7 @@
               <!-- Quatrième bouton -->
               <a
                 href="#"
-                class="bulle overlay-link"
+                class="bulle overlay-link scroll-animation"
                 data-overlay="seonaturel-overlay"
               >
                 <div class="button-like">
@@ -460,7 +458,7 @@
               <!-- Cinquième bouton -->
               <a
                 href="#"
-                class="bulle overlay-link"
+                class="bulle overlay-link scroll-animation"
                 data-overlay="propositiondesign-overlay"
               >
                 <div class="button-like">
@@ -474,7 +472,7 @@
               <!-- Sixième bouton -->
               <a
                 href="#"
-                class="bulle overlay-link"
+                class="bulle overlay-link scroll-animation"
                 data-overlay="performance-overlay"
               >
                 <div class="button-like">
@@ -697,7 +695,7 @@
         <div>
           <!-- Section contenant du texte et des images -->
           <div class="contenair_text">
-            <div class="carré_text">
+            <div class="carré_text" id="portfolio_behance">
               <p>
                 L'innovation est
                 <span class="img1"
@@ -721,6 +719,7 @@
           </div>
 
           <!-- Section des projets avec une phrase créative -->
+
           <div class="service_main projet" id="portfolio">
             <p>projets <span class="dote">.</span></p>
             <div class="phrase_creative">
@@ -803,7 +802,6 @@
 
         <!-- Informations de copyright -->
         <div class="copyright">©2023 Web-Labs - tous droits réservés</div>
- 
       </div>
       <div class="space"></div>
     </footer>

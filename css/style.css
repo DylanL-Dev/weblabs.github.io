@@ -94,17 +94,42 @@ a {
 /* Fin des styles de personnalisation de la barre de défilement */
 
 /* Styles pour la version globale sur desktop */
+/* Styles pour la section "name" (contenant le logo et la navigation) en position fixe */
 .name {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: #d5ff3f;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 20px;
 }
 
+#nav_desktop {
+  animation: navBarre 2s ease 0s 1 normal forwards;
+}
+
+@keyframes navBarre {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .name img {
   margin-right: auto;
   width: 14%;
   height: auto;
+  animation: navBarre 2s ease 0s 1 normal forwards;
 }
 
 nav {
@@ -138,11 +163,13 @@ nav ul li a:hover {
 .social {
   display: flex;
   gap: 13px;
+  animation: navBarre 2s ease 0s 1 normal forwards;
 }
 
 .social i {
   font-size: 30px;
   color: #000000;
+
 }
 
 .social i:hover {
@@ -159,7 +186,7 @@ nav ul li a:hover {
 /* Styles pour le titre du site web */
 .name_web_site {
   padding-left: 15px;
-  padding-top: 45px;
+  padding-top: 60px;
   line-height: 0px;
   position: relative;
 }
@@ -447,6 +474,21 @@ footer {
   border: none;
 }
 
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(
+    -50px
+  ); /* Modifier ici pour utiliser translateY au lieu de translateX */
+}
+
+.scroll-animation.active {
+  opacity: 1;
+  transform: translateY(
+    0
+  ); /* Modifier ici pour utiliser translateY au lieu de translateX */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
 /* Styles pour le contenu des bulles */
 .bulle-content {
   display: flex;
@@ -590,7 +632,7 @@ a {
 }
 
 /*card pack*/
-
+/*
 .container_card {
   display: flex;
   align-items: center;
@@ -709,7 +751,7 @@ a {
 
 .fa-hand-holding-usd {
   padding-left: 5px;
-}
+}*/
 
 /*End Parti pack*/
 
@@ -901,13 +943,6 @@ a {
   text-transform: uppercase;
 }
 
-/* Styles pour l'icône dans la section politique */
-.politique i {
-  padding: 0 5px;
-}
-
-/* Styles pour la section "Utilisation du Site" */
-
 .background_politique {
   background-color: #d5ff3f;
 }
@@ -929,7 +964,7 @@ a {
 .title_politique {
   color: #000000;
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .lien_web {
@@ -957,7 +992,8 @@ h2 {
 }
 
 /* Formulaire de contact */
-/* Ajoutez votre style CSS ici */
+
+/*
 .background_form {
   background-color: #d5ff3f;
   display: flex;
@@ -978,7 +1014,7 @@ h2 {
   text-align: left;
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   font-size: 20px;
-  color: #333; /* Couleur du texte */
+  color: #333;
   margin-top: 10px;
   padding: 0 15px;
   width: 60%;
@@ -1067,8 +1103,9 @@ input[type="submit"]:hover {
   color: #ff0000;
   margin-top: 10px;
 }
-
+*/
 /* End Formulaire de contact */
+
 /* Styles pour l'espace */
 .space {
   padding-top: 20px;
@@ -1085,7 +1122,94 @@ input[type="submit"]:hover {
 
   #nav_desktop {
     width: 70%;
+    display: none;
   }
+  .nav_mobile{
+    display: contents;
+
+  }
+
+  /* Overlay mobile pour la navigation */
+
+  .ouvrir-overlay-mobile {
+    font-size: 30px;
+    animation: navBarre 2s ease 0s 1 normal forwards;
+  }
+
+  .overlay_mobile {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content_mobile {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  /* Styles pour les liens dans l'overlay mobile */
+  .overlay_mobile a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 55px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    color: #cfcfcf;
+    cursor: none;
+  }
+
+  .overlay_mobile a:hover,
+  .overlay a:focus {
+    color: #cfcfcf;
+  }
+
+  /* Style pour le bouton de fermeture de l'overlay mobile */
+  .overlay_mobile .closebtn {
+    position: absolute;
+    top: 50px;
+    right: auto;
+  }
+
+  .closebtn i {
+    font-size: 30px;
+  }
+
+  /* Réajuster les styles si la hauteur de l'écran est inférieure à 450px */
+  @media screen and (max-height: 450px) {
+    .overlay_mobile a {
+      font-size: 20px;
+    }
+    .overlay_mobile .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  /* Styles pour la section 'social' */
+  .social {
+    display: flex;
+    gap: 13px;
+    padding-right: 20px;
+  }
+
+  .social i {
+    font-size: 30px;
+    color: #000000;
+  }
+
 
   /* Styles spécifiques à l'image du nom */
   .name img {
@@ -1097,6 +1221,7 @@ input[type="submit"]:hover {
   /* Styles pour la transition des éléments de la navigation */
   nav ul li {
     transition: none;
+    display: none;
   }
 
   /* Styles pour l'effet de survol des éléments de la navigation */
@@ -1208,6 +1333,7 @@ input[type="submit"]:hover {
   }
 
   /*card pack*/
+  /*
   .container_card {
     display: flex;
     align-items: center;
@@ -1302,6 +1428,7 @@ input[type="submit"]:hover {
   .card-top {
     margin-top: 0px;
   }
+  /*
   /*End Parti pack*/
 
   /* Styles pour l'image de la barre d'en-tête */
@@ -1518,6 +1645,7 @@ input[type="submit"]:hover {
   nav i {
     padding: 0 15px;
     font-size: 25px;
+    animation: navBarre 2s ease 0s 1 normal forwards;
   }
 
   /* Overlay mobile pour la navigation */
@@ -1602,7 +1730,6 @@ input[type="submit"]:hover {
   /* Styles pour la section 'name_web_site' */
   .name_web_site {
     padding-left: 15px;
-    padding-top: 15px;
   }
 
   .name_web_site h1 {
