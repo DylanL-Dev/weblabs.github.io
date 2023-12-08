@@ -87,6 +87,7 @@ self.addEventListener("install", function (event) {
       return cache.addAll([
         "/",
         "/index.html",
+        "/html/inspiration.html",
         "/css/styles.css",
         "/css/normalize/node_modules/normalize.css/normalize.css",
         "/script.js",

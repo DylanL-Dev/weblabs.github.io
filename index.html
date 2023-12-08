@@ -227,6 +227,9 @@
               >
             </li>
             <li>
+              <a href="html/inspiration.html">inspiration</a>
+            </li>
+            <li>
               <a href="#contact" aria-label="Vers la section Contact"
                 >Contact</a
               >
@@ -270,6 +273,9 @@
               >
               <a href="#services" onclick="closeNav()">services</a>
               <a href="#portfolio_behance" onclick="closeNav()">portfolio</a>
+
+              <a href="html/inspiration.html">inspiration</a>
+
               <a href="#contact" onclick="closeNav()">contact</a>
               <!--<a href="#tarif" onclick="closeNav()">tarif</a>-->
             </div>
@@ -314,12 +320,15 @@
       <div>
         <a href="#contact">
           <!-- La div "contact_mobile" contient un bouton de contact mobile -->
-          <div class="contact_mobile">
-            <!-- La div "contactMe" contient le texte du bouton -->
-            <div class="contactMe"><p>Discutons-en</p></div>
-            <!-- L'icône de flèche vers la droite provenant de Font Awesome -->
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
+          <a href="html/inspiration.html">
+            <div class="btn_inspiration">
+              <!-- La div "contactMe" contient le texte du bouton -->
+
+              <div class="contactMe"><p>Inspiration</p></div>
+              <!-- L'icône de flèche vers la droite provenant de Font Awesome -->
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
         </a>
       </div>
 
@@ -355,8 +364,8 @@
         <!-- Image représentant une flèche circulaire provenant de la source "Assets/logo/circle_arrow.webp" -->
         <img src="Assets/logo/circle_arrow.webp" alt="cercle avec une fleche" />
 
-        <!-- Balise vidéo avec les attributs autoplay, muted, loop, playsinline -->
-        <video autoplay muted loop playsinline>
+        <!-- Balise vidéo avec les attributs autoplay, muted, loop, playsinline,  disableRemotePlayback -->
+        <video autoplay muted loop playsinline disableRemotePlayback>
           <!-- Source de la vidéo provenant d'une URL externe -->
           <source src="Assets/video/58f7d3690a4f77fa03c8a2e03f577078.mp4" />
           <!-- Élément <track> vide pour indiquer l'absence de légendes -->

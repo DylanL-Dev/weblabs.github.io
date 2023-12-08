@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Web Labs" />
+    <meta name="theme-color" content="#d5ff3f" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/Assets/logo/labs_ico.png" />
+    <!--CSS-->
+    <link
+      rel="stylesheet"
+      href="../css/normalize/node_modules/normalize.css/normalize.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--END CSS-->
+
+    <!--manifest.json-->
+    <link rel="manifest" href="../manifest.json" />
+
+    <link rel="canonical" href="https://web-labs.fr/" />
+
+    <!--schema.org-->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Organization",
+        "name": "Web Labs",
+        "url": "https://web-labs.fr/",
+        "logo": "https://web-labs.fr/Assets/logo/Logo.webp",
+        "description": "Conception de sites web, avec pour objectif de répondre aux besoins spécifiques de chaque client.",
+        "keywords": "Développement web, web mobile, SEO, design personnalisé, performance, refonte, créations web",
+        "sameAs": [
+          "https://www.instagram.com/weblabs_inc/?next=%2Fweblabs_inc%2F",
+          "https://www.behance.net/mdahyou",
+          "https://dribbble.com/search/landing-page"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+33-XXXXXXXXX",
+          "contactType": "customer service",
+          "email": "support@web-labs.fr"
+        }
+      }
+    </script>
+
+    <!--BreadcrumbList (fil d'Ariane) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "inspiration",
+            "item": "https://dribbble.com/search/landing-page"
+          }
+        ]
+      }
+    </script>
+
+    <!-- Ajout du script Font Awesome avec l'attribut 'defer' pour le rendre non bloquant -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/79857fa36d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Balise de titre de la page -->
+    <title>Web-Labs : votre destination pour la création</title>
+
+    <!-- Balise meta pour la description de la page -->
+    <meta
+      name="description"
+      content="Design Infini, votre destination pour la création de sites web. Fusionnant l'art et la technologie avec élégance et innovation. Découvrez notre univers unique où le design rencontre la fonctionnalité. Explorez les créations inspirantes et trouvez l'inspiration pour vos projets de conception web."
+    />
+
+    <!-- Balises Open Graph -->
+    <meta property="og:title" content="Web Labs" />
+    <meta
+      property="og:description"
+      content="Conception de sites web, avec pour objectif de répondre aux besoins spécifiques de chaque client."
+    />
+    <meta property="og:url" content="https://web-labs.fr/" />
+    <meta
+      property="og:image"
+      content="https://web-labs.fr/Assets/logo/Logo.webp"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="name">
+        <!-- Logo du site avec un texte alternatif (alt) pour l'accessibilité -->
+        <img src="../Assets/logo/Logo.webp" alt="logo du site Web Labs" />
+
+        <!-- Navigation pour la version desktop -->
+        <nav id="nav_desktop">
+          <!-- Liste non ordonnée (ul) contenant les liens de navigation -->
+          <ul>
+            <!-- Chaque lien est enveloppé dans une balise "a" avec un attribut "href" pointant vers une section spécifique -->
+            <li>
+              <!--<a href="#tarif" onclick="closeNav()">tarif</a>-->
+            </li>
+            <li>
+              <a href="../#Accueil" aria-label="Vers la section Accueil"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a href="../#services" aria-label="Vers la section Services"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="../#portfolio" aria-label="Vers la section Portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="inspiration.html">inspiration</a>
+            </li>
+            <li>
+              <a href="../#contact" aria-label="Vers la section Contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Section des icônes sociales -->
+        <div class="social">
+          <!-- Icône Instagram avec un lien vers le profil correspondant -->
+          <a
+            target="_blank"
+            href="https://www.instagram.com/weblabs_inc"
+            rel="noopener"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <!-- Icône Behance avec un lien vers le profil correspondant -->
+          <a
+            target="_blank"
+            href="https://www.behance.net/mdahyou"
+            rel="noopener"
+            aria-label="Behance"
+          >
+            <i class="fa-brands fa-behance"></i>
+          </a>
+        </div>
+
+        <!-- Navigation pour la version mobile -->
+        <nav class="nav_mobile">
+          <!-- Overlay mobile utilisé pour la navigation -->
+          <div id="myNav" class="overlay_mobile" onclick="closeNav()">
+            <!-- Contenu de l'overlay mobile avec des liens pointant vers des sections spécifiques -->
+            <div class="overlay-content_mobile">
+              <!-- Chaque lien a un onclick pour fermer l'overlay lorsqu'il est cliqué -->
+
+              <a href="../#Accueil" aria-label="Vers la section Accueil"
+                >Accueil</a
+              >
+              <a href="../#services" onclick="closeNav()">services</a>
+              <a href="../#portfolio_behance" onclick="closeNav()">portfolio</a>
+
+              <a href="inspiration.html">inspiration</a>
+
+              <a href="../#contact" onclick="closeNav()">contact</a>
+              <!--<a href="#tarif" onclick="closeNav()">tarif</a>-->
+            </div>
+          </div>
+
+          <!-- Bouton pour ouvrir l'overlay mobile avec une icône de barres -->
+          <span class="ouvrir-overlay-mobile" onclick="openNav()">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </span>
+        </nav>
+      </div>
+    </header>
+    <section class="contente-folow">
+      <div class="background_container">
+        <div class="rectangle_vertical"></div>
+        <div class="rectangle_horizontal">
+          <div class="logo_nav">
+            <img
+              src="../Assets/stars-bar.webp"
+              alt="Logo du site"
+              aria-label="logo du site"
+            />
+            <!--<a href="../index.html"> <i class="fa-solid fa-circle-arrow-left back"></i></a> -->
+            <!--<a href="../index.html"
+              ><i class="fa-solid fa-arrow-left-long"></i
+            ></a>-->
+          </div>
+          <main>
+            <section class="contenair_text_inspiration">
+              <div class="title_inspiration">
+                <h1>design infini</h1>
+                <p>
+                  Votre Destination pour la Création de Sites Web, Fusionnant
+                  l'Art et la Technologie avec Élégance et Innovation.
+                </p>
+                <p>
+                  Explorez les créations inspirantes et trouvez l'inspiration
+                  pour vos projets de conception web.
+                </p>
+              </div>
+            </section>
+
+            <section>
+              <div class="btn_decouvrire">
+                <a
+                  href="https://dribbble.com/search/landing-page"
+                  aria-label="lien vers dribbble.com"
+                  >Découvrir l'inspiration
+                </a>
+              </div>
+            </section>
+
+            <section>
+              <div class="abstract">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  disableRemotePlayback
+                  src="../Assets/video/58f7d3690a4f77fa03c8a2e03.mp4"
+                ></video>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <script defer type="text/javascript" src="../script.js"></script>
+  </body>
+</html>

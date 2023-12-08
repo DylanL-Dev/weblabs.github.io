@@ -171,12 +171,6 @@ nav ul li a:hover {
   color: #000000;
 }
 
-.social i:hover {
-  font-size: 30px;
-  color: #000000;
-  cursor: url("/Assets/logo/cursor-pointer.png"), auto;
-}
-
 /* Styles pour la navigation mobile (cachée par défaut) */
 .nav_mobile {
   display: none;
@@ -266,7 +260,7 @@ nav ul li a:hover {
 }
 
 /* Styles pour la version mobile de la section de contact (cachée par défaut) */
-.contact_mobile {
+.btn_inspiration {
   display: none;
 }
 
@@ -1105,7 +1099,8 @@ input[type="submit"]:hover {
 */
 /* End Formulaire de contact */
 
-/*page folow*/
+/*page inspiration */
+
 .content-follow {
   background-color: #808080;
 }
@@ -1124,7 +1119,7 @@ input[type="submit"]:hover {
   height: 80vh;
   background-color: #d5ff3f;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -1138,11 +1133,11 @@ input[type="submit"]:hover {
 
 .logo_nav i {
   font-size: 30px;
-color: #000000;
+  color: #000000;
 }
 
 .rectangle_horizontal img {
-  width: 20%;
+  width: 45%;
   margin: 40px;
 }
 
@@ -1153,17 +1148,18 @@ color: #000000;
   position: absolute;
   top: 0;
   right: 0;
+  left: 60;
   z-index: 1;
 }
 
-.contenair_text_folow {
+.contenair_text_inspiration {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
 }
 
-.title_folow {
+.title_inspiration {
   padding-left: 40px;
   width: 35%;
   font-family: "IntegralCF-Bold", "Russo One", sans-serif;
@@ -1171,12 +1167,12 @@ color: #000000;
   font-size: 60px;
 }
 
-.title_folow h1 {
+.title_inspiration h1 {
   margin: 0;
   line-height: 100px;
 }
 
-.title_folow p {
+.title_inspiration p {
   margin: 0;
   padding-top: 30px;
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
@@ -1185,12 +1181,12 @@ color: #000000;
   font-style: italic;
 }
 
-.btn_contact {
+.btn_decouvrire a {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px;
-  width: 17%;
+  width: 25%;
   height: 10vh;
   background-color: #000000;
   color: #d5ff3f;
@@ -1205,29 +1201,29 @@ color: #000000;
   transform: scale(1);
 }
 
-.btn_contact:hover {
+.btn_decouvrire a:hover {
   transform: scale(1.05);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .abstract {
   position: absolute;
-  top: 0; /* Ajuste la position verticale de la vidéo en haut du rectangle horizontal */
-  left: 50%; /* Ajuste la position horizontale de la vidéo à gauche du rectangle horizontal */
+  top: 0;
+  left: 50%;
   width: 50%;
-  height: 80vh; /* Utilise la même hauteur que le rectangle horizontal */
+  height: 80vh;
   z-index: 9999;
-  
 }
 
 .abstract video {
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ajuste le contenu vidéo pour couvrir la totalité du conteneur */
-  border-radius: 0 0 50px 0 ;
+  border-radius: 0 0 50px 0;
 }
 
-
-/* end page folow*/
+/* end page inspiration */
 
 /* Styles pour l'espace */
 .space {
@@ -1729,6 +1725,129 @@ color: #000000;
   .gallery img:hover {
     transform: scale(1);
   }
+
+  /*page inspiration */
+  .content-follow {
+    background-color: #808080;
+  }
+
+  .background_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .rectangle_horizontal {
+    width: 90%;
+    height: 80vh;
+    background-color: #d5ff3f;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50px 0 55px 0;
+  }
+
+  .logo_nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo_nav i {
+    font-size: 30px;
+    color: #000000;
+  }
+
+  .rectangle_horizontal img {
+    width: 90%;
+    margin: 40px;
+  }
+
+  .rectangle_vertical {
+    width: 100%;
+    height: 55vh;
+    background-color: #292929;
+    position: absolute;
+    top: 45%;
+    right: 0;
+    z-index: 1;
+  }
+
+  .contenair_text_inspiration {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .title_inspiration {
+    padding-left: 5%;
+    width: 80%;
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title_inspiration h1 {
+    margin: 0;
+    line-height: 100px;
+  }
+
+  .title_inspiration p {
+    margin: 0;
+    padding-top: 30px;
+    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: italic;
+  }
+  .btn_decouvrire a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    width: 35%;
+    height: 8vh;
+    background-color: #000000;
+    color: #d5ff3f;
+    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
+    border-radius: 20px 0 20px 0;
+    transition: all 0.3s;
+    animation-delay: 400ms;
+    transform: scale(1);
+  }
+  .btn_decouvrire a:hover {
+    transform: scale(1);
+  }
+
+  .abstract {
+    position: absolute;
+    top: 70.5%; /* Ajuste la position verticale de la vidéo en haut du rectangle horizontal */
+    left: 0; /* Ajuste la position horizontale de la vidéo à gauche du rectangle horizontal */
+    width: 100%;
+    height: 25vh; /* Utilise la même hauteur que le rectangle horizontal */
+    z-index: 9999;
+  }
+
+  .abstract video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajuste le contenu vidéo pour couvrir la totalité du conteneur */
+    border-radius: 0 0 50px 0;
+  }
+
+  /* end page inspiration */
 }
 
 /*Styles spécifiques aux mobile*/
@@ -1933,7 +2052,7 @@ color: #000000;
   }
 
   /* Styles pour la section 'contact_mobile' */
-  .contact_mobile {
+  .btn_inspiration {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1954,7 +2073,7 @@ color: #000000;
   }
 
   /* Styles pour l'icône dans la section 'contact_mobile' */
-  .contact_mobile i {
+  .btn_inspiration i {
     padding: 15px;
     font-size: 30px;
     color: #d5ff3f;
@@ -2382,4 +2501,126 @@ color: #000000;
   .logo_du_site_politique img {
     width: 100%;
   }
+
+  /*page inspiration */
+  .content-follow {
+    background-color: #808080;
+  }
+
+  .background_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .rectangle_horizontal {
+    width: 90%;
+    height: 600px;
+    background-color: #d5ff3f;
+    position: absolute;
+    top: 50%; /* Ajuste la position verticale au centre */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 50px 0 55px 0;
+  }
+
+  .logo_nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo_nav i {
+    font-size: 30px;
+    color: #000000;
+  }
+
+  .rectangle_horizontal img {
+    width: 82%;
+    margin: 30px;
+  }
+
+  .rectangle_vertical {
+    width: 100%;
+    height: 50vh;
+    background-color: #292929;
+    position: absolute;
+    top: 50%; /* Ajuste la position verticale au centre */
+    right: 0;
+    z-index: 1;
+  }
+
+  .contenair_text_inspiration {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .title_inspiration {
+    padding-left: 30px;
+    padding-top: 0px;
+    width: 80%;
+    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title_inspiration h1 {
+    margin: 0;
+    line-height: 55px;
+  }
+
+  .title_inspiration p {
+    margin: 0;
+    padding-top: 25px;
+    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    font-style: italic;
+  }
+  .btn_decouvrire a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    width: 60%;
+    height: 60px;
+    background-color: #000000;
+    color: #d5ff3f;
+    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
+    border-radius: 20px 0 20px 0;
+    transition: none;
+  }
+  .btn_decouvrire a:hover {
+    transform: scale(1);
+  }
+
+  .abstract {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    z-index: 9999;
+  }
+
+  .abstract video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 50px 0;
+  }
+
+  /* end page inspiration */
 }
