@@ -33,10 +33,10 @@
     <!--manifest.json-->
     <link rel="manifest" href="../manifest.json" />
 
-    <link rel="canonical" href="https://web-labs.fr/" />
+    <link rel="canonical" href="https://web-labs.fr/html/inspiration.html" />
 
     <!--schema.org-->
-    <script type="application/ld+json">
+    <script defer type="application/ld+json">
       {
         "@context": "https://schema.org/",
         "@type": "Organization",
@@ -60,7 +60,7 @@
     </script>
 
     <!--BreadcrumbList (fil d'Ariane) -->
-    <script type="application/ld+json">
+    <script defer type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -88,7 +88,7 @@
     <!-- Balise meta pour la description de la page -->
     <meta
       name="description"
-      content="Design Infini, votre destination pour la création de sites web. Fusionnant l'art et la technologie avec élégance et innovation. Découvrez notre univers unique où le design rencontre la fonctionnalité. Explorez les créations inspirantes et trouvez l'inspiration pour vos projets de conception web."
+      content="Design Infini, votre destination pour la création de sites web. Fusionnant l'art et la technologie avec élégance et innovation."
     />
 
     <!-- Balises Open Graph -->
@@ -107,7 +107,11 @@
     <header>
       <div class="name">
         <!-- Logo du site avec un texte alternatif (alt) pour l'accessibilité -->
-        <img src="../Assets/logo/Logo.webp" alt="logo du site Web Labs" />
+        <img
+          src="../Assets/logo/Logo.webp"
+          alt="logo du site Web Labs"
+          aria-label="logo du site dans la barre de navigation"
+        />
 
         <!-- Navigation pour la version desktop -->
         <nav id="nav_desktop">
@@ -150,7 +154,7 @@
             target="_blank"
             href="https://www.instagram.com/weblabs_inc"
             rel="noopener"
-            aria-label="Instagram"
+            aria-label="Instagram réseaux sociaux pour montrer le portfolio"
           >
             <i class="fa-brands fa-instagram"></i>
           </a>
@@ -160,7 +164,7 @@
             target="_blank"
             href="https://www.behance.net/mdahyou"
             rel="noopener"
-            aria-label="Behance"
+            aria-label="Behance réseaux sociaux pour montrer le portfolio"
           >
             <i class="fa-brands fa-behance"></i>
           </a>
@@ -194,7 +198,7 @@
         </nav>
       </div>
     </header>
-    <section class="contente-folow">
+    <section>
       <div class="background_container">
         <div class="rectangle_vertical"></div>
         <div class="rectangle_horizontal">
@@ -213,6 +217,7 @@
             <section class="contenair_text_inspiration">
               <div class="title_inspiration">
                 <h1>design infini</h1>
+
                 <p>
                   Votre Destination pour la Création de Sites Web, Fusionnant
                   l'Art et la Technologie avec Élégance et Innovation.
@@ -228,7 +233,7 @@
               <div class="btn_decouvrire">
                 <a
                   href="https://dribbble.com/search/landing-page"
-                  aria-label="lien vers dribbble.com"
+                  aria-label="lien vers dribbble.com trouvez les meilleurs designers et professionnels de la création sur Dribbble"
                   >Découvrir l'inspiration
                 </a>
               </div>
@@ -250,7 +255,6 @@
         </div>
       </div>
     </section>
-
     <script defer type="text/javascript" src="../script.js"></script>
   </body>
 </html>

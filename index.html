@@ -36,7 +36,7 @@
     <link rel="canonical" href="https://web-labs.fr/" />
 
     <!--schema.org-->
-    <script type="application/ld+json">
+    <script defer type="application/ld+json">
       {
         "@context": "https://schema.org/",
         "@type": "Organization",
@@ -60,7 +60,8 @@
 
     <!--BreadcrumbList-->
     <!-- Premier produit Pack -->
-    <script type="application/ld+json">
+    <!--
+    <script defer type="application/ld+json">
       {
         "@context": "https://schema.org/",
         "@type": "Product",
@@ -82,9 +83,11 @@
         }
       }
     </script>
+-->
 
     <!-- Deuxième produit Pack -->
-    <script type="application/ld+json">
+    <!--
+    <script defer type="application/ld+json">
       {
         "@context": "https://schema.org/",
         "@type": "Product",
@@ -106,9 +109,11 @@
         }
       }
     </script>
+  -->
 
     <!-- Troisième produit Pack -->
-    <script type="application/ld+json">
+    <!--
+    <script defer type="application/ld+json">
       {
         "@context": "https://schema.org/",
         "@type": "Product",
@@ -130,9 +135,9 @@
         }
       }
     </script>
-
+-->
     <!--BreadcrumbList (fil d'Ariane) -->
-    <script type="application/ld+json">
+    <script defer type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -152,14 +157,19 @@
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Pack Création de Site Web",
-            "item": "https://www.web-labs.fr/#tarif"
+            "name": "Inspiration",
+            "item": "https://www.web-labs.fr/#portfolio"
           },
-
           {
             "@type": "ListItem",
             "position": 4,
-            "name": "Contact",
+            "name": "Inspiration",
+            "item": "https://www.web-labs.fr/html/inspiration.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Inspiration",
             "item": "https://www.web-labs.fr/#contact"
           }
         ]
@@ -201,7 +211,11 @@
       <!-- La div "name" englobe le logo, la navigation (desktop et mobile) et la section des icônes sociales -->
       <div class="name">
         <!-- Logo du site avec un texte alternatif (alt) pour l'accessibilité -->
-        <img src="Assets/logo/Logo.webp" alt="logo du site Web Labs" />
+        <img
+          src="Assets/logo/Logo.webp"
+          alt="logo du site Web Labs"
+          aria-label="logo du site dans la barre de navigation"
+        />
 
         <!-- Navigation pour la version desktop -->
         <nav id="nav_desktop">
@@ -244,7 +258,7 @@
             target="_blank"
             href="https://www.instagram.com/weblabs_inc"
             rel="noopener"
-            aria-label="Instagram"
+            aria-label="Instagram réseaux sociaux pour montrer le portfolio"
           >
             <i class="fa-brands fa-instagram"></i>
           </a>
@@ -254,7 +268,7 @@
             target="_blank"
             href="https://www.behance.net/mdahyou"
             rel="noopener"
-            aria-label="Behance"
+            aria-label="Behance réseaux sociaux pour montrer le portfolio "
           >
             <i class="fa-brands fa-behance"></i>
           </a>
@@ -812,15 +826,7 @@
         <!-- Informations de copyright -->
         <div class="copyright">©2023 Web-Labs - tous droits réservés</div>
 
-        <!--<div>
-          <a
-            href="documents/mention-legales.html"
-            class="documents"
-            aria-label="Conditions Générales d'Utilisation"
-          >
-           contac@web-labs.fr
-          </a>
-        </div>-->
+        <div class="email">support@web-labs.fr</div>
       </div>
       <div class="space"></div>
     </footer>

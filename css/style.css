@@ -929,12 +929,13 @@ a {
 .copyright {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   font-size: 12px;
   color: #d5ff3f;
   text-transform: uppercase;
 }
+
 
 .background_politique {
   background-color: #d5ff3f;
@@ -1177,7 +1178,7 @@ input[type="submit"]:hover {
   padding-top: 30px;
   font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   font-style: italic;
 }
 
@@ -1210,7 +1211,7 @@ input[type="submit"]:hover {
 .abstract {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 51%;
   width: 50%;
   height: 80vh;
   z-index: 9999;
@@ -2496,6 +2497,10 @@ input[type="submit"]:hover {
     font-size: 10px;
     color: #d5ff3f;
     text-transform: uppercase;
+  }
+
+  .email{
+    display: none;
   }
 
   .logo_du_site_politique img {
