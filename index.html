@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- Balise meta -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,33 +10,31 @@
     <meta name="apple-mobile-web-app-title" content="Web Labs" />
     <meta name="theme-color" content="#d5ff3f" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Icon pour onglet du navigateur -->
     <link rel="icon" type="image/x-icon" href="/Assets/logo/labs_ico.png" />
-    <!--CSS-->
+    <!-- CSS -->
     <link
       rel="stylesheet"
       href="css/normalize/node_modules/normalize.css/normalize.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <!--END CSS-->
+    <!-- END CSS -->
 
-    <!--manifest.json-->
+    <!-- Polices Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap"
+    />
+
+    <!-- Manifest.json -->
     <link rel="manifest" href="manifest.json" />
-
     <link rel="canonical" href="https://web-labs.fr/" />
 
-    <!--schema.org-->
+    <!-- Schema.org -->
     <script defer type="application/ld+json">
       {
         "@context": "https://schema.org/",
@@ -58,85 +57,7 @@
       }
     </script>
 
-    <!--BreadcrumbList-->
-    <!-- Premier produit Pack -->
-    <!--
-    <script defer type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "PACK LANDING PAGE",
-        "description": "UNE LONGUE PAGE OPTIMISÉE POUR RÉALISER VOS OBJECTIFS.",
-        "brand": {
-          "@type": "Organization",
-          "name": "Web Labs"
-        },
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "EUR",
-          "price": "890",
-          "availability": "https://schema.org/InStock",
-          "seller": {
-            "@type": "Organization",
-            "name": "Web Labs"
-          }
-        }
-      }
-    </script>
--->
-
-    <!-- Deuxième produit Pack -->
-    <!--
-    <script defer type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "PACK SITE VITRINE",
-        "description": "UN SITE OPTIMISÉ POUR GÉNÉRER DES CONTACTS.",
-        "brand": {
-          "@type": "Organization",
-          "name": "Web Labs"
-        },
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "EUR",
-          "price": "2599",
-          "availability": "https://schema.org/InStock",
-          "seller": {
-            "@type": "Organization",
-            "name": "Web Labs"
-          }
-        }
-      }
-    </script>
-  -->
-
-    <!-- Troisième produit Pack -->
-    <!--
-    <script defer type="application/ld+json">
-      {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "PACK DÉVELOPPEMENT WEB",
-        "description": "Le Pack Ultime Élevez votre Présence en Ligne à des Sommets Inégalés !",
-        "brand": {
-          "@type": "Organization",
-          "name": "Web Labs"
-        },
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "EUR",
-          "price": "4990",
-          "availability": "https://schema.org/InStock",
-          "seller": {
-            "@type": "Organization",
-            "name": "Web Labs"
-          }
-        }
-      }
-    </script>
--->
-    <!--BreadcrumbList (fil d'Ariane) -->
+    <!-- BreadcrumbList -->
     <script defer type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -157,7 +78,7 @@
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Inspiration",
+            "name": "portfolio",
             "item": "https://www.web-labs.fr/#portfolio"
           },
           {
@@ -169,8 +90,20 @@
           {
             "@type": "ListItem",
             "position": 5,
-            "name": "Inspiration",
+            "name": "contact",
             "item": "https://www.web-labs.fr/#contact"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "suivez-nous",
+            "item": "https://www.instagram.com/weblabs_inc"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "       Mentions Légales",
+            "item": "https://web-labs.fr/documents/mention-legales.html"
           }
         ]
       }
@@ -184,7 +117,7 @@
     ></script>
 
     <!-- Balise de titre de la page -->
-    <title>Web-Labs : Votre Partenaire Web</title>
+    <title>Web Labs : Votre Partenaire Web</title>
 
     <!-- Balise meta pour la description de la page -->
     <meta
@@ -204,6 +137,7 @@
       content="https://web-labs.fr/Assets/logo/Logo.webp"
     />
   </head>
+
   <body>
     <header>
       <!--Div pour scroller vers l'accueil-->
@@ -241,7 +175,11 @@
               >
             </li>
             <li>
-              <a href="html/inspiration.html">inspiration</a>
+              <a
+                href="html/inspiration.html"
+                aria-label="Vers la page inspiration"
+                >inspiration</a
+              >
             </li>
             <li>
               <a href="#contact" aria-label="Vers la section Contact"
@@ -285,12 +223,32 @@
               <a href="#Accueil" aria-label="Vers la section Accueil"
                 >Accueil</a
               >
-              <a href="#services" onclick="closeNav()">services</a>
-              <a href="#portfolio_behance" onclick="closeNav()">portfolio</a>
 
-              <a href="html/inspiration.html">inspiration</a>
+              <a
+                href="#services"
+                aria-label="Vers la section services"
+                onclick="closeNav()"
+                >services</a
+              >
+              <a
+                href="#portfolio_behance"
+                aria-label="Vers la section portfolio behance"
+                onclick="closeNav()"
+                >portfolio</a
+              >
 
-              <a href="#contact" onclick="closeNav()">contact</a>
+              <a
+                href="html/inspiration.html"
+                aria-label="Vers la page inspiration"
+                >inspiration</a
+              >
+
+              <a
+                href="#contact"
+                aria-label="Vers la section contact"
+                onclick="closeNav()"
+                >contact</a
+              >
               <!--<a href="#tarif" onclick="closeNav()">tarif</a>-->
             </div>
           </div>
@@ -332,9 +290,9 @@
 
       <!-- La div contient un lien vers la section d'email -->
       <div>
-        <a href="#contact">
+        <a href="#contact" aria-label="lien vers la section d'email">
           <!-- La div "contact_mobile" contient un bouton de contact mobile -->
-          <a href="html/inspiration.html">
+          <a href="html/inspiration.html" aria-label="">
             <div class="btn_inspiration">
               <!-- La div "contactMe" contient le texte du bouton -->
 
@@ -770,7 +728,7 @@
             >
               <div class="gallery">
                 <img
-                  src="Assets/gallery.webp"
+                  src="Assets/gallery-min.webp"
                   alt="gallery de projet réalisé"
                 />
               </div>
@@ -817,7 +775,7 @@
           <a
             href="documents/mention-legales.html"
             class="documents"
-            aria-label="Conditions Générales d'Utilisation"
+            aria-label="Mentions Légales"
           >
             Mentions Légales
           </a>

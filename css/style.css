@@ -1,100 +1,89 @@
-/* Réinitialisation */
+#nav_desktop,
+.name img,
+.social {
+  animation: 2s forwards navBarre;
+}
+.name_web_site h1,
+nav ul li a {
+  font-family: IntegralCF-Bold, "Russo One", sans-serif;
+  color: #000;
+}
+.name_web_site img,
+.video img {
+  transform: translate(-50%, -50%);
+}
+.btn_decouvrire a,
+.name_behance,
+.title_inspiration,
+nav ul li a {
+  text-transform: uppercase;
+}
 *,
-*::before,
-*::after {
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* Gestion du dimensionnement des images et vidéos */
 img,
 video {
   object-fit: cover;
 }
-
-/* Comportement de défilement fluide pour HTML */
 html {
   scroll-behavior: smooth;
 }
-
-/* Style de base pour le corps de la page */
 body {
   width: 100%;
   background-color: #171717;
   cursor: url("/Assets/logo/cursor-black.png"), auto;
 }
-
-/* Styles pour les en-têtes (header) et les sections principales (main) */
+.button_footer .parlons-maintenant-button:hover,
+a,
+nav ul li a:hover {
+  cursor: url("/Assets/logo/cursor-pointer.png"), auto;
+}
 header,
 main {
   background-color: #d5ff3f;
 }
-
-/* Styles pour les liens */
 a {
   text-decoration: none !important;
-  cursor: url("/Assets/logo/cursor-pointer.png"), auto;
 }
-
-/* Définition des polices personnalisées */
 @font-face {
-  font-family: "IntegralCF-Bold";
+  font-family: IntegralCF-Bold;
   src: url(/Fonts/IntegralCF-Bold.woff2) format("woff2");
 }
-
 @font-face {
-  font-family: "Garrison_Regular";
+  font-family: Garrison_Regular;
   src: url(/Fonts/Garrison_Sans_Regular.ttf) format("truetype");
 }
-
-/* Importation de polices Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap");
-
-/* Fin des styles de police */
-
-/* Styles pour la personnalisation de la barre de défilement */
-/* Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: #d5ff3f #181818;
 }
-
-/* Chrome, Edge et Safari */
-*::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
 }
-
-*::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   border-radius: 5px;
   background-color: #181818;
 }
-
-*::-webkit-scrollbar-track:hover {
+::-webkit-scrollbar-track:hover {
   background-color: #181818;
 }
-
-*::-webkit-scrollbar-track:active {
+::-webkit-scrollbar-track:active {
   background-color: #181818;
 }
-
-*::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background-color: #d5ff3f;
 }
-
-*::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background-color: #bfdb00;
 }
-
-*::-webkit-scrollbar-thumb:active {
+::-webkit-scrollbar-thumb:active {
   background-color: #d5ff3f;
 }
-/* Fin des styles de personnalisation de la barre de défilement */
-
-/* Styles pour la version globale sur desktop */
-/* Styles pour la section "name" (contenant le logo et la navigation) en position fixe */
 .name {
   position: fixed;
   top: 0;
@@ -108,231 +97,185 @@ a {
   justify-content: space-evenly;
   padding: 20px;
 }
-
-#nav_desktop {
-  animation: navBarre 2s ease 0s 1 normal forwards;
-}
-
 @keyframes navBarre {
   0% {
     opacity: 0;
     transform: translateY(-50px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
 .name img {
   margin-right: auto;
   width: 14%;
   height: auto;
-  animation: navBarre 2s ease 0s 1 normal forwards;
 }
-
 nav {
   padding-right: 8vh;
-  transition: all 0.3s;
-  animation-delay: 400ms;
+  transition: 0.3s;
+  animation-delay: 0.4s;
   transform: scale(1);
 }
-
-nav ul,
-nav li {
+nav li,
+nav ul {
   display: flex;
   align-items: center;
   list-style-type: none;
 }
-
 nav ul li a {
   padding: 0 15px;
-  color: #000000;
-  text-transform: uppercase;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   transition: transform 0.3s;
 }
-
 nav ul li a:hover {
   transform: scale(1.2);
-  cursor: url("/Assets/logo/cursor-pointer.png"), auto;
 }
-
-/* Styles pour les icônes sociales */
 .social {
   display: flex;
   gap: 13px;
-  animation: navBarre 2s ease 0s 1 normal forwards;
 }
-
+.logo_nav i,
 .social i {
   font-size: 30px;
-  color: #000000;
+  color: #000;
 }
-
-/* Styles pour la navigation mobile (cachée par défaut) */
+.btn_inspiration,
 .nav_mobile {
   display: none;
 }
-
-/* Styles pour le titre du site web */
+.excellence,
+.flex_presentation {
+  display: flex;
+  align-items: center;
+}
 .name_web_site {
   padding-left: 15px;
   padding-top: 60px;
-  line-height: 0px;
+  line-height: 0;
   position: relative;
 }
-
 .name_web_site h1 {
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   font-size: 150px;
-  color: black;
 }
-
+.bubble,
+.button_footer .parlons-maintenant-button,
+.button_footer .suivez-nous-button,
+.presentation p {
+  font-family: Garrison_Regular, "Martel Sans", sans-serif;
+}
 .name_web_site img {
   position: absolute;
   top: 64%;
   left: 80%;
-  transform: translate(-50%, -50%);
   width: 20%;
 }
-
-/* Styles pour le sous-titre du site web */
 .subtitle_header {
   font-size: 40px !important;
   padding-left: 12px;
 }
-
-/* Styles pour la section de présentation */
 .flex_presentation {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
-
 .presentation {
   width: 35%;
   text-align: right;
   margin-left: auto;
 }
-
 .presentation p {
   font-size: 20px;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   margin-right: 15%;
 }
-
-/* Styles pour la section "Excellence" */
+.bubble,
+.bubble i {
+  font-size: 18px;
+}
 .excellence {
-  display: flex;
-  align-items: center;
   padding-left: 15px;
 }
-
-/* Styles pour l'image de la barre d'en-tête */
+.bubble,
+.video {
+  display: flex;
+  align-items: center;
+}
 .img_bar_header img {
   width: 60%;
 }
-
-/* Styles pour la bulle d'annonce */
 .bubble {
-  display: flex;
-  align-items: center;
   justify-content: center;
   width: 170px;
   height: 35px;
   border-radius: 35px;
-  border: solid 1px;
+  border: 1px solid;
   gap: 10px;
-  margin: 10px;
-}
-
-.bubble i {
-  font-size: 18px;
-}
-
-.bubble {
-  font-size: 18px;
   text-align: center;
   margin: 20px;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
 }
-
-/* Styles pour la version mobile de la section de contact (cachée par défaut) */
-.btn_inspiration {
-  display: none;
+.annonce_content,
+.service_main {
+  font-family: IntegralCF-Bold, "Russo One", sans-serif;
 }
-
-/* Styles pour la section vidéo */
 .video {
-  display: flex;
-  align-items: center;
   justify-content: center;
   padding-top: 100px;
   position: relative;
 }
-
 .video img {
   position: absolute;
   top: 16%;
   left: 84%;
-  transform: translate(-50%, -50%);
   width: 14%;
 }
-
 .video video {
   width: 90%;
   max-height: 700px;
-  -o-object-fit: cover;
-  object-fit: cover;
   overflow: hidden;
-  border-radius: 80px 80px 0px 0px;
+  border-radius: 80px 80px 0 0;
 }
-
-/* Styles pour la zone d'annonce défilante */
 .zone_annonce {
   width: 100%;
   height: 80px;
   overflow: hidden;
   background-color: #080808;
 }
-
 .annonce_content {
   display: inline-block;
   white-space: nowrap;
-  padding: 25px 0px;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  padding: 25px 0;
   font-size: 23px;
   letter-spacing: 2px;
   color: #d5ff3f;
-  animation: move 30s linear infinite;
-  animation-delay: 0s;
+  animation: 30s linear infinite move;
 }
-
+.bulle,
+.button_footer .parlons-maintenant-button,
+.button_footer .suivez-nous-button {
+  font-weight: 700;
+  transition: 0.3s;
+  animation-delay: 0.4s;
+  display: flex;
+  height: 50px;
+}
 @-webkit-keyframes move {
   0% {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
     -webkit-transform: translateX(-60%);
     transform: translateX(-60%);
   }
 }
-
 @keyframes move {
   0% {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
     -webkit-transform: translateX(-60%);
     transform: translateX(-60%);
   }
 }
-
-/* Styles pour le pied de page */
 .button_footer {
   position: absolute;
   top: 80%;
@@ -343,82 +286,55 @@ nav ul li a:hover {
   justify-content: center;
   gap: 20px;
 }
-
-/* Styles pour le bouton "Parlons maintenant" */
 .button_footer .parlons-maintenant-button {
   width: 200px;
-  height: 50px;
-  border: solid 1px #000000;
+  border: 1px solid #000;
   border-radius: 25px;
-  background-color: #000000;
+  background-color: #000;
   color: #d5ff3f;
-  display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-  font-weight: bold;
-  transition: all 0.3s;
-  animation-delay: 400ms;
   transform: scale(1);
 }
-
 .button_footer .parlons-maintenant-button:hover {
-  cursor: url("/Assets/logo/cursor-pointer.png"), auto;
   transform: scale(1.1);
   background-color: #d5ff3f;
-  color: #000000;
+  color: #000;
 }
-
-/* Styles pour le bouton "Suivez-nous" */
 .button_footer .suivez-nous-button {
   width: 200px;
-  height: 50px;
-  border: solid 1px #000000;
+  border: 1px solid #000;
   border-radius: 25px;
-  display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-  font-weight: bold;
-  color: #000000;
-  transition: all 0.3s;
-  animation-delay: 400ms;
+  color: #000;
   transform: scale(1);
 }
-
 .button_footer .suivez-nous-button:hover {
   cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
   transform: scale(1.1);
-  background-color: #000000;
+  background-color: #000;
   color: #d5ff3f;
 }
-
-/* Styles pour la section content_main */
-.content_main {
-  background-color: #171717;
-  cursor: url("/Assets/logo/cursor-jaune.png"), auto;
-}
-
-/* Styles pour le pied de page */
+.content_main,
 footer {
   background-color: #171717;
   cursor: url("/Assets/logo/cursor-jaune.png"), auto;
 }
-
-/* Styles pour le service principal */
 .service_main {
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   font-size: 80px;
   padding: 20px;
   color: #cfcfcf;
 }
-
-/* Styles pour les points (dot) */
+.bulle,
+.overlay-content p,
+.text_descriptif,
+a {
+  font-family: Garrison_Regular, "Martel Sans", sans-serif;
+}
 .dote {
   color: #d5ff3f;
 }
-
-/* Styles pour la flexbox container */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -426,63 +342,42 @@ footer {
   align-items: center;
   gap: 20px;
 }
-
-/* Styles pour le texte descriptif */
 .text_descriptif {
   width: 30%;
   padding: 20px;
-  color: #808080;
+  color: grey;
   text-align: justify;
   font-size: 25px;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
 }
-
-/* Styles pour la flexbox grid */
 .grid_flex {
   width: 38%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-
-/* Styles pour les bulles */
 .bulle {
   background-color: transparent;
   border-radius: 20px;
-  border: 2px solid #808080;
+  border: 2px solid grey;
   width: 180px;
-  height: 50px;
-  display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-  transition: all 0.3s;
   transform: scale(1);
-  animation-delay: 400ms;
 }
-
 .bulle:hover {
   transform: scale(1.1);
-  background-color: #000000;
+  background-color: #000;
   border: none;
 }
-
 .scroll-animation {
   opacity: 0;
-  transform: translateY(
-    -50px
-  ); /* Modifier ici pour utiliser translateY au lieu de translateX */
+  transform: translateY(-50px);
 }
-
 .scroll-animation.active {
   opacity: 1;
-  transform: translateY(
-    0
-  ); /* Modifier ici pour utiliser translateY au lieu de translateX */
-  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(0);
+  transition: opacity 1s, transform 1s;
 }
-
-/* Styles pour le contenu des bulles */
 .bulle-content {
   display: flex;
   align-items: center;
@@ -490,23 +385,16 @@ footer {
   text-align: center;
   gap: 10px;
 }
-
-/* Styles pour les icônes dans les bulles */
 .bulle i {
   font-size: 16px;
-  color: #808080;
+  color: grey;
 }
-
-/* Styles généraux pour les liens et les bulles */
 .bulle,
 a {
   font-size: 20px;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   color: #818181;
   cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
 }
-
-/* Styles pour l'overlay */
 .overlay {
   position: fixed;
   top: 0;
@@ -520,46 +408,38 @@ a {
   overflow: hidden;
   z-index: 2;
 }
-
-/* Styles pour le contenu de l'overlay */
 .overlay-content {
   width: 30%;
   background: #181818;
   padding: 20px;
   border-radius: 10px;
-  animation: infoOverlay 0.4s ease 0s 1 normal forwards;
+  animation: 0.4s forwards infoOverlay;
 }
-
-/* Animation pour l'overlay */
 @keyframes infoOverlay {
   0% {
     transform: scale(0);
   }
-
   100% {
     transform: scale(1);
   }
 }
-
-/* Styles pour les icônes dans l'overlay */
 .overlay-content i {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 100px;
-  color: #808080;
+  color: grey;
 }
-
-/* Styles pour le texte dans l'overlay */
 .overlay-content p {
   padding-top: 15px;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   text-align: justify;
   font-size: 20px;
-  color: #808080;
+  color: grey;
 }
-
-/*Parti pack*/
+#politique,
+.title_pack {
+  text-align: center;
+}
 .bg_ifo_création {
   margin-top: 10px;
   background-color: #d5ff3f;
@@ -568,30 +448,35 @@ a {
   cursor: url("/Assets/logo/cursor-black.png"), auto;
   position: relative;
 }
-
+.btn_decouvrire a,
+.scroll_contact {
+  background-color: #000;
+  font-weight: 700;
+  transition: 0.3s;
+  animation-delay: 0.4s;
+}
 .flex_info {
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  font-family: IntegralCF-Bold, "Russo One", sans-serif;
   padding-top: 7%;
   padding-left: 16%;
   line-height: 20px;
 }
-
+.ifo_création,
+.scroll_contact {
+  font-family: Garrison_Regular, "Martel Sans", sans-serif;
+  font-size: 20px;
+}
 .flex_info h1 {
   font-size: 75px;
 }
-
 .flex_info h2 {
   font-size: 25px;
   padding-left: 10px;
 }
-
 .ifo_création {
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   padding-left: 16.5%;
-  font-size: 20px;
   width: 65%;
 }
-
 .scroll_contact {
   position: absolute;
   top: 50%;
@@ -602,153 +487,27 @@ a {
   width: 23%;
   height: 60px;
   color: #d5ff3f;
-  background-color: #000000;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
   cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
-  transition: all 0.3s;
-  animation-delay: 400ms;
   transform: scale(1);
 }
-
+.carré_text,
+.projet,
+.title_pack {
+  font-family: IntegralCF-Bold, "Russo One", sans-serif;
+}
+.contenair_follow_us,
+.cursor,
+.gallery img,
+.title_pack {
+  cursor: url("/Assets/logo/cursor-black.png"), auto;
+}
 .scroll_contact:hover {
   transform: scale(1.04);
 }
-
 .title_pack {
   background-color: #d5ff3f;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  text-align: center;
   font-size: 42px;
-  cursor: url("/Assets/logo/cursor-black.png"), auto;
 }
-
-/*card pack*/
-/*
-.container_card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  width: 100%;
-  height: 1100px;
-  background-color: #d5ff3f;
-  cursor: url("/Assets/logo/cursor-black.png"), auto;
-}
-
-.card {
-  width: 22%;
-  height: auto;
-
-  background-color: #171717;
-  transition: all 0.3s;
-  animation-delay: 400ms;
-  transform: scale(1);
-  cursor: url("/Assets/logo/cursor-jaune.png"), auto;
-}
-
-.card:hover {
-  transform: scale(1.06);
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-}
-
-.card_special {
-  background-color: #000000;
-  margin-bottom: 20px;
-}
-
-.card_special:hover {
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-}
-
-.card h1 {
-  text-align: center;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  font-size: 25px;
-  padding-top: 15px;
-  color: #cfcfcf;
-}
-
-.card p {
-  text-align: center;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-  color: #cfcfcf;
-  font-weight: bold;
-}
-
-.def_prix {
-  padding-top: 20px;
-  padding-right: 50%;
-  font-size: 25px;
-}
-
-.prix {
-  text-align: center;
-  font-size: 80px;
-}
-
-.proposition {
-  font-size: 15px;
-}
-
-.proposition2 {
-  font-size: 10px;
-}
-
-.contact_pack {
-  margin-top: 10%;
-  width: 100%;
-  height: 60px;
-  background-color: #000000;
-  color: #d5ff3f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-}
-.contact_pack_special {
-  background-color: #292929;
-  color: #d5ff3f;
-  margin-top: 21%;
-}
-
-.card .conseil {
-  width: 100%;
-  height: 55px;
-  background-color: #292929;
-  color: #d5ff3f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  animation: blink 2s ease 0s infinite normal forwards;
-}
-
-@keyframes blink {
-  0%,
-  50%,
-  100% {
-    opacity: 1;
-  }
-
-  25%,
-  75% {
-    opacity: 0;
-  }
-}
-
-.card2 {
-  padding-top: 5px;
-}
-
-.fa-hand-holding-usd {
-  padding-left: 5px;
-}*/
-
-/*End Parti pack*/
-
-/* Styles pour le conteneur de texte */
 .contenair_text {
   width: 73%;
   height: 900px;
@@ -759,96 +518,86 @@ a {
   justify-content: center;
   letter-spacing: 4px;
 }
-
-/* Styles pour le carré de texte */
+.background_politique,
+.contenair_follow_us {
+  background-color: #d5ff3f;
+}
+.name_behance,
+.projet {
+  display: flex;
+  align-items: center;
+}
 .carré_text {
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   color: #cfcfcf;
   text-align: justify;
   font-size: 60px;
   width: 80%;
   line-height: 70px;
 }
-
-/* Styles pour les images dans le carré de texte */
 .carré_text .img1 img {
   width: 200px;
   height: 50px;
   border-radius: 50px;
 }
-
-.carré_text .img2 img {
-  width: 150px;
-  height: 50px;
-  border-radius: 50px;
-}
-
+.carré_text .img2 img,
 .carré_text .img3 img {
   width: 150px;
   height: 50px;
   border-radius: 50px;
 }
-
 .carré_text .img4 img {
   width: 9%;
   border-radius: 50px;
 }
-
-/* Styles pour la section "Projet" */
 .projet {
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   color: #cfcfcf;
   font-size: 80px;
   padding: 20px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
-
-/* Styles pour la phrase créative */
 .phrase_creative {
   font-size: 16px;
   width: 30%;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-  font-weight: bold;
-  color: #808080;
+  font-family: Garrison_Regular, "Martel Sans", sans-serif;
+  font-weight: 700;
+  color: grey;
   padding-top: 60px;
   padding-right: 5%;
   line-height: 30px;
 }
-
-/* Styles pour le point (dot) */
+.contenair_follow_us h6,
+.name_behance {
+  font-family: IntegralCF-Bold, "Russo One", sans-serif;
+}
 .dote3 {
   padding-top: 30px;
   padding-left: 60%;
 }
-
+.space,
+h2 {
+  padding-top: 20px;
+}
 .dote3 img {
   width: 100%;
   height: auto;
 }
-
-/* Styles pour le conteneur du portfolio */
 .contenair_porfolio {
   position: relative;
 }
-
-/* Styles pour le nom Behance */
 .name_behance {
   position: absolute;
   top: 70%;
   left: 5vw;
   color: #cfcfcf;
   font-size: 5vw;
-  text-transform: uppercase;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  display: flex;
-  align-items: center;
   transform: rotate(-90deg);
   transform-origin: 0 50%;
 }
-
-/* Styles pour la barre verticale */
+.contenair_follow_us,
+.gallery {
+  align-items: center;
+  display: flex;
+}
 .barre-verticale {
   position: absolute;
   top: 35%;
@@ -857,255 +606,86 @@ a {
   border-left: 2px solid #d5ff3f;
   height: 19.5vh;
 }
-
-/* Styles pour la galerie d'images */
 .gallery {
   width: 100%;
   height: auto;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
-
-/* Styles pour le curseur */
-.cursor {
-  cursor: url("/Assets/logo/cursor-black.png"), auto;
-}
-
-/* Styles pour les images dans la galerie */
 .gallery img {
   width: 77%;
   height: auto;
-  cursor: url("/Assets/logo/cursor-black.png"), auto;
-  transition: all 0.3s;
-  animation-delay: 400ms;
+  transition: 0.3s;
+  animation-delay: 0.4s;
   transform: scale(1);
 }
-
-/* Animation pour les images de la galerie */
 .gallery img:hover {
   transform: scale(1.03);
 }
-
-/* Styles pour le conteneur "Follow us" */
 .contenair_follow_us {
   width: 90%;
   height: 800px;
   border-radius: 0 0 100px 100px;
   margin: 100px auto;
-  background-color: #d5ff3f;
-  display: flex;
-  align-items: center;
   justify-content: center;
   position: relative;
-  cursor: url("/Assets/logo/cursor-black.png"), auto;
-  position: relative;
 }
-
-/* Styles pour l'image dans le conteneur "Follow us" */
 .contenair_follow_us img {
-  object-fit: cover;
   width: 90%;
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-/* Styles pour le titre dans le conteneur "Follow us" */
 .contenair_follow_us h6 {
   width: 60%;
   margin: 0 auto;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   font-size: 100px;
   text-align: center;
 }
-
-/*
-   Styles spécifiques à la version globale Desktop
-*/
-.politique,
+.copyright,
 .documents,
-.copyright {
+.politique {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+  font-family: Garrison_Regular, "Martel Sans", sans-serif;
   font-size: 12px;
   color: #d5ff3f;
   text-transform: uppercase;
 }
-
-
-.background_politique {
-  background-color: #d5ff3f;
+.title_politique,
+h2 {
+  color: #000;
+  font-family: IntegralCF-Bold, "Russo One", sans-serif;
 }
-
 .container {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
 }
-
 #logo_du_site_politique {
   width: 100%;
 }
-
-#politique {
-  text-align: center;
-}
-
 .title_politique {
-  color: #000000;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   font-size: 30px;
 }
-
+.btn_decouvrire a,
+.informations-collectées,
+.police_g,
+.title_inspiration p,
+section p {
+  font-family: Garrison_Regular, "Martel Sans", sans-serif;
+}
 .lien_web {
-  color: #0066cc;
+  color: #06c;
   cursor: url("/Assets/logo/cursor-pointer.png"), auto;
 }
-
 section p {
   margin-top: 20px;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
 }
-
-h2 {
-  padding-top: 20px;
-  color: #000000;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-}
-
-.informations-collectées {
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-}
-
-.police_g {
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-}
-
-/* Formulaire de contact */
-
-/*
-.background_form {
-  background-color: #d5ff3f;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-}
-
-.title_form {
-  text-align: center;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  font-size: 55px;
-  color: #000000;
-}
-
-.contenaire_instructions {
-  text-align: left;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-  font-size: 20px;
-  color: #333;
-  margin-top: 10px;
-  padding: 0 15px;
-  width: 60%;
-}
-
-.instructions {
-  padding-top: 50px;
-}
-
-.contenaire_instructions ol {
-  padding-top: 50px;
-  padding-left: 20px;
-}
-
-form {
-  cursor: url("/Assets/logo/cursor-black.png"), auto;
-  min-width: 600px;
-  margin: 20px;
-  padding: 20px;
-  background-color: #171717;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-label {
-  display: block;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  font-size: 17px;
-  color: #d5ff3f;
-  margin-bottom: 5px;
-  cursor: url("/Assets/logo/cursor-black.png"), auto;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  background-color: #f8f8f83e;
-  border: 1px solid #292929;
-  color: #000000;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  outline: none;
-  border-radius: 5px;
-  cursor: url("/Assets/logo/cursor-black.png"), auto;
-}
-
-textarea::placeholder {
-  color: #cfcfcf;
-}
-
-input::placeholder,
-select::placeholder {
-  color: #cfcfcf;
-}
-
-input[type="radio"] {
-  margin-right: 5px;
-}
-
-input[type="submit"] {
-  background-color: #000000;
-  color: #d5ff3f;
-  cursor: pointer;
-  height: 50px;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-}
-
-input[type="submit"]:hover {
-  background-color: #333;
-}
-
-.confirmation {
-  color: #4caf50;
-  margin-top: 10px;
-}
-
-.erreur {
-  color: #ff0000;
-  margin-top: 10px;
-}
-*/
-/* End Formulaire de contact */
-
-/*page inspiration */
-
 .content-follow {
-  background-color: #808080;
+  background-color: grey;
 }
-
 .background_container {
   width: 100%;
   height: 100vh;
@@ -1114,7 +694,6 @@ input[type="submit"]:hover {
   justify-content: center;
   position: relative;
 }
-
 .rectangle_horizontal {
   width: 90%;
   height: 80vh;
@@ -1124,24 +703,16 @@ input[type="submit"]:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  border-radius: 50px 0 55px 0;
+  border-radius: 50px 0 55px;
 }
-
 .logo_nav {
   display: flex;
   align-items: center;
 }
-
-.logo_nav i {
-  font-size: 30px;
-  color: #000000;
-}
-
 .rectangle_horizontal img {
   width: 45%;
   margin: 40px;
 }
-
 .rectangle_vertical {
   width: 40%;
   height: 100vh;
@@ -1152,36 +723,29 @@ input[type="submit"]:hover {
   left: 60;
   z-index: 1;
 }
-
 .contenair_text_inspiration {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
 }
-
 .title_inspiration {
   padding-left: 40px;
   width: 35%;
-  font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  text-transform: uppercase;
+  font-family: IntegralCF-Bold, "Russo One", sans-serif;
   font-size: 60px;
 }
-
 .title_inspiration h1 {
   margin: 0;
   line-height: 100px;
 }
-
 .title_inspiration p {
   margin: 0;
   padding-top: 30px;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   font-style: italic;
 }
-
 .btn_decouvrire a {
   display: flex;
   align-items: center;
@@ -1189,25 +753,17 @@ input[type="submit"]:hover {
   margin: 40px;
   width: 25%;
   height: 10vh;
-  background-color: #000000;
   color: #d5ff3f;
-  font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
   cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
-  border-radius: 20px 0 20px 0;
-  transition: all 0.3s;
-  animation-delay: 400ms;
+  border-radius: 20px 0;
   transform: scale(1);
 }
-
 .btn_decouvrire a:hover {
   transform: scale(1.05);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
 }
-
 .abstract {
   position: absolute;
   top: 0;
@@ -1216,30 +772,25 @@ input[type="submit"]:hover {
   height: 80vh;
   z-index: 9999;
 }
-
 .abstract video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajuste le contenu vidéo pour couvrir la totalité du conteneur */
-  border-radius: 0 0 50px 0;
+  border-radius: 0 0 50px;
 }
-
-/* end page inspiration */
-
-/* Styles pour l'espace */
-.space {
-  padding-top: 20px;
-}
-
-/* Fin de la version globale Desktop */
-
-/* Styles spécifiques aux tablettes (768px < largeur < 1025px) */
 @media screen and (min-width: 769px) and (max-width: 1075px) {
-  /* Désactiver le curseur pour tous les éléments */
+  .overlay a:focus,
+  .overlay_mobile a:hover,
+  .service_main {
+    color: #cfcfcf;
+  }
+  .flex_info,
+  .overlay_mobile a,
+  .service_main {
+    font-family: IntegralCF-Bold, "Russo One", sans-serif;
+  }
   * {
     cursor: none;
   }
-
   #nav_desktop {
     width: 70%;
     display: none;
@@ -1247,14 +798,10 @@ input[type="submit"]:hover {
   .nav_mobile {
     display: contents;
   }
-
-  /* Overlay mobile pour la navigation */
-
   .ouvrir-overlay-mobile {
     font-size: 30px;
-    animation: navBarre 2s ease 0s 1 normal forwards;
+    animation: 2s forwards navBarre;
   }
-
   .overlay_mobile {
     height: 100%;
     width: 0;
@@ -1262,12 +809,10 @@ input[type="submit"]:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
   }
-
   .overlay-content_mobile {
     position: relative;
     top: 25%;
@@ -1275,37 +820,31 @@ input[type="submit"]:hover {
     text-align: center;
     margin-top: 30px;
   }
-
-  /* Styles pour les liens dans l'overlay mobile */
   .overlay_mobile a {
     padding: 8px;
     text-decoration: none;
     font-size: 55px;
-    color: #818181;
     display: block;
     transition: 0.3s;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     color: #cfcfcf;
     cursor: none;
   }
-
-  .overlay_mobile a:hover,
-  .overlay a:focus {
-    color: #cfcfcf;
+  .img_bar_header img,
+  nav ul li {
+    display: none;
   }
-
-  /* Style pour le bouton de fermeture de l'overlay mobile */
+  .gallery img,
+  ul li:hover {
+    cursor: url("/Assets/logo/cursor-pointer.png"), auto;
+  }
   .overlay_mobile .closebtn {
     position: absolute;
     top: 50px;
     right: auto;
   }
-
   .closebtn i {
     font-size: 30px;
   }
-
-  /* Réajuster les styles si la hauteur de l'écran est inférieure à 450px */
   @media screen and (max-height: 450px) {
     .overlay_mobile a {
       font-size: 20px;
@@ -1316,45 +855,30 @@ input[type="submit"]:hover {
       right: 35px;
     }
   }
-
-  /* Styles pour la section 'social' */
   .social {
     display: flex;
     gap: 13px;
     padding-right: 20px;
   }
-
+  .logo_nav i,
   .social i {
     font-size: 30px;
-    color: #000000;
+    color: #000;
   }
-
-  /* Styles spécifiques à l'image du nom */
   .name img {
     margin-right: auto;
     width: 20%;
     height: auto;
   }
-
-  /* Styles pour la transition des éléments de la navigation */
   nav ul li {
     transition: none;
-    display: none;
   }
-
-  /* Styles pour l'effet de survol des éléments de la navigation */
   ul li:hover {
     transform: none;
-    cursor: url("/Assets/logo/cursor-pointer.png"), auto;
   }
-
-  /* Styles pour le nom du site web */
-
   .name_web_site h1 {
     font-size: 100px;
   }
-
-  /* Styles pour l'image du site web */
   .name_web_site img {
     position: absolute;
     top: 65%;
@@ -1362,38 +886,30 @@ input[type="submit"]:hover {
     transform: translate(-50%, -50%);
     width: 20%;
   }
-
-  /* Styles pour le sous-titre de l'en-tête */
+  .btn_decouvrire a,
+  .btn_decouvrire a:hover,
+  .gallery img:hover {
+    transform: scale(1);
+  }
   .subtitle_header {
     font-size: 30px !important;
   }
-
-  /* Styles pour la présentation */
   .presentation {
     width: 50%;
   }
-
   .presentation p {
     margin-right: 10%;
     padding-top: 10%;
   }
-
-  /* Styles pour l'excellence */
   .excellence {
     display: flex;
     align-items: center;
     padding-left: 15px;
   }
-
-  /* Styles pour le service principal */
   .service_main {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 60px;
     padding: 20px;
-    color: #cfcfcf;
   }
-
-  /*Parti pack*/
   .bg_ifo_création {
     margin-top: 5%;
     background-color: #d5ff3f;
@@ -1402,30 +918,35 @@ input[type="submit"]:hover {
     cursor: url("/Assets/logo/cursor-black.png"), auto;
     position: relative;
   }
-
+  .btn_decouvrire a,
+  .scroll_contact {
+    background-color: #000;
+    color: #d5ff3f;
+    transition: 0.3s;
+    animation-delay: 0.4s;
+  }
   .flex_info {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     padding-top: 7%;
     padding-left: 5%;
     line-height: 10px;
   }
-
+  .ifo_création,
+  .scroll_contact,
+  .text_descriptif {
+    font-family: Garrison_Regular, "Martel Sans", sans-serif;
+  }
   .flex_info h1 {
     font-size: 30px;
     padding-left: 5px;
   }
-
   .flex_info h2 {
     font-size: 15px;
   }
-
   .ifo_création {
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
     padding-left: 6%;
     font-size: 20px;
     width: 90%;
   }
-
   .scroll_contact {
     position: absolute;
     top: 75%;
@@ -1435,148 +956,29 @@ input[type="submit"]:hover {
     border: none;
     width: 45%;
     height: 60px;
-    color: #d5ff3f;
-    background-color: #000000;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
     cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
-    transition: all 0.3s;
-    animation-delay: 400ms;
     transform: scale(1);
   }
-
   .scroll_contact:hover {
     transform: scale(1.04);
   }
-
-  /*card pack*/
-  /*
-  .container_card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    height: 3000px;
-    background-color: #d5ff3f;
-  }
-
-  .card {
-    width: 60%;
-    height: auto;
-    background-color: #171717;
-    transition: none;
-    animation-delay: none;
-    transform: scale(1);
-  }
-
-  .card:hover {
-    transform: scale(1);
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  }
-
-  .card_special {
-    background-color: #000000;
-  }
-
-  .card_special:hover {
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  }
-
-  .card h1 {
-    text-align: center;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-    font-size: 20px;
-    padding-top: 15px;
-    color: #cfcfcf;
-  }
-
-  .card p {
-    text-align: center;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-    color: #cfcfcf;
-    font-weight: bold;
-  }
-
-  .def_prix {
-    padding-top: 20px;
-    padding-right: 30%;
-    font-size: 25px;
-  }
-
-  .prix {
-    text-align: center;
-    font-size: 80px;
-  }
-
-  .proposition {
-    font-size: 16px;
-  }
-
-  .contact_pack {
-    margin-top: 16%;
-    width: 100%;
-    height: 60px;
-    background-color: #000000;
-    color: #d5ff3f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  }
-  .contact_pack_special {
-    background-color: #292929;
-    color: #d5ff3f;
-    margin-top: 21%;
-  }
-
-  .conseil {
-    width: 100%;
-    height: 55px;
-    background-color: #292929;
-    color: #d5ff3f;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-  }
-
-  .card-top {
-    margin-top: 0px;
-  }
-  /*
-  /*End Parti pack*/
-
-  /* Styles pour l'image de la barre d'en-tête */
-  .img_bar_header img {
-    display: none;
-  }
-
-  /* Styles pour le conteneur "follow us" */
   .contenair_follow_us {
     width: 100%;
   }
-
   .contenair_follow_us img {
     width: 90%;
   }
-
-  /* Styles pour le titre du conteneur "follow us" */
   .contenair_follow_us h6 {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 80px;
   }
-
-  /* Styles pour le point dans le titre du conteneur "follow us" */
   .dote {
     color: #d5ff3f;
   }
-
-  /* Styles pour le conteneur flexible */
   .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -1584,18 +986,17 @@ input[type="submit"]:hover {
     align-items: center;
     gap: 20px;
   }
-
-  /* Styles pour le texte descriptif */
   .text_descriptif {
     width: 60%;
     padding: 20px;
-    color: #808080;
+    color: grey;
     text-align: justify;
     font-size: 25px;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   }
-
-  /* Styles pour le conteneur de texte */
+  .carré_text,
+  .projet {
+    font-family: IntegralCF-Bold, "Russo One", sans-serif;
+  }
   .contenair_text {
     width: 95%;
     height: 700px;
@@ -1606,96 +1007,83 @@ input[type="submit"]:hover {
     justify-content: center;
     letter-spacing: 4px;
   }
-
-  /* Styles pour le carré de texte */
+  .name_behance,
+  .projet {
+    color: #cfcfcf;
+    display: flex;
+    align-items: center;
+  }
   .carré_text {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     color: #cfcfcf;
     text-align: justify;
     font-size: 35px;
     width: 86%;
     line-height: 60px;
   }
-
-  /* Styles pour l'image 1 dans le carré de texte */
   .carré_text .img1 img {
     width: 200px;
     height: 50px;
     border-radius: 50px;
   }
-
-  /* Styles pour l'image 2 dans le carré de texte */
   .carré_text .img2 img {
     width: 100px;
     height: 50px;
     border-radius: 50%;
   }
-
-  /* Styles pour l'image 3 dans le carré de texte */
   .carré_text .img3 img {
     width: 150px;
     height: 50px;
   }
-
-  /* Styles pour le conteneur flexible */
   .grid_flex {
     width: 90%;
     margin-left: 14%;
   }
-
-  /* Styles pour le contenu de superposition */
   .overlay-content {
     width: 85%;
     background: #181818;
     padding: 20px;
     border-radius: 10px;
   }
-
-  /* Styles pour le projet */
   .projet {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-    color: #cfcfcf;
     font-size: 55px;
     padding: 20px;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
   }
-
-  /* Styles pour la phrase créative */
-  .phrase_creative {
+  .phrase_creative,
+  .title_inspiration p {
     font-size: 16px;
+    font-family: Garrison_Regular, "Martel Sans", sans-serif;
+    font-weight: 700;
+  }
+  .phrase_creative {
     width: 45%;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-    font-weight: bold;
-
     padding-top: 100px;
     line-height: 30px;
     text-align: right;
   }
-
-  /* Styles pour le point 3 dans la phrase créative */
+  .name_behance,
+  .title_inspiration {
+    font-family: IntegralCF-Bold, "Russo One", sans-serif;
+    text-transform: uppercase;
+  }
   .dote3 {
     padding-top: 10px;
     padding-left: 10%;
   }
-
-  /* Styles pour le nom Behance */
   .name_behance {
     position: absolute;
     top: 66%;
     left: 5vw;
-    color: #cfcfcf;
     font-size: 4vw;
-    text-transform: uppercase;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-    display: flex;
-    align-items: center;
     transform: rotate(-90deg);
     transform-origin: 0 50%;
   }
-
-  /* Styles pour la barre verticale */
+  .background_container,
+  .gallery {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
   .barre-verticale {
     position: absolute;
     top: 35%;
@@ -1704,43 +1092,27 @@ input[type="submit"]:hover {
     border-left: 2px solid #d5ff3f;
     height: 8vh;
   }
-
-  /* Styles pour la galerie d'images */
   .gallery {
-    width: 100%;
     height: auto;
-    display: flex;
-    align-items: center;
     justify-content: center;
   }
-
-  /* Styles pour les images dans la galerie */
   .gallery img {
     width: 80%;
     height: auto;
-    object-fit: cover;
-    cursor: url("/Assets/logo/cursor-pointer.png"), auto;
   }
-
-  /* Styles pour l'effet de survol des images dans la galerie */
-  .gallery img:hover {
-    transform: scale(1);
-  }
-
-  /*page inspiration */
   .content-follow {
-    background-color: #808080;
+    background-color: grey;
   }
-
   .background_container {
-    width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
     justify-content: center;
     position: relative;
   }
-
+  .logo_nav,
+  .title_inspiration {
+    align-items: center;
+    display: flex;
+  }
   .rectangle_horizontal {
     width: 90%;
     height: 80vh;
@@ -1750,24 +1122,12 @@ input[type="submit"]:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    border-radius: 50px 0 55px 0;
+    border-radius: 50px 0 55px;
   }
-
-  .logo_nav {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo_nav i {
-    font-size: 30px;
-    color: #000000;
-  }
-
   .rectangle_horizontal img {
     width: 90%;
     margin: 40px;
   }
-
   .rectangle_vertical {
     width: 100%;
     height: 55vh;
@@ -1777,36 +1137,25 @@ input[type="submit"]:hover {
     right: 0;
     z-index: 1;
   }
-
   .contenair_text_inspiration {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
   }
-
   .title_inspiration {
     padding-left: 5%;
     width: 80%;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
-    text-transform: uppercase;
     font-size: 60px;
-    display: flex;
-    align-items: center;
     flex-direction: column;
   }
-
   .title_inspiration h1 {
     margin: 0;
     line-height: 100px;
   }
-
   .title_inspiration p {
     margin: 0;
     padding-top: 30px;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-    font-weight: bold;
-    font-size: 16px;
     font-style: italic;
   }
   .btn_decouvrire a {
@@ -1816,85 +1165,71 @@ input[type="submit"]:hover {
     margin: 40px;
     width: 35%;
     height: 8vh;
-    background-color: #000000;
-    color: #d5ff3f;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    font-family: Garrison_Regular, "Martel Sans", sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
-    border-radius: 20px 0 20px 0;
-    transition: all 0.3s;
-    animation-delay: 400ms;
-    transform: scale(1);
+    border-radius: 20px 0;
   }
-  .btn_decouvrire a:hover {
-    transform: scale(1);
-  }
-
   .abstract {
     position: absolute;
-    top: 70.5%; /* Ajuste la position verticale de la vidéo en haut du rectangle horizontal */
-    left: 0; /* Ajuste la position horizontale de la vidéo à gauche du rectangle horizontal */
+    top: 70.5%;
+    left: 0;
     width: 100%;
-    height: 25vh; /* Utilise la même hauteur que le rectangle horizontal */
+    height: 25vh;
     z-index: 9999;
   }
-
   .abstract video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajuste le contenu vidéo pour couvrir la totalité du conteneur */
-    border-radius: 0 0 50px 0;
+    border-radius: 0 0 50px;
   }
-
-  /* end page inspiration */
 }
-
-/*Styles spécifiques aux mobile*/
 @media screen and (max-width: 768px) {
-  /* Désactiver le curseur pour tous les éléments */
+  .card:hover,
+  .card_special:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+  }
   * {
     cursor: none;
   }
-
-  /* Style pour la section 'name' */
   .name {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
   }
-
-  /* Style pour l'image dans la section 'name' */
   .name img {
     margin-right: auto;
     width: 30%;
     height: auto;
   }
-
-  /* Cacher la navigation desktop */
-  #nav_desktop {
+  #nav_desktop,
+  .barre-verticale,
+  .carré_text .img1 img,
+  .carré_text .img2 img,
+  .carré_text .img3 img,
+  .carré_text .img4 img,
+  .email,
+  .img_bar_header img,
+  .name_behance,
+  .name_web_site img,
+  .video img {
     display: none;
   }
-
-  /* Styles pour la navigation mobile */
   .nav_mobile {
     display: contents;
   }
-
   nav i {
     padding: 0 15px;
     font-size: 25px;
-    animation: navBarre 2s ease 0s 1 normal forwards;
+    animation: 2s forwards navBarre;
   }
-
-  /* Overlay mobile pour la navigation */
-
+  .closebtn i,
   .ouvrir-overlay-mobile {
     font-size: 30px;
   }
-
   .overlay_mobile {
     height: 100%;
     width: 0;
@@ -1902,12 +1237,10 @@ input[type="submit"]:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
   }
-
   .overlay-content_mobile {
     position: relative;
     top: 25%;
@@ -1915,37 +1248,30 @@ input[type="submit"]:hover {
     text-align: center;
     margin-top: 30px;
   }
-
-  /* Styles pour les liens dans l'overlay mobile */
   .overlay_mobile a {
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
     display: block;
     transition: 0.3s;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-family: IntegralCF-Bold, "Russo One", sans-serif;
     color: #cfcfcf;
     cursor: none;
   }
-
-  .overlay_mobile a:hover,
-  .overlay a:focus {
+  .bubble p,
+  .contactMe,
+  .presentation p {
+    font-family: Garrison_Regular, "Martel Sans", sans-serif;
+  }
+  .overlay a:focus,
+  .overlay_mobile a:hover {
     color: #cfcfcf;
   }
-
-  /* Style pour le bouton de fermeture de l'overlay mobile */
   .overlay_mobile .closebtn {
     position: absolute;
     top: 50px;
     right: auto;
   }
-
-  .closebtn i {
-    font-size: 30px;
-  }
-
-  /* Réajuster les styles si la hauteur de l'écran est inférieure à 450px */
   @media screen and (max-height: 450px) {
     .overlay_mobile a {
       font-size: 20px;
@@ -1956,171 +1282,121 @@ input[type="submit"]:hover {
       right: 35px;
     }
   }
-
-  /* Styles pour la section 'social' */
   .social {
     display: flex;
     gap: 13px;
   }
-
   .social i {
     font-size: 25px;
-    color: #000000;
+    color: #000;
   }
-
-  /* Styles pour la section 'name_web_site' */
   .name_web_site {
     padding-left: 15px;
   }
-
   .name_web_site h1 {
     font-size: 50px;
   }
-
-  .name_web_site img {
-    display: none;
-  }
-
-  /* Styles pour la sous-section 'subtitle_header' */
   .subtitle_header {
     font-size: 15px !important;
     padding-left: 5px;
   }
-
-  /* Styles pour la section 'flex_presentation' */
   .flex_presentation {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-
-  /* Cacher l'image de la barre header */
-  .img_bar_header img {
-    display: none;
+  .bubble,
+  .excellence {
+    display: flex;
+    align-items: center;
   }
-
-  /* Styles pour la section 'presentation' */
   .presentation {
     width: 95%;
     text-align: left;
     padding-top: 45px;
   }
-
   .presentation p {
     font-size: 20px;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   }
-
-  /* Styles pour la section 'excellence' */
+  .bubble i,
+  .bubble p {
+    font-size: 18px;
+    color: #000000db;
+  }
   .excellence {
-    display: flex;
-    align-items: center;
     justify-content: center;
     padding-top: 10px;
     width: 95%;
   }
-
-  /* Styles pour la bulle */
   .bubble {
-    display: flex;
-    align-items: center;
     justify-content: center;
     width: 170px;
     height: 35px;
     border-radius: 35px;
     border: none;
-    gap: 0px;
+    gap: 0;
     margin: 10px;
   }
-
-  /* Styles pour l'icône dans la bulle */
-  .bubble i {
-    margin-bottom: 4px;
-    font-size: 18px;
-    color: #000000db;
-  }
-
-  /* Styles pour le texte dans la bulle */
+  .btn_inspiration,
   .bubble p {
     display: flex;
     align-items: center;
+  }
+  .bubble i {
+    margin-bottom: 4px;
+  }
+  .bubble p {
     justify-content: center;
-    font-size: 18px;
     text-align: center;
     margin: 20px;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-    color: #000000db;
   }
-
-  /* Styles pour la section 'contact_mobile' */
   .btn_inspiration {
-    display: flex;
-    align-items: center;
     justify-content: center;
     border: 2px solid rgba(255, 0, 0, 0.31);
     border-radius: 30px;
-    background-color: #000000;
+    background-color: #000;
     height: 60px;
     width: 85%;
-    margin: 10% auto 0 auto;
+    margin: 10% auto 0;
   }
-
-  /* Styles pour le texte dans la section 'contactMe' */
+  .container_card,
+  .video {
+    align-items: center;
+    display: flex;
+  }
   .contactMe {
     display: contents;
     color: #d5ff3f;
     font-size: 30px;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
   }
-
-  /* Styles pour l'icône dans la section 'contact_mobile' */
   .btn_inspiration i {
     padding: 15px;
     font-size: 30px;
     color: #d5ff3f;
     transform: rotate(315deg);
   }
-
-  /* Styles pour la section 'video' */
   .video {
-    display: flex;
-    align-items: center;
     justify-content: center;
     padding-top: 10px;
     position: relative;
   }
-
-  /* Styles pour l'image dans la section 'video' */
-  .video img {
-    display: none;
-  }
-
-  /* Styles pour la section 'service_main' */
   .service_main {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-family: IntegralCF-Bold, "Russo One", sans-serif;
     font-size: 45px;
     padding: 20px;
     color: #cfcfcf;
   }
-
-  /* Styles pour la classe 'dote' */
   .dote {
     color: #d5ff3f;
   }
-
-  /* Styles pour la bulle en état normal */
   .bulle {
     transition: none;
   }
-
-  /* Styles pour la bulle au survol */
   .bulle:hover {
     transform: none;
     background-color: transparent;
-    border: 2px solid #808080;
+    border: 2px solid grey;
   }
-
-  /* Styles pour le conteneur flexible */
   .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -2128,18 +1404,19 @@ input[type="submit"]:hover {
     align-items: center;
     gap: 20px;
   }
-
-  /* Styles pour le texte descriptif */
   .text_descriptif {
     width: 93%;
     padding: 20px;
-    color: #808080;
+    color: grey;
     text-align: left;
     font-size: 25px;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
+    font-family: Garrison_Regular, "Martel Sans", sans-serif;
   }
-
-  /*Parti pack*/
+  .card h1,
+  .card p,
+  .prix {
+    text-align: center;
+  }
   .bg_ifo_création {
     margin-top: 25px;
     background-color: #d5ff3f;
@@ -2148,30 +1425,28 @@ input[type="submit"]:hover {
     cursor: url("/Assets/logo/cursor-black.png"), auto;
     position: relative;
   }
-
   .flex_info {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-family: IntegralCF-Bold, "Russo One", sans-serif;
     padding-top: 7%;
     padding-left: 4.5%;
     line-height: 20px;
   }
-
+  .ifo_création,
+  .scroll_contact {
+    font-family: Garrison_Regular, "Martel Sans", sans-serif;
+    font-size: 20px;
+  }
   .flex_info h1 {
     font-size: 25px;
   }
-
   .flex_info h2 {
     font-size: 13px;
     padding-right: 20px;
   }
-
   .ifo_création {
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
     padding-left: 7%;
-    font-size: 20px;
     width: 95%;
   }
-
   .scroll_contact {
     position: absolute;
     top: 80%;
@@ -2182,24 +1457,23 @@ input[type="submit"]:hover {
     width: 80%;
     height: 60px;
     color: #d5ff3f;
-    background-color: #000000;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    background-color: #000;
+    font-weight: 700;
     cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
-    transition: all 0.3s;
-    animation-delay: 400ms;
+    transition: 0.3s;
+    animation-delay: 0.4s;
     transform: scale(1);
   }
-
   .scroll_contact:hover {
     transform: scale(1.04);
   }
-
-  /*card pack*/
+  .btn_decouvrire a:hover,
+  .card,
+  .card:hover,
+  .gallery img:hover {
+    transform: scale(1);
+  }
   .container_card {
-    display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
@@ -2207,311 +1481,217 @@ input[type="submit"]:hover {
     height: 2592px;
     background-color: #d5ff3f;
   }
-
+  .conseil,
+  .contact_pack {
+    color: #d5ff3f;
+    display: flex;
+    align-items: center;
+    font-family: IntegralCF-Bold, "Russo One", sans-serif;
+  }
   .card {
     width: 90%;
     height: auto;
     background-color: #171717;
     transition: none;
     animation-delay: none;
-    transform: scale(1);
   }
-
-  .card:hover {
-    transform: scale(1);
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  .btn_decouvrire a,
+  .card_special,
+  .contact_pack {
+    background-color: #000;
   }
-
-  .card_special {
-    background-color: #000000;
+  .dote3,
+  .rectangle_horizontal {
+    transform: translate(-50%, -50%);
   }
-
-  .card_special:hover {
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  }
-
   .card h1 {
-    text-align: center;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-family: IntegralCF-Bold, "Russo One", sans-serif;
     font-size: 23px;
     padding-top: 15px;
     color: #cfcfcf;
   }
-
+  .bulle p,
   .card p {
-    text-align: center;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-    color: #cfcfcf;
-    font-weight: bold;
+    font-family: Garrison_Regular, "Martel Sans", sans-serif;
   }
-
+  .bulle i,
+  .bulle p {
+    font-size: 17px;
+  }
+  .card p {
+    color: #cfcfcf;
+    font-weight: 700;
+  }
   .def_prix {
     padding-top: 20px;
     padding-right: 30%;
     font-size: 18px;
   }
-
   .prix {
-    text-align: center;
     font-size: 50px;
   }
-
   .proposition {
     font-size: 16px;
   }
-
   .contact_pack {
     margin-top: 16%;
     width: 100%;
     height: 60px;
-    background-color: #000000;
-    color: #d5ff3f;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+  }
+  .conseil,
+  .contact_pack_special,
+  .contenair_text {
+    background-color: #292929;
   }
   .contact_pack_special {
-    background-color: #292929;
     color: #d5ff3f;
     margin-top: 21%;
   }
-
   .conseil {
     width: 100%;
     height: 55px;
-    background-color: #292929;
-    color: #d5ff3f;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
   }
-
+  .contenair_text,
+  .grid_flex {
+    align-items: center;
+    display: flex;
+  }
   .card-top {
-    margin-top: 0px;
+    margin-top: 0;
   }
-  /*End Parti pack*/
-  /*End Parti pack*/
-
-  /* Styles pour le conteneur de texte */
   .contenair_text {
     width: 100%;
     height: 300px;
-    background-color: #292929;
     margin: 25px auto;
-    display: flex;
-    align-items: center;
     justify-content: center;
     letter-spacing: 2px;
   }
-
-  /* Styles pour le texte carré */
   .carré_text {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-family: IntegralCF-Bold, "Russo One", sans-serif;
     color: #cfcfcf;
     text-align: justify;
     font-size: 15px;
     width: 95%;
     line-height: 23px;
   }
-
-  /* Styles pour l'image 1 dans le texte carré */
-  .carré_text .img1 img {
-    display: none;
-  }
-
-  /* Styles pour l'image 2 dans le texte carré */
-  .carré_text .img2 img {
-    display: none;
-  }
-
-  /* Styles pour l'image 3 dans le texte carré */
-  .carré_text .img3 img {
-    display: none;
-  }
-
-  /* Styles pour l'image 4 dans le texte carré */
-  .carré_text .img4 img {
-    display: none;
-  }
-
-  /* Styles pour le conteneur flexible avec une grille */
   .grid_flex {
     width: 95%;
-    display: flex;
-    align-items: center;
     justify-content: center;
     padding-left: 10px;
     gap: 20px;
   }
-
-  /* Styles pour la bulle */
   .bulle {
     width: 90%;
   }
-
-  /* Styles pour le contenu de la bulle */
   .bulle-content {
     text-align: center;
     gap: 10px;
   }
-
-  /* Styles pour l'icône dans la bulle */
-  .bulle i {
-    font-size: 17px;
-  }
-
-  /* Styles pour le texte dans la bulle */
   .bulle p {
-    font-size: 17px;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
     color: #818181;
   }
-
-  /* Styles pour le contenu de l'overlay */
+  .contenair_follow_us h6,
+  .projet {
+    font-family: IntegralCF-Bold, "Russo One", sans-serif;
+  }
   .overlay-content {
     width: 90%;
     background: #181818;
     padding: 20px;
     border-radius: 10px;
   }
-
-  /* Styles pour l'icône dans la section 'name_behance' */
-  .name_behance {
-    display: none;
-  }
-
-  /* Styles pour la barre verticale */
-  .barre-verticale {
-    display: none;
-  }
-
-  /* Styles pour le conteneur 'contenair_follow_us' */
   .contenair_follow_us {
     width: 100%;
     height: 500px;
     border-radius: 0 0 50px 50px;
     margin: 50px auto;
   }
-
-  /* Styles pour l'image dans le conteneur 'contenair_follow_us' */
   .contenair_follow_us img {
-    object-fit: cover;
     width: 100%;
     top: 10%;
   }
-
-  /* Styles pour le titre dans le conteneur 'contenair_follow_us' */
   .contenair_follow_us h6 {
     width: 60%;
     margin-bottom: 100px;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     font-size: 43px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
-  /* Styles pour le conteneur des boutons dans le pied de page */
   .button_footer {
     flex-direction: column;
   }
-
-  /* Styles pour le bouton 'parlons-maintenant-button' dans le pied de page */
+  .gallery,
+  .projet {
+    align-items: center;
+    display: flex;
+  }
   .button_footer .parlons-maintenant-button {
     width: 300px;
   }
-
-  /* Styles pour le bouton 'suivez-nous-button' dans le pied de page */
   .button_footer .suivez-nous-button {
     width: 300px;
     border-radius: 25px;
   }
-
-  /* Styles pour la section 'projet' */
   .projet {
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
     color: #cfcfcf;
     font-size: 45px;
     padding: 20px;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     flex-direction: column;
   }
-
-  /* Styles pour la phrase créative */
+  .btn_decouvrire a,
+  .copyright,
+  .documents,
+  .phrase_creative,
+  .politique,
+  .title_inspiration p {
+    font-family: Garrison_Regular, "Martel Sans", sans-serif;
+  }
   .phrase_creative {
     font-size: 16px;
     width: 90%;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     padding-top: 65px;
     line-height: 25px;
     text-align: center;
     position: relative;
   }
-
-  /* Styles pour le point 3 dans la phrase créative */
+  .dote3,
+  .gallery,
+  .gallery img,
+  .logo_du_site_politique img {
+    width: 100%;
+  }
   .dote3 {
     position: absolute;
     top: 15%;
     left: 16%;
-    transform: translate(-50%, -50%);
-  }
-  .dote3 {
-    width: 100%;
     height: auto;
   }
-  /* Styles pour la section 'gallery' */
   .gallery {
-    width: 100%;
     height: auto;
-    display: flex;
-    align-items: center;
     justify-content: center;
   }
-
-  /* Styles pour les images dans la section 'gallery' */
   .gallery img {
-    width: 100%;
     height: auto;
-    object-fit: cover;
     cursor: url("/Assets/logo/cursor-pointer.png"), auto;
   }
-
-  /* Styles pour les images au survol dans la section 'gallery' */
-  .gallery img:hover {
-    transform: scale(1);
-  }
-
-  /* Styles pour les sections 'politique', 'documents', et 'copyright' */
-  .politique,
+  .copyright,
   .documents,
-  .copyright {
+  .politique {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
     font-size: 10px;
     color: #d5ff3f;
     text-transform: uppercase;
   }
-
-  .email{
-    display: none;
-  }
-
-  .logo_du_site_politique img {
-    width: 100%;
-  }
-
-  /*page inspiration */
   .content-follow {
-    background-color: #808080;
+    background-color: grey;
   }
-
   .background_container {
     width: 100%;
     height: 100vh;
@@ -2520,73 +1700,61 @@ input[type="submit"]:hover {
     justify-content: center;
     position: relative;
   }
-
+  .logo_nav,
+  .title_inspiration {
+    align-items: center;
+    display: flex;
+  }
   .rectangle_horizontal {
     width: 90%;
     height: 600px;
     background-color: #d5ff3f;
     position: absolute;
-    top: 50%; /* Ajuste la position verticale au centre */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 2;
-    border-radius: 50px 0 55px 0;
+    border-radius: 50px 0 55px;
   }
-
-  .logo_nav {
-    display: flex;
-    align-items: center;
-  }
-
   .logo_nav i {
     font-size: 30px;
-    color: #000000;
+    color: #000;
   }
-
   .rectangle_horizontal img {
     width: 82%;
     margin: 30px;
   }
-
   .rectangle_vertical {
     width: 100%;
     height: 50vh;
     background-color: #292929;
     position: absolute;
-    top: 50%; /* Ajuste la position verticale au centre */
+    top: 50%;
     right: 0;
     z-index: 1;
   }
-
   .contenair_text_inspiration {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
   }
-
   .title_inspiration {
     padding-left: 30px;
-    padding-top: 0px;
+    padding-top: 0;
     width: 80%;
-    font-family: "IntegralCF-Bold", "Russo One", sans-serif;
+    font-family: IntegralCF-Bold, "Russo One", sans-serif;
     text-transform: uppercase;
     font-size: 30px;
-    display: flex;
-    align-items: center;
     flex-direction: column;
   }
-
   .title_inspiration h1 {
     margin: 0;
     line-height: 55px;
   }
-
   .title_inspiration p {
     margin: 0;
     padding-top: 25px;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 12px;
     font-style: italic;
   }
@@ -2597,20 +1765,14 @@ input[type="submit"]:hover {
     margin: 30px;
     width: 60%;
     height: 60px;
-    background-color: #000000;
     color: #d5ff3f;
-    font-family: "Garrison_Regular", "Martel Sans", sans-serif;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     cursor: url("/Assets/logo/cursor_pointer_yellow.png"), auto;
-    border-radius: 20px 0 20px 0;
+    border-radius: 20px 0;
     transition: none;
   }
-  .btn_decouvrire a:hover {
-    transform: scale(1);
-  }
-
   .abstract {
     position: absolute;
     top: 75%;
@@ -2619,13 +1781,9 @@ input[type="submit"]:hover {
     height: 35%;
     z-index: 9999;
   }
-
   .abstract video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 0 0 50px 0;
+    border-radius: 0 0 50px;
   }
-
-  /* end page inspiration */
 }
